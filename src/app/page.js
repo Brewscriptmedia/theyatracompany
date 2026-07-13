@@ -1,7 +1,7 @@
 export default function Home(){
   return (
     <main>
-      <h1>The yatra Company</h1>
+      <h1></h1>
     </main>
   )
 }

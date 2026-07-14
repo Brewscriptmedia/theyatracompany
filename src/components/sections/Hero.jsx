@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -41,7 +42,7 @@ export default function Hero() {
 
         <div className={styles.right}>
           <img
-            src="/Images/hero-car.jpeg"
+            src="/Images/innova-sada1.png"
             alt="Taxi"
           />
         </div>

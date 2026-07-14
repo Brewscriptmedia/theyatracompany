@@ -1,7 +1,12 @@
 import "./globals.css";
+import { Geist } from "next/font/google"
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+
+const geist = Geist({
+  subsets: ["latin"]
+})
 
 export const metadata = {
   title: {
@@ -25,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white text-slate-900">
+      <body className={geist.className}>
         <Navbar />
 
         <main>{children}</main>

@@ -1,0 +1,63 @@
+.header{
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.navLinks{
+    display: flex;
+    gap: 35px;
+}
+
+.navLinks a{
+    font-weight: 500;
+    color: #334155;
+    transition: .3s;
+}
+
+.navLinks a:hover{
+    color: #f59e0b;
+}
+
+.callButton{
+    background: #f59e0b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.callButton:hover{
+    background: #d97706;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .navlinks{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

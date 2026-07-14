@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Button({
     children,
     href = "#",
@@ -5,12 +7,15 @@ export default function Button({
 }){
     const styles = {
         primary: "bg-amber-500 hover:bg-amber-600 text-white",
-        secondary: "border border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white"
+        secondary: "border border-white text-white hover:bg-white hover:text-slate-900"
     };
 
     return (
-        <a href= {href} className = {`${styles[variant]} inline-flex items-center justify-center rounded-lg px-6 py-3 font-medium transition-all duration-300`}>
-            {children}
-        </a>
+        <Link
+            href={href}
+            className={`inline-flex items-center justify-center gap-2 rounded-x1 px-7 py-4 font-semibold transition duration-300 ${variant[variant]}`}
+            >
+                {children}
+            </Link>
     );
 }

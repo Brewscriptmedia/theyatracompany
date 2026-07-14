@@ -1,59 +1,51 @@
-import { FaTaxi, FaPlaneArrival, FaRoad, FaBriefcase} from "react-icons/fa";
-import Container from "../ui/Container";
-import Card from "../ui/Card";
-
-const services = [
-    {
-        title: "Airport Pickup",
-        icon: <FaPlaneArrival size={40}/>,
-        description: "Reliable airport pickup service with professional drivers."
-    },
-    {
-        title: "Airport Drop",
-        icon: <FaTaxi size={40}/>,
-        description: "Reach the airport comfortably and on time."
-    },
-    {
-        title: "Outstation Trips",
-        icon: <FaRoad size={40}/>,
-        description: "Comfortable long-distance travel across India."
-    },
-    {
-        title: "Corporate Travel",
-        icon: <FaBriefcase size={40}/>,
-        description: "Professional transport solution for businesses."
-    },
-];
+import styles from "./Services.module.css";
+import {
+  FaPlaneArrival,
+  FaPlaneDeparture,
+  FaTaxi,
+  FaRoute,
+} from "react-icons/fa";
 
 export default function Services() {
-    return (
-        <section>
-            <Container>
+  const services = [
+    {
+      icon: <FaPlaneArrival />,
+      title: "Airport Pickup",
+      text: "On-time airport pickup with professional drivers.",
+    },
+    {
+      icon: <FaPlaneDeparture />,
+      title: "Airport Drop",
+      text: "Reach the airport comfortably without any hassle.",
+    },
+    {
+      icon: <FaTaxi />,
+      title: "Local Taxi",
+      text: "Affordable taxi service for local city travel.",
+    },
+    {
+      icon: <FaRoute />,
+      title: "Outstation Trips",
+      text: "Safe and comfortable long-distance travel across India.",
+    },
+  ];
 
-                <h2 className="text-4x1 font-bold text-center mb-14">
-                    Our Services
-                </h2>
+  return (
+    <section className={styles.services}>
+      <div className="container">
+        <h2>Our Services</h2>
+        <p>Reliable taxi services for every journey.</p>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                    {services.map((services) =>(
-                        <Card key={services.title}>
-                            <div className="text-amber-500 mb-4">
-                                {services.icon}
-                            </div>
-
-                            <h3 className="text-x1 font-semibold mb-3">
-                                {services.title}
-                            </h3>
-
-                            <p className="text-grey-600">
-                                {services.description}
-                            </p>
-                        </Card>
-                    ))}
-                    
-                </div>
-            </Container>
-        </section>
-    );
+        <div className={styles.grid}>
+          {services.map((service, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.icon}>{service.icon}</div>
+              <h3>{service.title}</h3>
+              <p>{service.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

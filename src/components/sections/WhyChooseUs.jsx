@@ -1,32 +1,50 @@
-import Container from "../ui/Container";
+import styles from "./WhyChooseUs.module.css";
+import {
+  FaUserTie,
+  FaClock,
+  FaShieldAlt,
+  FaMoneyBillWave,
+} from "react-icons/fa";
 
-const reasons = [
-    "24x7 Customer Support",
-    "Professional Drivers",
-    "Clean & Senitized Vehicles",
-    "Affordable Pricing",
-    "Safe & Secure Travel",
-    "On-Time Pickup"
-];
+export default function WhyChooseUs() {
+  const points = [
+    {
+      icon: <FaUserTie />,
+      title: "Professional Drivers",
+      text: "Experienced and courteous chauffeurs.",
+    },
+    {
+      icon: <FaClock />,
+      title: "24×7 Availability",
+      text: "Available whenever you need us.",
+    },
+    {
+      icon: <FaShieldAlt />,
+      title: "Safe Journey",
+      text: "Comfortable and secure rides every time.",
+    },
+    {
+      icon: <FaMoneyBillWave />,
+      title: "Affordable Pricing",
+      text: "Transparent pricing with no hidden charges.",
+    },
+  ];
 
-export default function WhyChooseUs(){
-    return (
-        <section className="bg-slate-100">
+  return (
+    <section className={styles.why}>
+      <div className="container">
+        <h2>Why Choose Us?</h2>
 
-            <Container>
-
-                <h2 className="text-4x1 font-bold text-center mb-12">
-                    Why Choose Us?
-                </h2>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {reasons.map((reason) => (
-                        <div key={reason} className="bg-white p-8 rounded-x1 shadow">
-                            ✅ {reason}
-                        </div>
-                    ))}
-                </div>
-            </Container>
-        </section>
-    )
+        <div className={styles.grid}>
+          {points.map((item, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.icon}>{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

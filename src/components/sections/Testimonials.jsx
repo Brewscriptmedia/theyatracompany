@@ -1,49 +1,41 @@
-import Container from "../ui/Container";
-import Card from "../ui/Card";
+import styles from "./Testimonials.module.css";
 
 export default function Testimonials() {
-    return (
-        <section>
+  const testimonials = [
+    {
+      name: "Rahul Sharma",
+      review:
+        "Excellent airport pickup service. Driver arrived on time and the journey was smooth.",
+    },
+    {
+      name: "Priya Verma",
+      review:
+        "Very professional drivers and clean cars. Highly recommended.",
+    },
+    {
+      name: "Amit Singh",
+      review:
+        "Booked an outstation trip with my family. Great experience and affordable pricing.",
+    },
+  ];
 
-            <Container>
+  return (
+    <section className={styles.testimonials}>
+      <div className="container">
+        <h2>What Our Clients Say</h2>
 
-                <h2 className="text-4x1 font-bold text-center mb-14">
-                    What Our Clients Say
-                </h2>
+        <div className={styles.grid}>
+          {testimonials.map((item, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.stars}>★★★★★</div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+              <p>{item.review}</p>
 
-                    <Card>
-                        ⭐️⭐️⭐️⭐️⭐️
-                        <p className="mt-4">
-                            Excellent airport pickup service. Driver arrived on time.
-                        </p>
-                        <h4 className="font-semibold mt-5">
-                            Rahul Sharma
-                        </h4>
-                    </Card>
-
-                    <Card>
-                        ⭐️⭐️⭐️⭐️⭐️
-                        <p className="mt-4">
-                            Comfortable ride and affordable pricing.
-                        </p>
-                        <h4 className="font-semibold mt-5">
-                            Priya Verma
-                        </h4>
-                    </Card>
-
-                    <Card>
-                        ⭐️⭐️⭐️⭐️⭐️
-                        <p className="mt-4">
-                            Best taxi service for business travel.
-                        </p>
-                        <h4 className="font-semibold mt-5">
-                            Amit Singh
-                        </h4>
-                    </Card>
-                </div>
-            </Container>
-        </section>
-    )
+              <h4>{item.name}</h4>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

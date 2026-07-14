@@ -1,29 +1,38 @@
-import Container from "../ui/Container";
-import Button from "../ui/Button";
+import styles from "./CTA.module.css";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
-export default function CTA() {
+export default function CTA(){
     return (
-        <section className="bg-amber-500">
+        <section className={styles.cta}>
+            <div className="container">
+                <div className={styles.content}>
+                    
+                    <h2>Ready to Travel With Us?</h2>
 
-            <Container>
+                    <p>Book your airport transfer, local taxi or outstation ride today. Safe, comfortable and affordable taxi services across India</p>
 
-                <div className="text-center py-10">
+                    <div className={styles.buttons}>
 
-                    <h2 className="text-5x1 font-bold text-white">
-                        Need a Taxi Today?
-                    </h2>
+                        <a
+                            href="tel:+919999999999"
+                            className={styles.callBtn}
+                        >
+                            <FaPhoneAlt/>
+                            Call Now
+                        </a>
 
-                    <p className="mt-5 text-white text-lg">
-                        Book your ride now and travel confortably anywhere in India.
-                    </p>
-
-                    <div className="mt-10">
-                        <Button href="/contact">
-                            Contact Us
-                        </Button>
+                        <a
+                            href="https://wa.me/919999999999"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.whatsappBtn}
+                        >
+                            <FaWhatsapp/>
+                            Whatsapp
+                        </a>
                     </div>
                 </div>
-            </Container>
+            </div>
         </section>
     )
 }

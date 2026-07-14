@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import Container from "../ui/Container";
@@ -9,8 +10,14 @@ export default function Navbar() {
         <header className={styles.header}>
             <Container>
                 <nav className={styles.navbar}>
-                    <Link href="/" className={styles.logo}>
-                        The Yatra Company
+                    <Link href="/">
+                        <Image 
+                            src="/Images/logo1.jpeg"
+                            alt="The Yatra Company"
+                            width={180}
+                            height={60}
+                            priority
+                        />
                     </Link>
 
                     <ul className={styles.navLinks}>

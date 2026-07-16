@@ -1,0 +1,73 @@
+.hero{
+    position:relative;
+    min-height:55vh;
+
+    /* background-image:url("/Images/contact-banner.jpg"); */
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    overflow:hidden;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(15,23,42,.72);
+}
+
+.content{
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:800px;
+
+    color:#fff;
+}
+
+.tag{
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border-radius:30px;
+
+    background:#f9b000;
+    color:#111827;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+}
+
+.content h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:19px;
+    line-height:1.8;
+    color:#f1f5f9;
+}
+
+@media(max-width:768px){
+
+.content h1{
+    font-size:40px;
+}
+
+.content p{
+    font-size:16px;
+}
+
+.hero{
+    min-height:45vh;
+}
+
+}

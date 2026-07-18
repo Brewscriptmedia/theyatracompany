@@ -1,4 +1,5 @@
 import styles from "./Map.module.css";
+import siteConfig from "@/config/siteConfig";
 
 export default function Map() {
   return (
@@ -7,7 +8,7 @@ export default function Map() {
       <h2>Find Us</h2>
 
       <iframe
-        src="YOUR_GOOGLE_MAPS_EMBED_LINK"
+        src={siteConfig.googleMap}
         loading="lazy"
         allowFullScreen
       ></iframe>

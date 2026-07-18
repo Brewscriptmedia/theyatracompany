@@ -1,5 +1,6 @@
 import styles from "./CTA.module.css";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import siteConfig from "@/config/siteConfig";
 
 export default function CTA(){
     return (
@@ -14,7 +15,7 @@ export default function CTA(){
                     <div className={styles.buttons}>
 
                         <a
-                            href="tel:+919999999999"
+                            href= {`tel:${siteConfig.phone}`}
                             className={styles.callBtn}
                         >
                             <FaPhoneAlt/>
@@ -22,7 +23,7 @@ export default function CTA(){
                         </a>
 
                         <a
-                            href="https://wa.me/919999999999"
+                            href= {siteConfig.whatsapp}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.whatsappBtn}

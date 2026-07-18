@@ -59,6 +59,10 @@
     color:#111827;
 
     margin-bottom:10px;
+
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
 
 .card span{

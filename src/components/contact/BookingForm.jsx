@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import styles from "./BookingForm.module.css";
+import siteConfig from "@/config/siteConfig";
 
 export default function BookingForm() {
   const [form, setForm] = useState({
@@ -66,7 +67,7 @@ ${form.message || "None"}
 
 Thank you.`;
 
-    const phoneNumber = "919876543210";
+    const phoneNumber = siteConfig.phone;
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       whatsappMessage

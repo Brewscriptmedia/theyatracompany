@@ -10,7 +10,7 @@ export default function ContactInfo() {
 
         <h3>Call Us</h3>
 
-        <p>+91 98765 43210</p>
+        <p>+91-91988 93198</p>
 
         <span>Available 24×7</span>
       </div>
@@ -20,7 +20,7 @@ export default function ContactInfo() {
 
         <h3>WhatsApp</h3>
 
-        <p>+91 98765 43210</p>
+        <p>+91-91988 93198</p>
 
         <span>Quick Booking Support</span>
       </div>
@@ -30,7 +30,7 @@ export default function ContactInfo() {
 
         <h3>Email</h3>
 
-        <p>info@theyatracompany.com</p>
+        <p>theyatracompanyofficial@gmail.com</p>
 
         <span>We'll reply within 24 hours</span>
       </div>

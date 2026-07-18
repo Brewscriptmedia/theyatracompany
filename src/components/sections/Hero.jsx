@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./Hero.module.css";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import siteConfig from "@/config/siteConfig";
 
 export default function Hero() {
   return (
@@ -26,7 +27,7 @@ export default function Hero() {
           <div className={styles.buttons}>
             <button className={styles.primary}>
               <a
-                href=""
+                href={siteConfig.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -36,7 +37,7 @@ export default function Hero() {
 
             <button className={styles.secondary}>
               <a
-                href="tel:+919999999999"
+                href={`tel:${siteConfig.phone}`}
               >
                 📞 Call Now
               </a>
@@ -45,7 +46,7 @@ export default function Hero() {
 
           <div className={styles.socials}>
           <a
-            href=""
+            href={siteConfig.instagram}
             target="_blank"
             rel="noopener noreferrer" 
           >
@@ -53,7 +54,7 @@ export default function Hero() {
           </a>
 
           <a
-            href=""
+            href={siteConfig.facebook}
             target="_blank"
             rel="noopener noreferrer" 
           >

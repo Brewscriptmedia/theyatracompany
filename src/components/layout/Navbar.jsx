@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import Container from "../ui/Container";
+import siteConfig from "@/config/siteConfig";
 
 export default function Navbar() {
     return(
@@ -28,7 +29,7 @@ export default function Navbar() {
                     </ul>
 
                     <a
-                        href="tel:+919999999999"
+                        href= {`tel:${siteConfig.phone}`}
                         className={styles.callButton}
                     >
                         📞 Call Now

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./Hero.module.css";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -24,13 +25,41 @@ export default function Hero() {
 
           <div className={styles.buttons}>
             <button className={styles.primary}>
-              Book Your Ride
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book Your Ride
+              </a>
             </button>
 
             <button className={styles.secondary}>
-              Call Now
+              <a
+                href="tel:+919999999999"
+              >
+                📞 Call Now
+              </a>
             </button>
           </div>
+
+          <div className={styles.socials}>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer" 
+          >
+            <FaInstagram/>
+          </a>
+
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer" 
+          >
+            <FaFacebookF/>
+          </a>
+        </div>
 
           <div className={styles.features}>
             <span>✔ Professional Drivers</span>

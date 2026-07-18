@@ -1,32 +1,79 @@
 .hero{
     position: relative;
-    height: 50vh;
-    /* background-image: url(); */
+    height: 60vh;
+    min-height: 420px;
+
+    background-image: url("/Images/services_bg_3_bokeh.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 .overlay{
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, .55);
+    background: rgba(10, 18, 35, .65);
 }
 
 .content{
     position: relative;
-    text-align: center;
     z-index: 2;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.tag{
+    display: inline-block;
+    padding: 10px 24px;
+    background: #f4b400;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: .95rem;
 }
 
 .content h1{
     font-size: 55px;
     margin-bottom: 15px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.content h1 span{
+    color: #f4b400;
 }
 
 .content p{
-    font-size: 20px;
-    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e4e4e4;
+    max-width: 650px;
+    margin: auto;
+}
+
+@media (max-width:768px){
+    .hero{
+        height: 45vh;
+    }
+
+    .content h1{
+        font-size: 4.2rem;
+    }
+
+    .content p{
+        font-size: 1rem;
+    }
+
+    .tag{
+        font-size: 8rem;
+    }
 }

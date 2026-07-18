@@ -39,6 +39,30 @@
     color:#94a3b8;
 }
 
+.socialIcons{
+    display: flex;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.socialIcons a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.socialIcons a:hover{
+    background: #f4b400;
+    transform: translateY(-4px);
+}
+
 @media(max-width:768px){
 
     .grid{

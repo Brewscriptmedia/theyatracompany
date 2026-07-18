@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import Container from "../ui/Container";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function Footer(){
     return(
@@ -24,6 +25,23 @@ export default function Footer(){
                             <li><Link href="/services">Services</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
+                        <div className={styles.socialIcons}>
+                        <a
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                        >
+                            <FaInstagram/>
+                        </a>
+
+                        <a
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                        >
+                            <FaFacebookF/>
+                        </a>
+                    </div>
                     </div>
 
                     <div>
@@ -31,6 +49,7 @@ export default function Footer(){
                         <p>📞 +91 99999 99999</p>
                         <p>✉ info@theyatracompany.com</p>
                     </div>
+
                 </div>
 
                 <div className={styles.bottom}>

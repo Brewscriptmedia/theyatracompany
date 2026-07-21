@@ -67,9 +67,9 @@ ${form.message || "None"}
 
 Thank you.`;
 
-    const phoneNumber = siteConfig.phone;
+    const phoneNumber = siteConfig.whatsapp;
 
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    const url = `${phoneNumber}?text=${encodeURIComponent(
       whatsappMessage
     )}`;
 

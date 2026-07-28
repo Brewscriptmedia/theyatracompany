@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.12",
     "axios": "^1.18.1",
     "framer-motion": "^12.42.2",
     "mongoose": "^9.7.4",

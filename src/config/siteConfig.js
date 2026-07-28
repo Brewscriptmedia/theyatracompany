@@ -5,7 +5,8 @@ const siteConfig = {
     instagram: process.env.NEXT_PUBLIC_INSTAGRAM,
     facebook: process.env.NEXT_PUBLIC_FACEBOOK,
     googleMap: process.env.NEXT_PUBLIC_GOOGLE_MAP,
-    email: process.env.NEXT_PUBLIC_EMAIL
+    email: process.env.NEXT_PUBLIC_EMAIL,
+    gaId: process.env.NEXT_PUBLIC_GA_ID
 }
 
 export default siteConfig;

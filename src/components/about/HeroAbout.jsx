@@ -9,8 +9,7 @@ export default function HeroAbout(){
                     <span className={styles.badge}>About The Yatra Company</span>
 
                     <h1>
-                        Your Trusted Travel 
-                        <br/>
+                        Your Trusted Travel <br/>
                         Partner Across India
                     </h1>
 

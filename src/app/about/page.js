@@ -6,7 +6,7 @@ import WhyUs from "@/components/about/WhyUs";
 import { keyframes } from "framer-motion";
 
 export const metadata = {
-  title: "About Us | Trusted Cab Service in Lucknow – The Yatra Company",
+  title: "About Us | Trusted Cab Service in Lucknow",
 
   description:
     "Learn about The Yatra Company, a trusted taxi service in Lucknow offering airport transfers, local cabs, outstation travel and corporate transportation.",

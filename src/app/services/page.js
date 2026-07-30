@@ -6,7 +6,7 @@ import ServicesGrid from "@/components/services/ServicesGrid";
 
 export const metadata = {
   title:
-    "Taxi Services – Airport, Local, Outstation & Corporate | The Yatra Company",
+    "Taxi Services – Airport, Local, Outstation & Corporate",
 
   description:
     "Explore airport pickup & drop, local taxi, outstation travel, corporate transportation and custom cab services in Lucknow with The Yatra Company.",

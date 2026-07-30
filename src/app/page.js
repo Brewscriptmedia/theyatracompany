@@ -5,7 +5,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 
 export const metadata = {
-  title: "Taxi Service in Lucknow | Airport Cabs & Outstation Travel – The Yatra Company",
+  title: "Taxi Service in Lucknow | Airport Cabs & Outstation Travel",
 
   description:
     "Book trusted taxi services in Lucknow with The Yatra Company. We provide airport transfers, local cabs, outstation travel, corporate rides and 24×7 professional drivers.",

@@ -15,8 +15,8 @@ export default function Hero() {
           </span>
 
           <h1>
-            Your Journey <br />
-            Starts Here
+            Reliable Taxi Services<br />
+            In Lucknow
           </h1>
 
           <p>

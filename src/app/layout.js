@@ -10,7 +10,27 @@ const geist = Geist({
   subsets: ["latin"]
 });
 
-
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "TaxiService",
+  name: siteConfig.companyName,
+  url: "https://theyatracompany.com",
+  image: "https://theyatracompany.com/Images/logo1.jpeg",
+  logo: "https://theyatracompany.com/Images/logo1.jpeg",
+  telephone: siteConfig.phone,
+  email: siteConfig.email,
+  areaServed: "Lucknow, Uttar Pradesh, India",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Lucknow",
+    addressRegion: "Uttar Pradesh",
+    addressCountry: "IN"
+  },
+  sameAs: [
+    siteConfig.instagram,
+    siteConfig.facebook,
+  ]
+}
 
 export const metadata = {
   metadataBase: new URL("https://theyatracompany.com"),
@@ -72,6 +92,12 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
 
         <Footer />
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
       </body>
 
       <GoogleAnalytics gaId={siteConfig.gaId}/>

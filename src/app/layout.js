@@ -54,10 +54,6 @@ export const metadata = {
     "The Yatra Company"
   ],
 
-  alternates: {
-    canonical: "https://theyatracompany.com"
-  },
-
   openGraph: {
     title: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
     description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",

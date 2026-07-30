@@ -5,42 +5,51 @@ import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 
 export const metadata = {
-  title: "The Yatra Company | Reliable Taxi & Can booking Across India",
+  title: "Taxi Service in Lucknow | Airport Cabs & Outstation Travel – The Yatra Company",
 
-  description: "Book reliable airport transfers, outstation cabs, local taxis, one-way and round-trip cab rides with The Yatra Company. Safe, affordable and available across India.",
+  description:
+    "Book trusted taxi services in Lucknow with The Yatra Company. We provide airport transfers, local cabs, outstation travel, corporate rides and 24×7 professional drivers.",
 
   keywords: [
-    "Taxi Service India",
-    "Cab Booking",
-    "Airport Taxi",
-    "Airport Transfer",
+    "Taxi Service in Lucknow",
+    "Airport Taxi Lucknow",
+    "Cab Booking Lucknow",
     "Outstation Taxi",
-    "One Way Cab",
-    "Round Trip Cab",
+    "Corporate Taxi",
     "Local Taxi",
-    "Travel Company",
-    "The Yatra COmpany"
+    "The Yatra Company",
   ],
-  
+
   alternates: {
     canonical: "/",
   },
 
   openGraph: {
-    title: "The Yatra Company | Reliable Taxi & Can booking Across India",
-    description: "Book airport transfers, outstation cabs, local taxis and more with The Yatra Company.",
+    title: "Taxi Service in Lucknow | The Yatra Company",
+    description:
+      "Airport transfers, local taxis, outstation trips and corporate travel in Lucknow.",
     url: "https://theyatracompany.com",
     siteName: "The Yatra Company",
-    locale: "un_IN",
-    type: "website"
+    images: [
+      {
+        url: "/Images/logo1.jpeg",
+        width: 1336,
+        height: 518,
+        alt: "The Yatra Company",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "The Yatra Company",
-    description: "Reliable taxi services, airport transfers and outstation cab booking across India."
-  }
-}
+    title: "Taxi Service in Lucknow | The Yatra Company",
+    description:
+      "Airport transfers, local taxis and outstation cab services.",
+    images: ["/Images/logo1.jpeg"],
+  },
+};
 
 export default function Home(){
   return (

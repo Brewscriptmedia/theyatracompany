@@ -13,19 +13,48 @@ const geist = Geist({
 const schema = {
   "@context": "https://schema.org",
   "@type": "TaxiService",
+
   name: siteConfig.companyName,
   url: "https://theyatracompany.com",
   image: "https://theyatracompany.com/Images/logo1.jpeg",
   logo: "https://theyatracompany.com/Images/logo1.jpeg",
+
   telephone: siteConfig.phone,
   email: siteConfig.email,
-  areaServed: "Lucknow, Uttar Pradesh, India",
+
+  priceRange: "₹₹",
+
   address: {
     "@type": "PostalAddress",
+    streetAddress: "T9-1103, Sun Breeze 1, Faizabad Road, BBD Green City",
     addressLocality: "Lucknow",
-    addressRegion: "Uttar Pradesh",
+    AddressRegion: "Uttar Pradesh",
+    postalCode: "226028",
     addressCountry: "IN"
   },
+
+  areaServed: {
+    "@type": "City",
+    name: "Lucknow"
+  },
+
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednessday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      open: "00:00",
+      close: "23:59"
+    },
+  ],
+
   sameAs: [
     siteConfig.instagram,
     siteConfig.facebook,

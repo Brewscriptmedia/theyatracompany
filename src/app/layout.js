@@ -8,25 +8,59 @@ import siteConfig from "@/config/siteConfig";
 
 const geist = Geist({
   subsets: ["latin"]
-})
+});
+
+
 
 export const metadata = {
+  metadataBase: new URL("https://theyatracompany.com"),
+
   title: {
-    default: "The Yatra Company",
+    default: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
     template: "%s | The Yatra Company",
   },
 
   description:
-    "Reliable taxi services, airport pickup, airport drop and outstation cab booking across India.",
+    "Reliable tairport pickup, drop, local, and outstation taxi service in Lucknow. Professional drivers, 24*7 support. Book on Whatsapp or Call now.",
 
   keywords: [
-    "Taxi Service",
+    "Taxi Service in Lucknow",
+    "Airport Taxi Lucknow",
     "Airport Pickup",
     "Airport Drop",
     "Outstation Taxi",
     "Cab Booking",
     "Travel Company",
+    "The Yatra Company"
   ],
+
+  alternates: {
+    canonical: "https://theyatracompany.com"
+  },
+
+  openGraph: {
+    title: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
+    description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
+    url: "https://theyatracompany.com",
+    siteName: "The Yatra Company",
+    images: [
+      {
+        url: "/Images/logo1.jpeg",
+        width: 1336,
+        height: 518,
+        alt: "The Yatra Company Logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
+    description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
+    images: ["/Images/logo1.jpeg"],
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -30,8 +30,8 @@ export default function CompanyStory(){
 
                     <p>
                         Our experienced drivers, well-maintained vehicles, and 24*7 support 
-                        ensure every ride is smooth from pickup to destination. whether 
-                        you're travelling for business or leisure, we'er always ready to 
+                        ensure every ride is smooth from pickup to destination. Whether 
+                        you're travelling for business or leisure, we're always ready to 
                         serve you.
                     </p>
 

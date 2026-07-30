@@ -15,7 +15,7 @@ export default function HeroAbout(){
                     </h1>
 
                     <p>
-                        The yatra Company provides safe, reliable, and affordable taxi
+                        The Yatra Company provides safe, reliable, and affordable taxi
                         services for airport transfers, local city rides, outstation
                         journeys, and corporate travel. Our mission is to make every
                         journey comfortable, punctual, and stress-free.

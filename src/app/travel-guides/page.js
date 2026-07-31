@@ -1,5 +1,3 @@
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
 import CTA from "@/components/sections/CTA";
 import GuideGrid from "@/components/travel-guides/GuideGrid";
 import HeroGuides from "@/components/travel-guides/HeroGuides";

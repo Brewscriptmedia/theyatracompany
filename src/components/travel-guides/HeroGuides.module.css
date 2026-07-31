@@ -1,0 +1,112 @@
+.hero {
+  position: relative;
+  min-height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+    url("/Images/travel-guides-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 120px 20px;
+}
+
+.content{
+  position:relative;
+  z-index:2;
+
+  max-width:850px;
+
+  color:white;
+}
+
+.badge{
+
+  display:inline-block;
+
+  background:#FFB400;
+
+  color:#111;
+
+  padding:.55rem 1rem;
+
+  border-radius:40px;
+
+  font-weight:600;
+
+  margin-bottom:1.4rem;
+}
+
+.content h1{
+
+  font-size:clamp(2.8rem,5vw,4.8rem);
+
+  margin-bottom:1.5rem;
+}
+
+.content p{
+
+  font-size:1.15rem;
+
+  line-height:1.8;
+
+  color:#f3f3f3;
+
+  margin-bottom:2.2rem;
+}
+
+.button{
+
+  display:inline-block;
+
+  padding:14px 32px;
+
+  border-radius:40px;
+
+  background:#FFB400;
+
+  color:#111;
+
+  text-decoration:none;
+
+  font-weight:700;
+
+  transition:.3s;
+}
+
+.button:hover{
+
+  transform:translateY(-3px);
+
+  background:white;
+}
+
+@media(max-width:768px){
+
+.content h1{
+
+font-size:2.5rem;
+
+}
+
+.content p{
+
+font-size:1rem;
+
+}
+
+.hero{
+
+padding:100px 20px;
+
+}
+
+}

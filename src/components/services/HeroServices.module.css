@@ -60,20 +60,21 @@
     margin: auto;
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
     .hero{
-        height: 45vh;
+        min-height: 60vh;
     }
 
     .content h1{
-        font-size: 4.2rem;
+        font-size: 34px;
     }
 
     .content p{
-        font-size: 1rem;
+        font-size: 16px;
     }
 
-    .tag{
-        font-size: 8rem;
+    .badge{
+        font-size: 14px;
+        padding: 8px 18px;
     }
 }

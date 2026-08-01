@@ -3,6 +3,7 @@ import HeroAbout from "@/components/about/HeroAbout";
 import MissionVision from "@/components/about/MissionVision";
 import Stats from "@/components/about/Stats";
 import WhyUs from "@/components/about/WhyUs";
+import CTA from "@/components/sections/CTA";
 import { keyframes } from "framer-motion";
 
 export const metadata = {
@@ -60,6 +61,7 @@ export default function AboutPage(){
             <MissionVision/>
             <Stats/>
             <WhyUs/>
+            <CTA/>
         </>
     )
 }

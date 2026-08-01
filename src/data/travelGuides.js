@@ -1,220 +1,221 @@
 export const guides = [
-  {
-    slug: "bbd-green-city-ayodhya-road-taxi",
+  // {
+  //   slug: "bbd-green-city-ayodhya-road-taxi",
 
-    seo: {
-      metaTitle:
-        "BBD Green City & Ayodhya Road Taxi Service | Local Cab Booking | The Yatra Company",
-      metaDescription:
-        "Book a local taxi in BBD Green City and along Ayodhya Road, Lucknow. Fixed fare, doorstep pickup, outstation cabs to Ayodhya. WhatsApp booking, 24x7 support.",
-      keywords: [
-        "BBD Green City taxi",
-        "Ayodhya Road Lucknow cab service",
-        "local taxi Ayodhya Road Lucknow",
-        "BBD Green City cab booking",
-        "Ayodhya Road taxi service Lucknow",
-      ],
-      canonical:
-        "https://theyatracompany.com/routes/bbd-green-city-ayodhya-road-taxi",
-      ogTitle: "BBD Green City & Ayodhya Road Taxi Service — Local Cab Booking",
-      ogDescription:
-        "Doorstep taxi service for BBD Green City and Ayodhya Road residents in Lucknow. Local drops and direct outstation cabs.",
-      ogImage: "/images/routes/bbd-green-city-og.jpg",
-    },
+  //   seo: {
+  //     metaTitle:
+  //       "BBD Green City & Ayodhya Road Taxi Service | Local Cab Booking | The Yatra Company",
+  //     metaDescription:
+  //       "Book a local taxi in BBD Green City and along Ayodhya Road, Lucknow. Fixed fare, doorstep pickup, outstation cabs to Ayodhya. WhatsApp booking, 24x7 support.",
+  //     keywords: [
+  //       "BBD Green City taxi",
+  //       "Ayodhya Road Lucknow cab service",
+  //       "local taxi Ayodhya Road Lucknow",
+  //       "BBD Green City cab booking",
+  //       "Ayodhya Road taxi service Lucknow",
+  //     ],
+  //     canonical:
+  //       "https://theyatracompany.com/routes/bbd-green-city-ayodhya-road-taxi",
+  //     ogTitle: "BBD Green City & Ayodhya Road Taxi Service — Local Cab Booking",
+  //     ogDescription:
+  //       "Doorstep taxi service for BBD Green City and Ayodhya Road residents in Lucknow. Local drops and direct outstation cabs.",
+  //     ogImage: "/images/routes/bbd-green-city-og.jpg",
+  //   },
 
-    hero: {
-      badge: "Local Neighborhood Service",
-      title: "BBD Green City & Ayodhya Road Taxi Service — Lucknow",
-      description:
-        "Your neighborhood cab, without the wait. Book a reliable local taxi from BBD Green City or anywhere along the Ayodhya Road corridor — for city trips, station drops, or an outstation ride straight to Ayodhya.",
-      heroImage: "/images/routes/bbd-green-city-hero.jpg",
-      heroImageAlt: "Taxi on Ayodhya Road near BBD Green City, Lucknow",
-    },
+  //   hero: {
+  //     badge: "Local Neighborhood Service",
+  //     title: "BBD Green City & Ayodhya Road Taxi Service — Lucknow",
+  //     description:
+  //       "Your neighborhood cab, without the wait. Book a reliable local taxi from BBD Green City or anywhere along the Ayodhya Road corridor — for city trips, station drops, or an outstation ride straight to Ayodhya.",
+  //     heroImage: "/images/routes/bbd-green-city-hero.jpg",
+  //     heroImageAlt: "Taxi on Ayodhya Road near BBD Green City, Lucknow",
+  //   },
 
-    quickInfo: {
-      from: "BBD Green City / Ayodhya Road corridor",
-      to: "Anywhere in Lucknow, or outstation (Ayodhya, Varanasi, Prayagraj)",
-      distance: "Local drops: 5–20 km depending on area",
-      duration: "20–45 minutes for local drops",
-      estimatedFare:
-        "Starting ₹349 (Sedan, local drop) | ₹2,299 (Sedan, one-way to Ayodhya)",
-      bestTimeToVisit:
-        "Year-round; this corridor is also the starting point for most Ayodhya-bound trips",
-      route: "Ayodhya Road → NH27 link → City / Outstation",
-    },
+  //   quickInfo: {
+  //     from: "BBD Green City / Ayodhya Road corridor",
+  //     to: "Anywhere in Lucknow, or outstation (Ayodhya, Varanasi, Prayagraj)",
+  //     distance: "Local drops: 5–20 km depending on area",
+  //     duration: "20–45 minutes for local drops",
+  //     estimatedFare:
+  //       "Starting ₹349 (Sedan, local drop) | ₹2,299 (Sedan, one-way to Ayodhya)",
+  //     bestTimeToVisit:
+  //       "Year-round; this corridor is also the starting point for most Ayodhya-bound trips",
+  //     route: "Ayodhya Road → NH27 link → City / Outstation",
+  //   },
 
-    destination: {
-      about:
-        "BBD Green City and the surrounding Ayodhya Road corridor form a fast-growing residential and institutional belt on Lucknow's eastern edge — home to BBD University, residential townships, and a steady flow of local and outstation travel demand, given its direct alignment with the Ayodhya highway.",
-      history:
-        "Ayodhya Road has grown from a highway-adjacent stretch into one of Lucknow's key residential and educational corridors over the past two decades, anchored by institutions like BBD University.",
-      whyVisit:
-        "Primarily a residential and daily-commute zone; its main travel advantage is direct, congestion-light access to the Ayodhya highway for pilgrim trips.",
-      climate:
-        "Standard Lucknow seasonal pattern — hot summers, monsoon, mild winters.",
-      nearestAirport:
-        "Chaudhary Charan Singh International Airport, approx. 20 km",
-      nearestRailwayStation: "Charbagh Railway Station, approx. 16 km",
-    },
-    taxi: {
-      service:
-        "Doorstep local taxi service across BBD Green City and the Ayodhya Road corridor, plus direct outstation cabs to Ayodhya, Varanasi, and Prayagraj — a natural starting point given the corridor's direct highway access.",
-      pickupPoints: [
-        "Any address in BBD Green City",
-        "Any point along Ayodhya Road",
-      ],
-      dropPoints: [
-        "Anywhere in Lucknow",
-        "Direct outstation: Ayodhya, Varanasi, Prayagraj",
-        "Charbagh Station, Lucknow Airport",
-      ],
-      availableCars: [
-        "Sedan (Dzire/Etios) — 4 seater",
-        "SUV (Ertiga/Innova) — 6 seater",
-        "Innova Crysta — premium 6-7 seater",
-      ],
-      inclusions: ["Driver allowance", "Fuel charges", "24x7 dispatch support"],
-      exclusions: [
-        "Toll for outstation trips (included in outstation fare, listed separately)",
-        "Waiting charges beyond package limit",
-      ],
-    },
-    route: {
-      mapImage: "/images/routes/bbd-green-city-map.jpg",
-      highway:
-        "Direct access to NH27 (Ayodhya Road), avoiding central Lucknow congestion",
-      stops: [],
-      tolls: "None for local drops; standard tolls apply for outstation trips",
-      roadCondition:
-        "Wide, relatively less congested roads compared to central Lucknow",
-      travelTips: [
-        "This corridor offers the fastest local starting point for Ayodhya-bound trips — no need to cross the city first",
-        "Book ahead during university admission or event season when local demand spikes",
-        "Confirm your exact society/block name in BBD Green City for accurate pickup",
-      ],
-    },
-    attractions: [],
-    thingsToDo: [
-      "Start your Ayodhya pilgrimage trip directly from this corridor, skipping city traffic",
-      "Book local drops for BBD University visits or admissions",
-      "Combine a Charbagh station or airport drop with local pickup",
-    ],
-    localFood: [],
-    nearbyDestinations: [
-      {
-        name: "Ayodhya",
-        distance: "Approx. 125 km from this corridor",
-        description:
-          "Direct highway access makes this the fastest local starting point.",
-      },
-      {
-        name: "Hazratganj",
-        distance: "16 km",
-        description: "Central Lucknow shopping and commercial district.",
-      },
-    ],
-    whyBook: [
-      "Fastest local starting point for Ayodhya-bound pilgrimage trips",
-      "Doorstep pickup across BBD Green City and the full Ayodhya Road corridor",
-      "Fixed local fares with no surge pricing",
-      "Sedan, SUV, and Innova options for local and outstation travel",
-      "WhatsApp booking with 24x7 support",
-    ],
-    pricing: [
-      {
-        car: "Sedan (Dzire/Etios) — Local drop",
-        oneWay: "₹349 onwards",
-        roundTrip: "N/A",
-        capacity: "4 passengers",
-      },
-      {
-        car: "Sedan — Ayodhya one-way",
-        oneWay: "₹2,299 onwards",
-        roundTrip: "₹3,999 onwards",
-        capacity: "4 passengers",
-      },
-      {
-        car: "Innova — Ayodhya one-way",
-        oneWay: "₹4,199 onwards",
-        roundTrip: "₹6,999 onwards",
-        capacity: "6-7 passengers",
-      },
-    ],
-    faqs: [
-      {
-        question: "Do you provide local taxi service in BBD Green City?",
-        answer:
-          "Yes, we offer doorstep pickup and drop across BBD Green City and the entire Ayodhya Road corridor for local and outstation trips.",
-      },
-      {
-        question: "Is it cheaper to start an Ayodhya trip from this corridor?",
-        answer:
-          "Slightly — since BBD Green City sits directly on Ayodhya Road, trips starting here skip central Lucknow traffic and can shave a little off both time and fare compared to a city-center pickup.",
-      },
-      {
-        question: "How much does a local drop cost from this area?",
-        answer:
-          "Local drops within Lucknow start at ₹349 for a sedan, depending on distance.",
-      },
-      {
-        question: "Can I book a direct one-way taxi to Ayodhya from here?",
-        answer:
-          "Yes, one-way Ayodhya taxis from BBD Green City / Ayodhya Road start at ₹2,299 for a sedan.",
-      },
-      {
-        question: "How do I book a taxi in this area?",
-        answer:
-          "Message us on WhatsApp at 91988 93198 with your exact address and destination for quick confirmation.",
-      },
-    ],
+  //   destination: {
+  //     about:
+  //       "BBD Green City and the surrounding Ayodhya Road corridor form a fast-growing residential and institutional belt on Lucknow's eastern edge — home to BBD University, residential townships, and a steady flow of local and outstation travel demand, given its direct alignment with the Ayodhya highway.",
+  //     history:
+  //       "Ayodhya Road has grown from a highway-adjacent stretch into one of Lucknow's key residential and educational corridors over the past two decades, anchored by institutions like BBD University.",
+  //     whyVisit:
+  //       "Primarily a residential and daily-commute zone; its main travel advantage is direct, congestion-light access to the Ayodhya highway for pilgrim trips.",
+  //     climate:
+  //       "Standard Lucknow seasonal pattern — hot summers, monsoon, mild winters.",
+  //     nearestAirport:
+  //       "Chaudhary Charan Singh International Airport, approx. 20 km",
+  //     nearestRailwayStation: "Charbagh Railway Station, approx. 16 km",
+  //   },
+  //   taxi: {
+  //     service:
+  //       "Doorstep local taxi service across BBD Green City and the Ayodhya Road corridor, plus direct outstation cabs to Ayodhya, Varanasi, and Prayagraj — a natural starting point given the corridor's direct highway access.",
+  //     pickupPoints: [
+  //       "Any address in BBD Green City",
+  //       "Any point along Ayodhya Road",
+  //     ],
+  //     dropPoints: [
+  //       "Anywhere in Lucknow",
+  //       "Direct outstation: Ayodhya, Varanasi, Prayagraj",
+  //       "Charbagh Station, Lucknow Airport",
+  //     ],
+  //     availableCars: [
+  //       "Sedan (Dzire/Etios) — 4 seater",
+  //       "SUV (Ertiga/Innova) — 6 seater",
+  //       "Innova Crysta — premium 6-7 seater",
+  //       "Urbania - premium 10-17 seater",
+  //     ],
+  //     inclusions: ["Driver allowance", "Fuel charges", "24x7 dispatch support"],
+  //     exclusions: [
+  //       "Toll for outstation trips (included in outstation fare, listed separately)",
+  //       "Waiting charges beyond package limit",
+  //     ],
+  //   },
+  //   route: {
+  //     mapImage: "/images/routes/bbd-green-city-map.jpg",
+  //     highway:
+  //       "Direct access to NH27 (Ayodhya Road), avoiding central Lucknow congestion",
+  //     stops: [],
+  //     tolls: "None for local drops; standard tolls apply for outstation trips",
+  //     roadCondition:
+  //       "Wide, relatively less congested roads compared to central Lucknow",
+  //     travelTips: [
+  //       "This corridor offers the fastest local starting point for Ayodhya-bound trips — no need to cross the city first",
+  //       "Book ahead during university admission or event season when local demand spikes",
+  //       "Confirm your exact society/block name in BBD Green City for accurate pickup",
+  //     ],
+  //   },
+  //   attractions: [],
+  //   thingsToDo: [
+  //     "Start your Ayodhya pilgrimage trip directly from this corridor, skipping city traffic",
+  //     "Book local drops for BBD University visits or admissions",
+  //     "Combine a Charbagh station or airport drop with local pickup",
+  //   ],
+  //   localFood: [],
+  //   nearbyDestinations: [
+  //     {
+  //       name: "Ayodhya",
+  //       distance: "Approx. 125 km from this corridor",
+  //       description:
+  //         "Direct highway access makes this the fastest local starting point.",
+  //     },
+  //     {
+  //       name: "Hazratganj",
+  //       distance: "16 km",
+  //       description: "Central Lucknow shopping and commercial district.",
+  //     },
+  //   ],
+  //   whyBook: [
+  //     "Fastest local starting point for Ayodhya-bound pilgrimage trips",
+  //     "Doorstep pickup across BBD Green City and the full Ayodhya Road corridor",
+  //     "Fixed local fares with no surge pricing",
+  //     "Sedan, SUV, and Innova options for local and outstation travel",
+  //     "WhatsApp booking with 24x7 support",
+  //   ],
+  //   pricing: [
+  //     {
+  //       car: "Sedan (Dzire/Etios) — Local drop",
+  //       oneWay: "₹349 onwards",
+  //       roundTrip: "N/A",
+  //       capacity: "4 passengers",
+  //     },
+  //     {
+  //       car: "Sedan — Ayodhya one-way",
+  //       oneWay: "₹2,299 onwards",
+  //       roundTrip: "₹3,999 onwards",
+  //       capacity: "4 passengers",
+  //     },
+  //     {
+  //       car: "Innova — Ayodhya one-way",
+  //       oneWay: "₹4,199 onwards",
+  //       roundTrip: "₹6,999 onwards",
+  //       capacity: "6-7 passengers",
+  //     },
+  //   ],
+  //   faqs: [
+  //     {
+  //       question: "Do you provide local taxi service in BBD Green City?",
+  //       answer:
+  //         "Yes, we offer doorstep pickup and drop across BBD Green City and the entire Ayodhya Road corridor for local and outstation trips.",
+  //     },
+  //     {
+  //       question: "Is it cheaper to start an Ayodhya trip from this corridor?",
+  //       answer:
+  //         "Slightly — since BBD Green City sits directly on Ayodhya Road, trips starting here skip central Lucknow traffic and can shave a little off both time and fare compared to a city-center pickup.",
+  //     },
+  //     {
+  //       question: "How much does a local drop cost from this area?",
+  //       answer:
+  //         "Local drops within Lucknow start at ₹349 for a sedan, depending on distance.",
+  //     },
+  //     {
+  //       question: "Can I book a direct one-way taxi to Ayodhya from here?",
+  //       answer:
+  //         "Yes, one-way Ayodhya taxis from BBD Green City / Ayodhya Road start at ₹2,299 for a sedan.",
+  //     },
+  //     {
+  //       question: "How do I book a taxi in this area?",
+  //       answer:
+  //         "Message us on WhatsApp at 91988 93198 with your exact address and destination for quick confirmation.",
+  //     },
+  //   ],
 
-    testimonials: [
-      {
-        name: "Manoj Tiwari",
-        location: "BBD Green City",
-        text: "Booked straight from home for an Ayodhya trip — didn't have to go into the city first, saved time.",
-      },
-      {
-        name: "Pooja Srivastava",
-        location: "Ayodhya Road",
-        text: "Regular local pickups for college drop, always on time and fairly priced.",
-      },
-    ],
+  //   testimonials: [
+  //     {
+  //       name: "Manoj Tiwari",
+  //       location: "BBD Green City",
+  //       text: "Booked straight from home for an Ayodhya trip — didn't have to go into the city first, saved time.",
+  //     },
+  //     {
+  //       name: "Pooja Srivastava",
+  //       location: "Ayodhya Road",
+  //       text: "Regular local pickups for college drop, always on time and fairly priced.",
+  //     },
+  //   ],
 
-    cta: {
-      heading: "Book Your BBD Green City / Ayodhya Road Taxi Today",
-      description:
-        "Doorstep local cabs and direct Ayodhya pilgrimage trips, confirmed instantly on WhatsApp.",
-      button: "WhatsApp Booking for Ayodhya Cabs",
-    },
+  //   cta: {
+  //     heading: "Book Your BBD Green City / Ayodhya Road Taxi Today",
+  //     description:
+  //       "Doorstep local cabs and direct Ayodhya pilgrimage trips, confirmed instantly on WhatsApp.",
+  //     button: "WhatsApp Booking for Ayodhya Cabs",
+  //   },
 
-    geo: {
-      aiSummary:
-        "The Yatra Company provides doorstep local taxi service across BBD Green City and the Ayodhya Road corridor in Lucknow, plus direct outstation cabs to Ayodhya, Varanasi, and Prayagraj. This corridor's direct highway alignment makes it the fastest local starting point for Ayodhya-bound trips. Local fares start at ₹349, booked via WhatsApp.",
-      keyTakeaways: [
-        "Residential/institutional corridor on Lucknow's eastern edge along NH27 (Ayodhya Road)",
-        "Direct highway access makes it the fastest local starting point for Ayodhya trips",
-        "Local drop fares start at ₹349 (sedan)",
-        "Booking is via WhatsApp at 91988 93198",
-      ],
-      serviceArea:
-        "BBD Green City, Ayodhya Road corridor, and adjoining Lucknow sectors",
-      latitude: 26.79,
-      longitude: 81.05,
-    },
+  //   geo: {
+  //     aiSummary:
+  //       "The Yatra Company provides doorstep local taxi service across BBD Green City and the Ayodhya Road corridor in Lucknow, plus direct outstation cabs to Ayodhya, Varanasi, and Prayagraj. This corridor's direct highway alignment makes it the fastest local starting point for Ayodhya-bound trips. Local fares start at ₹349, booked via WhatsApp.",
+  //     keyTakeaways: [
+  //       "Residential/institutional corridor on Lucknow's eastern edge along NH27 (Ayodhya Road)",
+  //       "Direct highway access makes it the fastest local starting point for Ayodhya trips",
+  //       "Local drop fares start at ₹349 (sedan)",
+  //       "Booking is via WhatsApp at 91988 93198",
+  //     ],
+  //     serviceArea:
+  //       "BBD Green City, Ayodhya Road corridor, and adjoining Lucknow sectors",
+  //     latitude: 26.79,
+  //     longitude: 81.05,
+  //   },
 
-    relatedGuides: [
-      "lucknow-to-ayodhya-taxi",
-      "lucknow-to-prayagraj-taxi",
-      "hazratganj-taxi-service",
-    ],
+  //   relatedGuides: [
+  //     "lucknow-to-ayodhya-taxi",
+  //     "lucknow-to-prayagraj-taxi",
+  //     "hazratganj-taxi-service",
+  //   ],
 
-    schema: {
-      author: "The Yatra Company",
-      publishedDate: "2026-08-01",
-      lastUpdated: "2026-08-01",
-    },
-  },
+  //   schema: {
+  //     author: "The Yatra Company",
+  //     publishedDate: "2026-08-01",
+  //     lastUpdated: "2026-08-01",
+  //   },
+  // },
   {
     slug: "gomti-nagar-corporate-taxi",
 
@@ -292,6 +293,7 @@ export const guides = [
         "Sedan (Dzire/Etios) — 4 seater",
         "SUV (Ertiga/Innova) — 6 seater",
         "Innova Crysta/Hycross — premium 6-7 seater",
+        "Urbania - premium 10-17 seater",
       ],
       inclusions: [
         "Driver allowance",
@@ -1227,6 +1229,7 @@ export const guides = [
         "Sedan (Dzire/Etios) — 4 seater",
         "SUV (Ertiga/Innova) — 6 seater",
         "Innova Crysta/Hycross — premium 6-7 seater",
+        "Urbania - premium 10-17 seater",
       ],
       inclusions: [
         "Driver allowance",
@@ -1512,6 +1515,7 @@ export const guides = [
         "Sedan (Dzire/Etios) — 4 seater",
         "SUV (Ertiga/Innova) — 6 seater",
         "Innova Hycross — premium executive 6-7 seater",
+        "Urbania - premium 10-17 seater",
       ],
       inclusions: [
         "Driver allowance",
@@ -1780,6 +1784,7 @@ export const guides = [
         "Sedan (Dzire/Etios) — 4 seater",
         "SUV (Ertiga/Innova) — 6 seater",
         "Innova Crysta — premium 6-7 seater",
+        "Urbania - premium 10-17 seater",
       ],
       inclusions: [
         "Driver allowance",
@@ -2032,6 +2037,7 @@ export const guides = [
         "Sedan (Dzire/Etios) — 4 seater",
         "SUV (Ertiga) — 6 seater",
         "Innova — premium 6-7 seater",
+        "Urbania - premium 10-17 seater",
       ],
       inclusions: [
         "Driver allowance",
@@ -2285,6 +2291,7 @@ export const guides = [
         "Sedan (Dzire/Etios) — 4 seater",
         "SUV (Ertiga/Innova) — 6 seater",
         "Innova Crysta — premium 6-7 seater",
+        "Urbania - premium 10-17 seater",
       ],
       inclusions: [
         "Driver allowance",
@@ -2557,6 +2564,7 @@ export const guides = [
         "Sedan (Dzire/Etios) — 4 seater",
         "SUV (Ertiga/Innova) — 6 seater",
         "Innova Crysta/Hycross — premium 6-7 seater",
+        "Urbania - premium 10-17 seater",
       ],
       inclusions: [
         "Driver allowance",

@@ -10,7 +10,7 @@
 
   background:
     linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
-    url("/Images/travel-guides-hero.jpg");
+    url("/Images/travel-guides-hero.JPG");
 
   background-size: cover;
   background-position: center;
@@ -34,7 +34,7 @@
 
   background:#FFB400;
 
-  color:#111;
+  color:#fff;
 
   padding:.55rem 1rem;
 
@@ -73,7 +73,7 @@
 
   background:#FFB400;
 
-  color:#111;
+  color:#fff;
 
   text-decoration:none;
 
@@ -87,6 +87,7 @@
   transform:translateY(-3px);
 
   background:white;
+  color: #111;
 }
 
 @media(max-width:768px){

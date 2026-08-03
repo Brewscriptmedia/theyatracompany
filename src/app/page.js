@@ -8,7 +8,7 @@ export const metadata = {
   title: "Taxi Service in Lucknow | Airport Cabs & Outstation Travel",
 
   description:
-    "Book trusted taxi services in Lucknow with The Yatra Company. We provide airport transfers, local cabs, outstation travel, corporate rides and 24×7 professional drivers.",
+    "Book trusted taxi services in Lucknow with The Yatra Company — airport transfers, local cabs, outstation trips, corporate rides & 24×7 professional drivers",
 
   keywords: [
     "Taxi Service in Lucknow",

@@ -1,63 +1,135 @@
-.header{
-    position: sticky;
-    top: 0;
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: #f5f5f5;
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.logo img {
+  width: auto;
+  height: 58px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+
+  list-style: none;
+}
+
+.navLinks a {
+  color: #334155;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: #f59e0b;
+}
+
+.callButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f59e0b;
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.callButton:hover {
+  background: #d97706;
+}
+
+.menuButton {
+  display: none;
+
+  background: none;
+  border: none;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  color: #0f172a;
+}
+
+@media (max-width: 900px) {
+  .menuButton {
+    display: block;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .menu {
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+    right: 0;
+
     background: #f5f5f5;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-}
 
-.navbar{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
     align-items: center;
-    height: 80px;
-}
 
-.logo{
-    font-size: 24px;
-    font-weight: 700;
-    color: #0f172a;
-}
+    gap: 25px;
 
-.navLinks{
-    display: flex;
-    gap: 35px;
-}
+    padding: 0;
 
-.navLinks a{
-    font-weight: 500;
-    color: #334155;
-    transition: .3s;
-}
+    overflow: hidden;
 
-.navLinks a:hover{
-    color: #f59e0b;
-}
+    max-height: 0;
 
-.callButton{
-    background: #f59e0b;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: .3s;
-}
+    transition: all 0.35s ease;
 
-.callButton:hover{
-    background: #d97706;
-}
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
 
-@media(max-width:768px){
-    .navbar{
-        flex-direction: column;
-        height: auto;
-        padding: 20px 0;
-        gap: 20px;
-    }
+  .menuOpen {
+    max-height: 600px;
+    padding: 30px 20px;
+  }
 
-    .navlinks{
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+  .navLinks {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .callButton {
+    width: 100%;
+    max-width: 280px;
+  }
 }

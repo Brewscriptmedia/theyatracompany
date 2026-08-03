@@ -727,7 +727,7 @@ export const guides = [
       ogTitle: "Charbagh Railway Station Taxi — Lucknow Station Cab Booking",
       ogDescription:
         "Pre-booked taxis at Lucknow Charbagh Railway Station for city travel and outstation connections. WhatsApp booking.",
-      ogImage: "/Images/routes/charbagh-station-og.png",
+      ogImage: "/Images/routes/charbagh-station-og.jpeg",
     },
 
     hero: {
@@ -736,7 +736,7 @@ export const guides = [
         "Lucknow Charbagh Railway Station Taxi — City & Outstation Cab Booking",
       description:
         "Skip the station touts and prepaid-booth queues. Pre-book a taxi at Charbagh for a city hotel drop, a corporate meeting, or a direct outstation trip to Ayodhya or Varanasi.",
-      heroImage: "/Images/routes/charbagh-station-og.png",
+      heroImage: "/Images/routes/charbagh-station-og.jpeg",
       heroImageAlt:
         "Taxi parked outside Lucknow Charbagh Railway Station's iconic chess-board architecture",
     },
@@ -1765,7 +1765,7 @@ export const guides = [
       ogTitle: "Lucknow to Kanpur Taxi — Same-Day Business & Regional Cab",
       ogDescription:
         "Fixed-fare Lucknow to Kanpur taxis for business travel and regional transit. WhatsApp booking.",
-      ogImage: "/Images/routes/lucknow-kanpur-og.png",
+      ogImage: "/Images/routes/lucknow-kanpur-og1.png",
     },
 
     hero: {
@@ -1773,7 +1773,7 @@ export const guides = [
       title: "Lucknow to Kanpur Taxi — Same-Day Business & Regional Travel",
       description:
         "Short distance, high frequency — this is the route business travelers book most. A Lucknow to Kanpur taxi gets you there in under two hours, on time, without depending on shared transport.",
-      heroImage: "/Images/routes/lucknow-kanpur-og.png",
+      heroImage: "/Images/routes/lucknow-kanpur-og1.png",
       heroImageAlt: "Sedan taxi on NH27 between Lucknow and Kanpur",
     },
 

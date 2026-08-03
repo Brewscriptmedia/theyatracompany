@@ -16,7 +16,7 @@ export const guides = [
         "Gomti Nagar to airport taxi",
       ],
       canonical:
-        "https://theyatracompany.com/routes/gomti-nagar-corporate-taxi",
+        "https://theyatracompany.com/travel-guides/gomti-nagar-corporate-taxi",
       ogTitle:
         "Gomti Nagar Corporate Cab Service — Vibhuti Khand Executive Taxi",
       ogDescription:
@@ -246,7 +246,7 @@ export const guides = [
         "Lucknow sightseeing taxi",
         "Hazratganj to airport taxi",
       ],
-      canonical: "https://theyatracompany.com/routes/hazratganj-taxi-service",
+      canonical: "https://theyatracompany.com/travel-guides/hazratganj-taxi-service",
       ogTitle: "Hazratganj Taxi Service — City Rentals & Shopping Cabs",
       ogDescription:
         "On-demand and hourly city rental cabs in Hazratganj, Lucknow's central commercial and tourist hub. WhatsApp booking.",
@@ -497,7 +497,7 @@ export const guides = [
         "Lucknow airport drop taxi",
         "LKO airport taxi service",
       ],
-      canonical: "https://theyatracompany.com/routes/lucknow-airport-taxi",
+      canonical: "https://theyatracompany.com/travel-guides/lucknow-airport-taxi",
       ogTitle: "Lucknow Airport Taxi — 24x7 Reliable Pickups & Drops",
       ogDescription:
         "Pre-booked airport taxis at Chaudhary Charan Singh International Airport, Lucknow. Flight tracking, doorstep drop, WhatsApp booking.",
@@ -723,7 +723,7 @@ export const guides = [
         "Charbagh to Ayodhya taxi",
       ],
       canonical:
-        "https://theyatracompany.com/routes/lucknow-charbagh-railway-station-taxi",
+        "https://theyatracompany.com/travel-guides/lucknow-charbagh-railway-station-taxi",
       ogTitle: "Charbagh Railway Station Taxi — Lucknow Station Cab Booking",
       ogDescription:
         "Pre-booked taxis at Lucknow Charbagh Railway Station for city travel and outstation connections. WhatsApp booking.",
@@ -949,11 +949,11 @@ export const guides = [
         "Innova cab Lucknow to Ayodhya",
         "Lucknow Ayodhya darshan taxi package",
       ],
-      canonical: "https://theyatracompany.com/routes/lucknow-to-ayodhya-taxi",
+      canonical: "https://theyatracompany.com/travel-guides/lucknow-to-ayodhya-taxi",
       ogTitle: "Lucknow to Ayodhya Taxi — Ram Mandir One-Way Cab Booking",
       ogDescription:
         "Fixed-fare Lucknow to Ayodhya taxis for pilgrims and families. Sedan/SUV/Innova, doorstep pickup, WhatsApp booking.",
-      ogImage: "/Images/routes/lucknow-ayodhya-hero.jpeg",
+      ogImage: "/Images/routes/lucknow-ayodhya-hero.png",
     },
 
     hero: {
@@ -961,7 +961,7 @@ export const guides = [
       title: "Lucknow to Ayodhya Taxi — One-Way Cabs for Ram Mandir Darshan",
       description:
         "Skip the bus queues and unreliable shared cabs. Book a clean, driver-verified taxi from Lucknow to Ayodhya, timed for darshan and back the same day if you want. Fixed fares, no last-minute surprises.",
-      heroImage: "/Images/routes/lucknow-ayodhya-hero.jpeg",
+      heroImage: "/Images/routes/lucknow-ayodhya-hero.png",
       heroImageAlt:
         "Taxi on the Lucknow to Ayodhya highway with Ram Mandir in the background",
     },
@@ -1235,7 +1235,7 @@ export const guides = [
         "Lucknow Delhi outstation taxi",
         "Lucknow to Noida Gurgaon cab",
       ],
-      canonical: "https://theyatracompany.com/routes/lucknow-to-delhi-taxi",
+      canonical: "https://theyatracompany.com/travel-guides/lucknow-to-delhi-taxi",
       ogTitle:
         "Lucknow to Delhi Taxi — Premium Highway Cabs for Corporate Travel",
       ogDescription:
@@ -1505,7 +1505,7 @@ export const guides = [
         "Gorakhnath temple taxi",
         "Lucknow to Gorakhpur outstation cab",
       ],
-      canonical: "https://theyatracompany.com/routes/lucknow-to-gorakhpur-taxi",
+      canonical: "https://theyatracompany.com/travel-guides/lucknow-to-gorakhpur-taxi",
       ogTitle: "Lucknow to Gorakhpur Taxi — One-Way Cab Booking",
       ogDescription:
         "Fixed-fare Lucknow to Gorakhpur taxis for business and regional transit. WhatsApp booking.",
@@ -1761,7 +1761,7 @@ export const guides = [
         "business cab Lucknow to Kanpur",
         "Lucknow to Kanpur one way taxi",
       ],
-      canonical: "https://theyatracompany.com/routes/lucknow-to-kanpur-taxi",
+      canonical: "https://theyatracompany.com/travel-guides/lucknow-to-kanpur-taxi",
       ogTitle: "Lucknow to Kanpur Taxi — Same-Day Business & Regional Cab",
       ogDescription:
         "Fixed-fare Lucknow to Kanpur taxis for business travel and regional transit. WhatsApp booking.",
@@ -2014,7 +2014,7 @@ export const guides = [
         "Lucknow Prayagraj cab fare",
         "Lucknow to Prayagraj weekend trip taxi",
       ],
-      canonical: "https://theyatracompany.com/routes/lucknow-to-prayagraj-taxi",
+      canonical: "https://theyatracompany.com/travel-guides/lucknow-to-prayagraj-taxi",
       ogTitle: "Lucknow to Prayagraj Taxi — One-Way Cab to Sangam",
       ogDescription:
         "Fixed-fare Lucknow to Prayagraj taxis for religious visits and weekend family trips. WhatsApp booking.",
@@ -2283,7 +2283,7 @@ export const guides = [
         "Innova cab Lucknow to Varanasi",
         "Lucknow Varanasi outstation taxi",
       ],
-      canonical: "https://theyatracompany.com/routes/lucknow-to-varanasi-taxi",
+      canonical: "https://theyatracompany.com/travel-guides/lucknow-to-varanasi-taxi",
       ogTitle: "Lucknow to Varanasi Taxi — Kashi Vishwanath One-Way Cab",
       ogDescription:
         "Fixed-fare Lucknow to Varanasi taxis for spiritual and heritage travel. Sedan/SUV/Innova, WhatsApp booking.",

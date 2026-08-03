@@ -21,7 +21,7 @@ export const guides = [
         "Gomti Nagar Corporate Cab Service — Vibhuti Khand Executive Taxi",
       ogDescription:
         "Punctual corporate cabs for Gomti Nagar and Vibhuti Khand offices. Executive drops, airport transfers, outstation trips.",
-      ogImage: "/images/routes/gomti-nagar-og.jpg",
+      ogImage: "/Images/routes/gomti-nagar-og.png",
     },
 
     hero: {
@@ -29,7 +29,7 @@ export const guides = [
       title: "Gomti Nagar & Vibhuti Khand Corporate Cab Service",
       description:
         "Lucknow's IT and corporate district runs on tight schedules. Book a punctual, professional cab for executive drops, client visits, or airport transfers to and from Gomti Nagar and Vibhuti Khand.",
-      heroImage: "/images/routes/gomti-nagar-hero.jpg",
+      heroImage: "/Images/routes/gomti-nagar-og.png",
       heroImageAlt:
         "Corporate sedan parked outside an office building in Vibhuti Khand, Gomti Nagar",
     },
@@ -501,7 +501,7 @@ export const guides = [
       ogTitle: "Lucknow Airport Taxi — 24x7 Reliable Pickups & Drops",
       ogDescription:
         "Pre-booked airport taxis at Chaudhary Charan Singh International Airport, Lucknow. Flight tracking, doorstep drop, WhatsApp booking.",
-      ogImage: "/images/routes/lucknow-airport-og.jpg",
+      ogImage: "/Images/routes/lucknow-airport-og.png",
     },
 
     hero: {
@@ -510,7 +510,7 @@ export const guides = [
         "Lucknow Airport Taxi — 24x7 Reliable Pickups at CCS International Airport",
       description:
         "Landing at odd hours or need a punctual airport drop? Pre-book a Lucknow airport taxi with flight tracking, so your driver is waiting even if your flight is delayed.",
-      heroImage: "/images/routes/lucknow-airport-hero.jpg",
+      heroImage: "/Images/routes/lucknow-airport-og.png",
       heroImageAlt:
         "Taxi waiting outside Chaudhary Charan Singh International Airport, Lucknow",
     },
@@ -1029,7 +1029,7 @@ export const guides = [
     },
 
     route: {
-      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28492.610157845178!2d82.17856824860183!3d26.78977371009263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07937e6d2823%3A0x5fc8f683b17f222b!2sAyodhya%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765253889!5m2!1sen!2sin",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d912351.7904909905!2d80.91058194707823!3d26.71646619688393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x399a07937e6d2823%3A0x5fc8f683b17f222b!2sAyodhya%2C%20Uttar%20Pradesh!3m2!1d26.792160499999998!2d82.1997954!5e0!3m2!1sen!2sin!4v1785771279573!5m2!1sen!2sin",
       highway: "NH27 (Lucknow–Barabanki–Ayodhya)",
       stops: ["Barabanki (tea/snack break)", "Rounahi", "Ayodhya bypass"],
       tolls:
@@ -1315,7 +1315,7 @@ export const guides = [
     },
 
     route: {
-      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223994.31178238653!2d76.92523211377964!3d28.69230517128948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d047309fff32f%3A0xfc5606ed1b5d46c3!2sDelhi!5e0!3m2!1sen!2sin!4v1785765333173!5m2!1sen!2sin",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1807282.5795454034!2d77.76507482825335!3d27.783633014092647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x390d047309fff32f%3A0xfc5606ed1b5d46c3!2sDelhi!3m2!1d28.681455099999997!2d77.22279!5e0!3m2!1sen!2sin!4v1785771194507!5m2!1sen!2sin",
       highway:
         "Lucknow-Agra Expressway to Agra, then Yamuna Expressway to Delhi NCR",
       stops: [
@@ -1583,7 +1583,7 @@ export const guides = [
     },
 
     route: {
-      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113996.62469424882!2d83.32151035096193!3d26.763691325846477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991446a0c332489%3A0x1ff3f97fdcc6bfa2!2sGorakhpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765410216!5m2!1sen!2sin",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1827219.688940398!2d80.83730254499378!3d26.55906305740368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x3991446a0c332489%3A0x1ff3f97fdcc6bfa2!2sGorakhpur%2C%20Uttar%20Pradesh!3m2!1d26.760554499999998!2d83.3731675!5e0!3m2!1sen!2sin!4v1785770875729!5m2!1sen!2sin",
       highway: "Purvanchal Expressway to the Gorakhpur link road",
       stops: ["Ambedkar Nagar / Azamgarh area (break point)"],
       tolls: "Expressway toll included in fare unless stated otherwise",
@@ -1836,7 +1836,7 @@ export const guides = [
     },
 
     route: {
-      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114312.51527983553!2d80.25598149011772!3d26.447150071884707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765469685!5m2!1sen!2sin",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d456420.24000777584!2d80.30018487973426!3d26.655425471160957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!3m2!1d26.449923!2d80.3318736!5e0!3m2!1sen!2sin!4v1785771121008!5m2!1sen!2sin",
       highway: "NH27 via Unnao",
       stops: ["Unnao (short break point if needed)"],
       tolls: "1 toll plaza on NH27; included in fare unless stated otherwise",
@@ -2091,7 +2091,7 @@ export const guides = [
     },
 
     route: {
-      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115330.45656849002!2d81.7191832551656!3d25.402240789357485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765524265!5m2!1sen!2sin",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d916788.1486195411!2d80.74225607958184!3d26.157494484579427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!3m2!1d25.468338!2d81.85460189999999!5e0!3m2!1sen!2sin!4v1785770983974!5m2!1sen!2sin",
       highway: "NH30 via Raebareli",
       stops: ["Raebareli (break point)", "Prayagraj outskirts"],
       tolls: "1 toll plaza on NH30; included in fare unless stated otherwise",
@@ -2364,7 +2364,7 @@ export const guides = [
     },
 
     route: {
-      mapLink:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.24588661194!2d82.9087076524942!3d25.320739742715027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765578665!5m2!1sen!2sin",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d917385.4672642463!2d81.2975935251365!3d26.08138437053992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!3m2!1d25.317645199999998!2d82.9739144!5e0!3m2!1sen!2sin!4v1785771052389!5m2!1sen!2sin",
       highway: "Purvanchal Expressway to Ghazipur, then NH19 to Varanasi",
       stops: [
         "Sultanpur/Ambedkar Nagar (break point)",

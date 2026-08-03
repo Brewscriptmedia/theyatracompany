@@ -1,287 +1,560 @@
+/* ===========================================================
+   PAGE LAYOUT
+=========================================================== */
+
 .page {
-  padding: 110px 0 0;
+  padding-top: 110px;
   background: #f8fafc;
   color: #1f2937;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px 80px;
+  margin: auto;
+  padding: 0 20px 100px;
 }
 
-/* ---------------- Hero ---------------- */
+/* ===========================================================
+   HERO
+=========================================================== */
 
 .hero {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 
 .hero span {
-  display: inline-block;
-  background: #fff5db;
-  color: #f4a100;
-  padding: 8px 16px;
-  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  background: #fff7df;
+  color: #d98b00;
+  border-radius: 999px;
   font-weight: 600;
-  margin-bottom: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 22px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.15;
   color: #111827;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  margin-bottom: 22px;
+  max-width: 900px;
 }
 
 .hero p {
-  color: #6b7280;
-  line-height: 1.8;
-  font-size: 1.05rem;
+  font-size: 1.12rem;
+  line-height: 1.9;
+  color: #64748b;
+  max-width: 850px;
   margin-bottom: 35px;
 }
 
 .heroImage {
   width: 100%;
-  height: 550px;
+  height: 560px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
 }
 
-/* ---------------- General Sections ---------------- */
+/* ===========================================================
+   GENERAL SECTION
+=========================================================== */
 
 .page section:not(.hero):not(.cta) {
-  margin-bottom: 80px;
+  background: white;
+  padding: 50px;
+  border-radius: 24px;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
 }
 
 .page section h2 {
   font-size: 2rem;
-  color: #111827;
   margin-bottom: 25px;
+  color: #111827;
 }
 
 .page section h3 {
-  margin-top: 30px;
+  margin-top: 28px;
   margin-bottom: 10px;
   color: #1f2937;
+  font-size: 1.2rem;
 }
 
 .page section p {
-  line-height: 1.8;
-  color: #555;
+  line-height: 1.9;
+  color: #475569;
 }
 
-/* ---------------- Quick Info ---------------- */
+/* ===========================================================
+   QUICK INFO
+=========================================================== */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
 }
 
 .grid div {
-  background: white;
+  background: #f8fafc;
+  border: 1px solid #eef2f7;
   border-radius: 18px;
-  padding: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  padding: 28px;
+  transition: 0.3s;
+}
+
+.grid div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
 }
 
 .grid h3 {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: #111827;
+  font-size: 1rem;
 }
 
 .grid p {
   margin: 0;
-  color: #6b7280;
+  color: #64748b;
+  line-height: 1.7;
 }
 
-/* ---------------- Lists ---------------- */
+/* ===========================================================
+   LISTS
+=========================================================== */
 
 .page ul {
   display: grid;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 18px;
   padding: 0;
+  margin-top: 20px;
 }
 
 .page li {
   list-style: none;
-  background: white;
-  padding: 18px 22px;
-  border-radius: 12px;
-  border-left: 5px solid #f4a100;
-  box-shadow: 0 8px 25px rgba(0,0,0,.05);
+  position: relative;
+  padding: 18px 22px 18px 55px;
+  background: #f8fafc;
+  border-radius: 14px;
+  transition: 0.25s;
 }
 
-/* ---------------- Route Image ---------------- */
+.page li:hover {
+  background: #fff;
+  transform: translateX(4px);
+}
+
+.page li::before {
+  content: "✓";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4a100;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* ===========================================================
+   MAP
+=========================================================== */
 
 .mapContainer {
-  width: 100%;
   margin: 35px 0;
-  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .map {
   width: 100%;
-  height: 500px;
-  border: 0;
-  display: block;
+  height: 520px;
+  border: none;
 }
 
-/* ---------------- Pricing Table ---------------- */
+/* ===========================================================
+   TABLE
+=========================================================== */
 
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 30px;
-  background: white;
-  border-radius: 16px;
   overflow: hidden;
+  border-radius: 18px;
+  margin-top: 30px;
+}
+
+.table thead {
+  background: #111827;
+  color: white;
 }
 
 .table th {
-  background: #0f172a;
-  color: white;
-  padding: 18px;
+  padding: 20px;
+  text-align: left;
 }
 
 .table td {
-  padding: 18px;
-  border-bottom: 1px solid #eee;
+  padding: 18px 20px;
+  border-bottom: 1px solid #ececec;
 }
 
-.table tr:nth-child(even) {
+.table tbody tr:nth-child(even) {
   background: #fafafa;
 }
 
-/* ---------------- Testimonials ---------------- */
+.table tbody tr:hover {
+  background: #fff7df;
+}
+
+/* ===========================================================
+   TESTIMONIALS
+=========================================================== */
 
 .review {
   background: white;
-  padding: 28px;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  border-radius: 22px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.06);
+  position: relative;
+  transition: 0.3s;
+}
+
+.review:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(15, 23, 42, 0.12);
+}
+
+.review::before {
+  content: "★★★★★";
+  display: block;
+  color: #f4a100;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  font-size: 1rem;
 }
 
 .review p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 24px;
   font-style: italic;
 }
 
 .review strong {
   display: block;
-  margin-top: 18px;
+  color: #111827;
+  font-size: 1rem;
 }
 
 .review span {
-  color: #777;
-  font-size: .9rem;
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 0.9rem;
 }
 
-/* ---------------- FAQ ---------------- */
+/* ===========================================================
+   FAQ
+=========================================================== */
 
 .page details {
   background: white;
-  border-radius: 14px;
-  margin-bottom: 16px;
-  padding: 20px 24px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.05);
+  border-radius: 18px;
+  padding: 22px 28px;
+  margin-bottom: 18px;
+  border: 1px solid #edf2f7;
+  transition: 0.3s;
+}
+
+.page details:hover {
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .page summary {
   cursor: pointer;
+  list-style: none;
   font-weight: 600;
+  font-size: 1.05rem;
   color: #111827;
+  position: relative;
+  padding-right: 35px;
+}
+
+.page summary::-webkit-details-marker {
+  display: none;
+}
+
+.page summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #f4a100;
+  transition: 0.3s;
+}
+
+.page details[open] summary::after {
+  content: "–";
 }
 
 .page details p {
-  margin-top: 15px;
+  margin-top: 18px;
+  color: #64748b;
+  line-height: 1.9;
 }
 
-/* ---------------- CTA ---------------- */
+/* ===========================================================
+   CTA
+=========================================================== */
 
 .cta {
-  margin-top: 100px;
-  background: linear-gradient(135deg,#0f172a,#1e293b);
-  padding: 80px 30px;
-  border-radius: 24px;
+  margin-top: 90px;
+  padding: 90px 50px;
   text-align: center;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  overflow: hidden;
+  position: relative;
 }
 
-.cta h2 {
-  color: #fff;
+.cta::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  top: -150px;
+  right: -120px;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  bottom: -130px;
+  left: -100px;
+}
+
+.page .cta h2 {
+  color: white;
+  font-size: 2.5rem;
   margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
 }
 
 .cta p {
-  color: rgba(255,255,255,.8);
-  max-width: 700px;
-  margin: auto;
-  margin-bottom: 35px;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 720px;
+  margin: 0 auto 35px;
+  line-height: 1.9;
+  position: relative;
+  z-index: 2;
 }
 
 .cta a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background: #f4a100;
   color: white;
-  padding: 16px 34px;
-  border-radius: 999px;
   text-decoration: none;
-  font-weight: 600;
-  transition: .3s;
+  padding: 18px 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
 }
 
 .cta a:hover {
-  background: #d88d00;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  background: #d88900;
+  box-shadow: 0 15px 30px rgba(244, 161, 0, 0.35);
 }
 
-/* ---------------- Responsive ---------------- */
+/* ===========================================================
+   IMAGES
+=========================================================== */
 
-@media (max-width:900px){
-
-.hero h1{
-font-size:2.3rem;
+.heroImage,
+.map {
+  transition: 0.4s;
 }
 
-.grid{
-grid-template-columns:1fr 1fr;
+.heroImage:hover {
+  transform: scale(1.01);
 }
 
-.heroImage{
-height:420px;
+/* ===========================================================
+   SMOOTH ANIMATIONS
+=========================================================== */
+
+.page section {
+  animation: fadeUp 0.6s ease both;
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@media (max-width:700px){
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
 
-.grid{
-grid-template-columns:1fr;
+@media (max-width: 992px) {
+  .container {
+    padding: 0 18px 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroImage {
+    height: 420px;
+  }
+
+  .map {
+    height: 420px;
+  }
+
+  .page section:not(.hero):not(.cta) {
+    padding: 35px;
+  }
+
+  .cta {
+    padding: 70px 35px;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
 }
 
-.hero h1{
-font-size:2rem;
+@media (max-width: 768px) {
+  .page {
+    padding-top: 95px;
+  }
+
+  .hero {
+    margin-bottom: 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .heroImage {
+    height: 280px;
+    border-radius: 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    height: 320px;
+  }
+
+  .page section {
+    margin-bottom: 35px;
+  }
+
+  .page section:not(.hero):not(.cta) {
+    padding: 28px;
+    border-radius: 18px;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table th,
+  .table td {
+    padding: 15px;
+  }
+
+  .review {
+    padding: 24px;
+  }
+
+  .cta {
+    padding: 55px 24px;
+    border-radius: 22px;
+  }
+
+  .cta h2 {
+    font-size: 1.7rem;
+  }
+
+  .cta a {
+    width: 100%;
+  }
 }
 
-.heroImage{
-height:280px;
-}
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
 
-.map{
-  height: 350px;
-}
+  .page section h2 {
+    font-size: 1.55rem;
+  }
 
-.table{
-display:block;
-overflow-x:auto;
-}
+  .page section h3 {
+    font-size: 1.05rem;
+  }
 
-.page{
-padding-top:90px;
-}
+  .review {
+    padding: 20px;
+  }
 
+  .page details {
+    padding: 18px;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 0.95rem;
+  }
 }

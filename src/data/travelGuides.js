@@ -1240,7 +1240,7 @@ export const guides = [
         "Lucknow to Delhi Taxi — Premium Highway Cabs for Corporate Travel",
       ogDescription:
         "Innova Hycross and SUV cabs from Lucknow to Delhi NCR, built for corporate and long-distance travelers. WhatsApp booking.",
-      ogImage: "/Images/routes/lucknow-delhi-og.png",
+      ogImage: "/Images/routes/lucknow-delhi-og1.png",
     },
 
     hero: {
@@ -1249,7 +1249,7 @@ export const guides = [
         "Lucknow to Delhi Taxi — Premium Highway Cabs for Corporate & Long-Distance Travel",
       description:
         "A 500+ km highway run needs a car built for it. Book an Innova Hycross, SUV, or sedan from Lucknow to Delhi NCR — punctual pickup, professional drivers, and a fare that doesn't change mid-trip.",
-      heroImage: "/Images/routes/lucknow-delhi-og.png",
+      heroImage: "/Images/routes/lucknow-delhi-og1.png",
       heroImageAlt:
         "Innova Hycross on the Lucknow-Agra Expressway en route to Delhi",
     },
@@ -2018,7 +2018,7 @@ export const guides = [
       ogTitle: "Lucknow to Prayagraj Taxi — One-Way Cab to Sangam",
       ogDescription:
         "Fixed-fare Lucknow to Prayagraj taxis for religious visits and weekend family trips. WhatsApp booking.",
-      ogImage: "/Images/routes/lucknow-prayagraj-og.png",
+      ogImage: "/Images/routes/lucknow-prayagraj-og1.png",
     },
 
     hero: {
@@ -2027,7 +2027,7 @@ export const guides = [
         "Lucknow to Prayagraj Taxi — One-Way Cabs for Sangam & Weekend Trips",
       description:
         "Close enough for a weekend, significant enough for a pilgrimage. Book a Lucknow to Prayagraj taxi for Sangam darshan, family outings, or a quick heritage trip along NH30.",
-      heroImage: "/Images/routes/lucknow-prayagraj-og.png",
+      heroImage: "/Images/routes/lucknow-prayagraj-og1.png",
       heroImageAlt: "Taxi approaching the Sangam area in Prayagraj",
     },
 
@@ -2287,7 +2287,7 @@ export const guides = [
       ogTitle: "Lucknow to Varanasi Taxi — Kashi Vishwanath One-Way Cab",
       ogDescription:
         "Fixed-fare Lucknow to Varanasi taxis for spiritual and heritage travel. Sedan/SUV/Innova, WhatsApp booking.",
-      ogImage: "/Images/routes/lucknow-varanasi-og.png",
+      ogImage: "/Images/routes/lucknow-varanasi-og1.png",
     },
 
     hero: {
@@ -2296,7 +2296,7 @@ export const guides = [
         "Lucknow to Varanasi Taxi — One-Way Cabs for Kashi Vishwanath & Ganga Aarti",
       description:
         "A long highway drive deserves a comfortable car and a driver who knows the route. Book a Lucknow to Varanasi taxi for temple visits, Ganga Aarti evenings, or a heritage weekend on the ghats.",
-      heroImage: "/Images/routes/lucknow-varanasi-og.png",
+      heroImage: "/Images/routes/lucknow-varanasi-og1.png",
       heroImageAlt:
         "Taxi on the Purvanchal Expressway en route from Lucknow to Varanasi",
     },

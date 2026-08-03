@@ -169,12 +169,16 @@ export default async function GuidePage({ params }) {
         <section>
           <h2>Taxi Route</h2>
 
-          <Image
-            src={guide.route.mapImage}
-            alt="Route Map"
-            width={1200}
-            height={600}
-          />
+          <div className={styles.mapContainer}>
+            <iframe
+              src={guide.route.mapLink}
+              title={`${guide.hero.title} Route Map`}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              className={styles.map}
+              />
+          </div>
 
           <p>{guide.route.highway}</p>
 

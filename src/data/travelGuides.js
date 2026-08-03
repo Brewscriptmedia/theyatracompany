@@ -1,221 +1,4 @@
 export const guides = [
-  // {
-  //   slug: "bbd-green-city-ayodhya-road-taxi",
-
-  //   seo: {
-  //     metaTitle:
-  //       "BBD Green City & Ayodhya Road Taxi Service | Local Cab Booking | The Yatra Company",
-  //     metaDescription:
-  //       "Book a local taxi in BBD Green City and along Ayodhya Road, Lucknow. Fixed fare, doorstep pickup, outstation cabs to Ayodhya. WhatsApp booking, 24x7 support.",
-  //     keywords: [
-  //       "BBD Green City taxi",
-  //       "Ayodhya Road Lucknow cab service",
-  //       "local taxi Ayodhya Road Lucknow",
-  //       "BBD Green City cab booking",
-  //       "Ayodhya Road taxi service Lucknow",
-  //     ],
-  //     canonical:
-  //       "https://theyatracompany.com/routes/bbd-green-city-ayodhya-road-taxi",
-  //     ogTitle: "BBD Green City & Ayodhya Road Taxi Service — Local Cab Booking",
-  //     ogDescription:
-  //       "Doorstep taxi service for BBD Green City and Ayodhya Road residents in Lucknow. Local drops and direct outstation cabs.",
-  //     ogImage: "/images/routes/bbd-green-city-og.jpg",
-  //   },
-
-  //   hero: {
-  //     badge: "Local Neighborhood Service",
-  //     title: "BBD Green City & Ayodhya Road Taxi Service — Lucknow",
-  //     description:
-  //       "Your neighborhood cab, without the wait. Book a reliable local taxi from BBD Green City or anywhere along the Ayodhya Road corridor — for city trips, station drops, or an outstation ride straight to Ayodhya.",
-  //     heroImage: "/images/routes/bbd-green-city-hero.jpg",
-  //     heroImageAlt: "Taxi on Ayodhya Road near BBD Green City, Lucknow",
-  //   },
-
-  //   quickInfo: {
-  //     from: "BBD Green City / Ayodhya Road corridor",
-  //     to: "Anywhere in Lucknow, or outstation (Ayodhya, Varanasi, Prayagraj)",
-  //     distance: "Local drops: 5–20 km depending on area",
-  //     duration: "20–45 minutes for local drops",
-  //     estimatedFare:
-  //       "Starting ₹349 (Sedan, local drop) | ₹2,299 (Sedan, one-way to Ayodhya)",
-  //     bestTimeToVisit:
-  //       "Year-round; this corridor is also the starting point for most Ayodhya-bound trips",
-  //     route: "Ayodhya Road → NH27 link → City / Outstation",
-  //   },
-
-  //   destination: {
-  //     about:
-  //       "BBD Green City and the surrounding Ayodhya Road corridor form a fast-growing residential and institutional belt on Lucknow's eastern edge — home to BBD University, residential townships, and a steady flow of local and outstation travel demand, given its direct alignment with the Ayodhya highway.",
-  //     history:
-  //       "Ayodhya Road has grown from a highway-adjacent stretch into one of Lucknow's key residential and educational corridors over the past two decades, anchored by institutions like BBD University.",
-  //     whyVisit:
-  //       "Primarily a residential and daily-commute zone; its main travel advantage is direct, congestion-light access to the Ayodhya highway for pilgrim trips.",
-  //     climate:
-  //       "Standard Lucknow seasonal pattern — hot summers, monsoon, mild winters.",
-  //     nearestAirport:
-  //       "Chaudhary Charan Singh International Airport, approx. 20 km",
-  //     nearestRailwayStation: "Charbagh Railway Station, approx. 16 km",
-  //   },
-  //   taxi: {
-  //     service:
-  //       "Doorstep local taxi service across BBD Green City and the Ayodhya Road corridor, plus direct outstation cabs to Ayodhya, Varanasi, and Prayagraj — a natural starting point given the corridor's direct highway access.",
-  //     pickupPoints: [
-  //       "Any address in BBD Green City",
-  //       "Any point along Ayodhya Road",
-  //     ],
-  //     dropPoints: [
-  //       "Anywhere in Lucknow",
-  //       "Direct outstation: Ayodhya, Varanasi, Prayagraj",
-  //       "Charbagh Station, Lucknow Airport",
-  //     ],
-  //     availableCars: [
-  //       "Sedan (Dzire/Etios) — 4 seater",
-  //       "SUV (Ertiga/Innova) — 6 seater",
-  //       "Innova Crysta — premium 6-7 seater",
-  //       "Urbania - premium 10-17 seater",
-  //     ],
-  //     inclusions: ["Driver allowance", "Fuel charges", "24x7 dispatch support"],
-  //     exclusions: [
-  //       "Toll for outstation trips (included in outstation fare, listed separately)",
-  //       "Waiting charges beyond package limit",
-  //     ],
-  //   },
-  //   route: {
-  //     mapImage: "/images/routes/bbd-green-city-map.jpg",
-  //     highway:
-  //       "Direct access to NH27 (Ayodhya Road), avoiding central Lucknow congestion",
-  //     stops: [],
-  //     tolls: "None for local drops; standard tolls apply for outstation trips",
-  //     roadCondition:
-  //       "Wide, relatively less congested roads compared to central Lucknow",
-  //     travelTips: [
-  //       "This corridor offers the fastest local starting point for Ayodhya-bound trips — no need to cross the city first",
-  //       "Book ahead during university admission or event season when local demand spikes",
-  //       "Confirm your exact society/block name in BBD Green City for accurate pickup",
-  //     ],
-  //   },
-  //   attractions: [],
-  //   thingsToDo: [
-  //     "Start your Ayodhya pilgrimage trip directly from this corridor, skipping city traffic",
-  //     "Book local drops for BBD University visits or admissions",
-  //     "Combine a Charbagh station or airport drop with local pickup",
-  //   ],
-  //   localFood: [],
-  //   nearbyDestinations: [
-  //     {
-  //       name: "Ayodhya",
-  //       distance: "Approx. 125 km from this corridor",
-  //       description:
-  //         "Direct highway access makes this the fastest local starting point.",
-  //     },
-  //     {
-  //       name: "Hazratganj",
-  //       distance: "16 km",
-  //       description: "Central Lucknow shopping and commercial district.",
-  //     },
-  //   ],
-  //   whyBook: [
-  //     "Fastest local starting point for Ayodhya-bound pilgrimage trips",
-  //     "Doorstep pickup across BBD Green City and the full Ayodhya Road corridor",
-  //     "Fixed local fares with no surge pricing",
-  //     "Sedan, SUV, and Innova options for local and outstation travel",
-  //     "WhatsApp booking with 24x7 support",
-  //   ],
-  //   pricing: [
-  //     {
-  //       car: "Sedan (Dzire/Etios) — Local drop",
-  //       oneWay: "₹349 onwards",
-  //       roundTrip: "N/A",
-  //       capacity: "4 passengers",
-  //     },
-  //     {
-  //       car: "Sedan — Ayodhya one-way",
-  //       oneWay: "₹2,299 onwards",
-  //       roundTrip: "₹3,999 onwards",
-  //       capacity: "4 passengers",
-  //     },
-  //     {
-  //       car: "Innova — Ayodhya one-way",
-  //       oneWay: "₹4,199 onwards",
-  //       roundTrip: "₹6,999 onwards",
-  //       capacity: "6-7 passengers",
-  //     },
-  //   ],
-  //   faqs: [
-  //     {
-  //       question: "Do you provide local taxi service in BBD Green City?",
-  //       answer:
-  //         "Yes, we offer doorstep pickup and drop across BBD Green City and the entire Ayodhya Road corridor for local and outstation trips.",
-  //     },
-  //     {
-  //       question: "Is it cheaper to start an Ayodhya trip from this corridor?",
-  //       answer:
-  //         "Slightly — since BBD Green City sits directly on Ayodhya Road, trips starting here skip central Lucknow traffic and can shave a little off both time and fare compared to a city-center pickup.",
-  //     },
-  //     {
-  //       question: "How much does a local drop cost from this area?",
-  //       answer:
-  //         "Local drops within Lucknow start at ₹349 for a sedan, depending on distance.",
-  //     },
-  //     {
-  //       question: "Can I book a direct one-way taxi to Ayodhya from here?",
-  //       answer:
-  //         "Yes, one-way Ayodhya taxis from BBD Green City / Ayodhya Road start at ₹2,299 for a sedan.",
-  //     },
-  //     {
-  //       question: "How do I book a taxi in this area?",
-  //       answer:
-  //         "Message us on WhatsApp at 91988 93198 with your exact address and destination for quick confirmation.",
-  //     },
-  //   ],
-
-  //   testimonials: [
-  //     {
-  //       name: "Manoj Tiwari",
-  //       location: "BBD Green City",
-  //       text: "Booked straight from home for an Ayodhya trip — didn't have to go into the city first, saved time.",
-  //     },
-  //     {
-  //       name: "Pooja Srivastava",
-  //       location: "Ayodhya Road",
-  //       text: "Regular local pickups for college drop, always on time and fairly priced.",
-  //     },
-  //   ],
-
-  //   cta: {
-  //     heading: "Book Your BBD Green City / Ayodhya Road Taxi Today",
-  //     description:
-  //       "Doorstep local cabs and direct Ayodhya pilgrimage trips, confirmed instantly on WhatsApp.",
-  //     button: "WhatsApp Booking for Ayodhya Cabs",
-  //   },
-
-  //   geo: {
-  //     aiSummary:
-  //       "The Yatra Company provides doorstep local taxi service across BBD Green City and the Ayodhya Road corridor in Lucknow, plus direct outstation cabs to Ayodhya, Varanasi, and Prayagraj. This corridor's direct highway alignment makes it the fastest local starting point for Ayodhya-bound trips. Local fares start at ₹349, booked via WhatsApp.",
-  //     keyTakeaways: [
-  //       "Residential/institutional corridor on Lucknow's eastern edge along NH27 (Ayodhya Road)",
-  //       "Direct highway access makes it the fastest local starting point for Ayodhya trips",
-  //       "Local drop fares start at ₹349 (sedan)",
-  //       "Booking is via WhatsApp at 91988 93198",
-  //     ],
-  //     serviceArea:
-  //       "BBD Green City, Ayodhya Road corridor, and adjoining Lucknow sectors",
-  //     latitude: 26.79,
-  //     longitude: 81.05,
-  //   },
-
-  //   relatedGuides: [
-  //     "lucknow-to-ayodhya-taxi",
-  //     "lucknow-to-prayagraj-taxi",
-  //     "hazratganj-taxi-service",
-  //   ],
-
-  //   schema: {
-  //     author: "The Yatra Company",
-  //     publishedDate: "2026-08-01",
-  //     lastUpdated: "2026-08-01",
-  //   },
-  // },
   {
     slug: "gomti-nagar-corporate-taxi",
 
@@ -308,7 +91,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/gomti-nagar-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56957.571755810284!2d80.96827832462738!3d26.844778981801223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd49fc60a843%3A0x92fc72e19b623f6a!2sGomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785764804006!5m2!1sen!2sin",
       highway:
         "Direct connectivity to NH27, Shaheed Path, and the airport road",
       stops: [],
@@ -467,7 +250,7 @@ export const guides = [
       ogTitle: "Hazratganj Taxi Service — City Rentals & Shopping Cabs",
       ogDescription:
         "On-demand and hourly city rental cabs in Hazratganj, Lucknow's central commercial and tourist hub. WhatsApp booking.",
-      ogImage: "/images/routes/hazratganj-og.jpg",
+      ogImage: "/Images/routes/hazratganj-og.png",
     },
 
     hero: {
@@ -475,7 +258,7 @@ export const guides = [
       title: "Hazratganj Taxi Service — City Rentals & Sightseeing Cabs",
       description:
         "Hazratganj's markets, restaurants, and colonial-era streets are best explored without watching the clock on a shared auto. Book an hourly or point-to-point taxi for shopping, sightseeing, or city travel.",
-      heroImage: "/images/routes/hazratganj-hero.jpg",
+      heroImage: "/Images/routes/hazratganj-og.png",
       heroImageAlt:
         "Taxi parked along Hazratganj's tree-lined shopping street in Lucknow",
     },
@@ -531,7 +314,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/hazratganj-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14238.484387192393!2d80.9376498083967!3d26.85200127693139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd09c18f1e13%3A0xbf01e68d3158fb37!2sHazratganj%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785764883790!5m2!1sen!2sin",
       highway:
         "Central Lucknow road network, well-connected to all major city zones",
       stops: [],
@@ -785,7 +568,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/lucknow-airport-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.456427438586!2d80.8830725756572!3d26.761717076737554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bf94ebb93769f%3A0xd25d850e74c76635!2sChaudhary%20Charan%20Singh%20International%20Airport%2C%20Terminal%203!5e0!3m2!1sen!2sin!4v1785764999675!5m2!1sen!2sin",
       highway:
         "Amausi–NH27 corridor connecting the airport to the city and onward highways",
       stops: [],
@@ -944,7 +727,7 @@ export const guides = [
       ogTitle: "Charbagh Railway Station Taxi — Lucknow Station Cab Booking",
       ogDescription:
         "Pre-booked taxis at Lucknow Charbagh Railway Station for city travel and outstation connections. WhatsApp booking.",
-      ogImage: "/images/routes/charbagh-station-og.jpg",
+      ogImage: "/Images/routes/charbagh-station-og.png",
     },
 
     hero: {
@@ -953,7 +736,7 @@ export const guides = [
         "Lucknow Charbagh Railway Station Taxi — City & Outstation Cab Booking",
       description:
         "Skip the station touts and prepaid-booth queues. Pre-book a taxi at Charbagh for a city hotel drop, a corporate meeting, or a direct outstation trip to Ayodhya or Varanasi.",
-      heroImage: "/images/routes/charbagh-station-hero.jpg",
+      heroImage: "/Images/routes/charbagh-station-og.png",
       heroImageAlt:
         "Taxi parked outside Lucknow Charbagh Railway Station's iconic chess-board architecture",
     },
@@ -1011,7 +794,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/charbagh-station-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.236967848661!2d80.92396647565943!3d26.832414276695165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfc4b7d7d6ec1%3A0xda4342850e894728!2sCharbagh%20Railway%20Station!5e0!3m2!1sen!2sin!4v1785765059574!5m2!1sen!2sin",
       highway: "Direct city road connectivity to NH27 and onward highways",
       stops: [],
       tolls: "None for city drops",
@@ -1170,7 +953,7 @@ export const guides = [
       ogTitle: "Lucknow to Ayodhya Taxi — Ram Mandir One-Way Cab Booking",
       ogDescription:
         "Fixed-fare Lucknow to Ayodhya taxis for pilgrims and families. Sedan/SUV/Innova, doorstep pickup, WhatsApp booking.",
-      ogImage: "/images/routes/lucknow-ayodhya-og.jpg",
+      ogImage: "/Images/routes/lucknow-ayodhya-hero.jpeg",
     },
 
     hero: {
@@ -1178,7 +961,7 @@ export const guides = [
       title: "Lucknow to Ayodhya Taxi — One-Way Cabs for Ram Mandir Darshan",
       description:
         "Skip the bus queues and unreliable shared cabs. Book a clean, driver-verified taxi from Lucknow to Ayodhya, timed for darshan and back the same day if you want. Fixed fares, no last-minute surprises.",
-      heroImage: "/images/routes/lucknow-ayodhya-hero.jpg",
+      heroImage: "/Images/routes/lucknow-ayodhya-hero.jpeg",
       heroImageAlt:
         "Taxi on the Lucknow to Ayodhya highway with Ram Mandir in the background",
     },
@@ -1246,7 +1029,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/lucknow-ayodhya-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28492.610157845178!2d82.17856824860183!3d26.78977371009263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07937e6d2823%3A0x5fc8f683b17f222b!2sAyodhya%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765253889!5m2!1sen!2sin",
       highway: "NH27 (Lucknow–Barabanki–Ayodhya)",
       stops: ["Barabanki (tea/snack break)", "Rounahi", "Ayodhya bypass"],
       tolls:
@@ -1457,7 +1240,7 @@ export const guides = [
         "Lucknow to Delhi Taxi — Premium Highway Cabs for Corporate Travel",
       ogDescription:
         "Innova Hycross and SUV cabs from Lucknow to Delhi NCR, built for corporate and long-distance travelers. WhatsApp booking.",
-      ogImage: "/images/routes/lucknow-delhi-og.jpg",
+      ogImage: "/Images/routes/lucknow-delhi-og.png",
     },
 
     hero: {
@@ -1466,7 +1249,7 @@ export const guides = [
         "Lucknow to Delhi Taxi — Premium Highway Cabs for Corporate & Long-Distance Travel",
       description:
         "A 500+ km highway run needs a car built for it. Book an Innova Hycross, SUV, or sedan from Lucknow to Delhi NCR — punctual pickup, professional drivers, and a fare that doesn't change mid-trip.",
-      heroImage: "/images/routes/lucknow-delhi-hero.jpg",
+      heroImage: "/Images/routes/lucknow-delhi-og.png",
       heroImageAlt:
         "Innova Hycross on the Lucknow-Agra Expressway en route to Delhi",
     },
@@ -1532,7 +1315,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/lucknow-delhi-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223994.31178238653!2d76.92523211377964!3d28.69230517128948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d047309fff32f%3A0xfc5606ed1b5d46c3!2sDelhi!5e0!3m2!1sen!2sin!4v1785765333173!5m2!1sen!2sin",
       highway:
         "Lucknow-Agra Expressway to Agra, then Yamuna Expressway to Delhi NCR",
       stops: [
@@ -1726,7 +1509,7 @@ export const guides = [
       ogTitle: "Lucknow to Gorakhpur Taxi — One-Way Cab Booking",
       ogDescription:
         "Fixed-fare Lucknow to Gorakhpur taxis for business and regional transit. WhatsApp booking.",
-      ogImage: "/images/routes/lucknow-gorakhpur-og.jpg",
+      ogImage: "/Images/routes/lucknow-gorakhpur-og.png",
     },
 
     hero: {
@@ -1735,7 +1518,7 @@ export const guides = [
         "Lucknow to Gorakhpur Taxi — One-Way Cabs via Purvanchal Expressway",
       description:
         "Business travel and regional transit to eastern UP made simple. Book a Lucknow to Gorakhpur taxi with a fixed fare and a driver who knows the Purvanchal Expressway well.",
-      heroImage: "/images/routes/lucknow-gorakhpur-hero.jpg",
+      heroImage: "/Images/routes/lucknow-gorakhpur-og.png",
       heroImageAlt:
         "Taxi on the Purvanchal Expressway heading toward Gorakhpur",
     },
@@ -1800,7 +1583,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/lucknow-gorakhpur-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113996.62469424882!2d83.32151035096193!3d26.763691325846477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991446a0c332489%3A0x1ff3f97fdcc6bfa2!2sGorakhpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765410216!5m2!1sen!2sin",
       highway: "Purvanchal Expressway to the Gorakhpur link road",
       stops: ["Ambedkar Nagar / Azamgarh area (break point)"],
       tolls: "Expressway toll included in fare unless stated otherwise",
@@ -1982,7 +1765,7 @@ export const guides = [
       ogTitle: "Lucknow to Kanpur Taxi — Same-Day Business & Regional Cab",
       ogDescription:
         "Fixed-fare Lucknow to Kanpur taxis for business travel and regional transit. WhatsApp booking.",
-      ogImage: "/images/routes/lucknow-kanpur-og.jpg",
+      ogImage: "/Images/routes/lucknow-kanpur-og.png",
     },
 
     hero: {
@@ -1990,7 +1773,7 @@ export const guides = [
       title: "Lucknow to Kanpur Taxi — Same-Day Business & Regional Travel",
       description:
         "Short distance, high frequency — this is the route business travelers book most. A Lucknow to Kanpur taxi gets you there in under two hours, on time, without depending on shared transport.",
-      heroImage: "/images/routes/lucknow-kanpur-hero.jpg",
+      heroImage: "/Images/routes/lucknow-kanpur-og.png",
       heroImageAlt: "Sedan taxi on NH27 between Lucknow and Kanpur",
     },
 
@@ -2053,7 +1836,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/lucknow-kanpur-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114312.51527983553!2d80.25598149011772!3d26.447150071884707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765469685!5m2!1sen!2sin",
       highway: "NH27 via Unnao",
       stops: ["Unnao (short break point if needed)"],
       tolls: "1 toll plaza on NH27; included in fare unless stated otherwise",
@@ -2235,7 +2018,7 @@ export const guides = [
       ogTitle: "Lucknow to Prayagraj Taxi — One-Way Cab to Sangam",
       ogDescription:
         "Fixed-fare Lucknow to Prayagraj taxis for religious visits and weekend family trips. WhatsApp booking.",
-      ogImage: "/images/routes/lucknow-prayagraj-og.jpg",
+      ogImage: "/Images/routes/lucknow-prayagraj-og.png",
     },
 
     hero: {
@@ -2244,7 +2027,7 @@ export const guides = [
         "Lucknow to Prayagraj Taxi — One-Way Cabs for Sangam & Weekend Trips",
       description:
         "Close enough for a weekend, significant enough for a pilgrimage. Book a Lucknow to Prayagraj taxi for Sangam darshan, family outings, or a quick heritage trip along NH30.",
-      heroImage: "/images/routes/lucknow-prayagraj-hero.jpg",
+      heroImage: "/Images/routes/lucknow-prayagraj-og.png",
       heroImageAlt: "Taxi approaching the Sangam area in Prayagraj",
     },
 
@@ -2308,7 +2091,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/lucknow-prayagraj-map.jpg",
+      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115330.45656849002!2d81.7191832551656!3d25.402240789357485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765524265!5m2!1sen!2sin",
       highway: "NH30 via Raebareli",
       stops: ["Raebareli (break point)", "Prayagraj outskirts"],
       tolls: "1 toll plaza on NH30; included in fare unless stated otherwise",
@@ -2504,7 +2287,7 @@ export const guides = [
       ogTitle: "Lucknow to Varanasi Taxi — Kashi Vishwanath One-Way Cab",
       ogDescription:
         "Fixed-fare Lucknow to Varanasi taxis for spiritual and heritage travel. Sedan/SUV/Innova, WhatsApp booking.",
-      ogImage: "/images/routes/lucknow-varanasi-og.jpg",
+      ogImage: "/Images/routes/lucknow-varanasi-og.png",
     },
 
     hero: {
@@ -2513,7 +2296,7 @@ export const guides = [
         "Lucknow to Varanasi Taxi — One-Way Cabs for Kashi Vishwanath & Ganga Aarti",
       description:
         "A long highway drive deserves a comfortable car and a driver who knows the route. Book a Lucknow to Varanasi taxi for temple visits, Ganga Aarti evenings, or a heritage weekend on the ghats.",
-      heroImage: "/images/routes/lucknow-varanasi-hero.jpg",
+      heroImage: "/Images/routes/lucknow-varanasi-og.png",
       heroImageAlt:
         "Taxi on the Purvanchal Expressway en route from Lucknow to Varanasi",
     },
@@ -2581,7 +2364,7 @@ export const guides = [
     },
 
     route: {
-      mapImage: "/images/routes/lucknow-varanasi-map.jpg",
+      mapLink:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.24588661194!2d82.9087076524942!3d25.320739742715027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1785765578665!5m2!1sen!2sin",
       highway: "Purvanchal Expressway to Ghazipur, then NH19 to Varanasi",
       stops: [
         "Sultanpur/Ambedkar Nagar (break point)",

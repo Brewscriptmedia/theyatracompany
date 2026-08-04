@@ -84,6 +84,31 @@ export const metadata = {
     "The Yatra Company"
   ],
 
+  author: [
+    {
+      name: "The Yatra Company",
+    },
+  ],
+
+  creator: "The Yatra Company",
+
+  publisher: "The Yatra COmpany",
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    }
+  },
+
+  themeColor: "#f4a100",
+
   openGraph: {
     title: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
     description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
@@ -91,7 +116,7 @@ export const metadata = {
     siteName: "The Yatra Company",
     images: [
       {
-        url: "/Images/logo1.jpeg",
+        url: "https://theyatracompany.com/Images/logo1.jpeg",
         width: 1336,
         height: 518,
         alt: "The Yatra Company Logo",
@@ -105,7 +130,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
     description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
-    images: ["/Images/logo1.jpeg"],
+    images: ["https://theyatracompany.com/Images/logo1.jpeg"],
   },
 };
 

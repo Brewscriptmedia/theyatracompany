@@ -4,7 +4,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Gomti Nagar Corporate Cab Service | Vibhuti Khand Taxi | The Yatra Company",
+        "Gomti Nagar Corporate Cab Service | Vibhuti Khand Taxi",
       metaDescription:
         "Reliable corporate taxi service in Gomti Nagar & Vibhuti Khand, Lucknow. Executive drops, airport transfers, outstation cabs. WhatsApp booking, 24x7 support.",
       keywords: [
@@ -235,7 +235,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Hazratganj Taxi Service | Lucknow City Rental & Shopping Cab | The Yatra Company",
+        "Hazratganj Taxi Service | Lucknow City Rental & Shopping Cab",
       metaDescription:
         "Book a taxi in Hazratganj, Lucknow for city rentals, shopping trips, and sightseeing. Sedan, SUV cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -485,7 +485,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow Airport Taxi | 24x7 CCS Airport Pickup & Drop | The Yatra Company",
+        "Lucknow Airport Taxi | 24x7 CCS Airport Pickup & Drop",
       metaDescription:
         "Book reliable 24x7 taxi pickups and drops at Chaudhary Charan Singh International Airport, Lucknow. Sedan, SUV, Innova cabs, flight-tracking, WhatsApp booking.",
       keywords: [
@@ -711,7 +711,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Charbagh Railway Station Taxi | Lucknow Station Cab Booking | The Yatra Company",
+        "Charbagh Railway Station Taxi | Lucknow Station Cab Booking",
       metaDescription:
         "Book a taxi at Lucknow Charbagh Railway Station for city rentals or outstation trips to Ayodhya, Varanasi, and Delhi. Fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -936,7 +936,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Ayodhya Taxi | One-Way Cab to Ram Mandir | The Yatra Company",
+        "Lucknow to Ayodhya Taxi | One-Way Cab to Ram Mandir",
       metaDescription:
         "Book a reliable Lucknow to Ayodhya taxi for Ram Mandir darshan. Sedan, SUV & Innova one-way cabs, fixed fares, WhatsApp booking, 24x7 support. Book now.",
       keywords: [
@@ -1223,7 +1223,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Delhi Taxi | Innova Hycross Highway Cab | The Yatra Company",
+        "Lucknow to Delhi Taxi | Innova Hycross Highway Cab",
       metaDescription:
         "Premium Lucknow to Delhi NCR taxi for corporate & long-distance travel. Innova Hycross, SUV & Sedan fleet, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -1494,7 +1494,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Gorakhpur Taxi | One-Way Cab Booking | The Yatra Company",
+        "Lucknow to Gorakhpur Taxi | One-Way Cab Booking",
       metaDescription:
         "Book a Lucknow to Gorakhpur taxi for business and regional travel. Sedan, SUV, Innova cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -1750,7 +1750,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Kanpur Taxi | Same-Day Business Cab | The Yatra Company",
+        "Lucknow to Kanpur Taxi | Same-Day Business Cab",
       metaDescription:
         "Book a Lucknow to Kanpur taxi for business trips and same-day travel. Sedan, SUV cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -2003,7 +2003,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Prayagraj Taxi | One-Way Cab to Sangam | The Yatra Company",
+        "Lucknow to Prayagraj Taxi | One-Way Cab to Sangam",
       metaDescription:
         "Book a Lucknow to Prayagraj taxi for Sangam, Kumbh, and weekend family trips. Sedan, SUV, Innova cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -2271,7 +2271,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Varanasi Taxi | One-Way Cab to Kashi Vishwanath | The Yatra Company",
+        "Lucknow to Varanasi Taxi | One-Way Cab to Kashi Vishwanath",
       metaDescription:
         "Book a Lucknow to Varanasi one-way taxi for Kashi Vishwanath darshan & Ganga Aarti. Sedan, SUV, Innova cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [

@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "The Yatra Company",
     images: [
       {
-        url: "/Images/logo1.jpeg",
+        url: "https://theyatracompany.com/Images/logo1.jpeg",
         width: 1336,
         height: 518,
         alt: "The Yatra Company",
@@ -47,7 +47,7 @@ export const metadata = {
     title: "Taxi Service in Lucknow | The Yatra Company",
     description:
       "Airport transfers, local taxis and outstation cab services.",
-    images: ["/Images/logo1.jpeg"],
+    images: ["https://theyatracompany.com/Images/logo1.jpeg"],
   },
 };
 

@@ -101,10 +101,10 @@ export default async function GuidePage({ params }) {
         postalCode: "226028",
         addressCountry: "IN",
       },
-      geo: {
+      "geo": {
         "@type": "GeoCoordinates",
-        latitude: guide.geo.latitude,
-        longitude: guide.geo.longitude,
+        "latitude": guide.geo.latitude,
+        "longitude": guide.geo.longitude,
       },
       areaServed: guide.geo.serviceArea,
     },
@@ -112,12 +112,12 @@ export default async function GuidePage({ params }) {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: guide.faqs.map((faq) => ({
+      "mainEntity": guide.faqs.map((faq) => ({
         "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
+        "name": faq.question,
+        "acceptedAnswer": {
           "@type": "Answer",
-          text: faq.answer,
+          "text": faq.answer,
         },
       })),
     },

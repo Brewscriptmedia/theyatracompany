@@ -5,7 +5,7 @@ import Map from "@/components/contact/Map";
 import CTA from "@/components/sections/CTA";
 
 export const metadata = {
-  title: "Book a Taxi in Lucknow | Contact The Yatra Company",
+  title: "Book a Taxi in Lucknow | Contact ",
 
   description:
     "Contact The Yatra Company in Lucknow to book airport transfers, local taxis, outstation cabs or corporate travel. Call or WhatsApp us for instant booking.",

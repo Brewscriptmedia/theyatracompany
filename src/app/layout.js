@@ -43,8 +43,8 @@ const schema = {
 
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "",
-    "reviewCount": "",
+    "ratingValue": "4.9",
+    "reviewCount": "9",
   },
 
   areaServed: {

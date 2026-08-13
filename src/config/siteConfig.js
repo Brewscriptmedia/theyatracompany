@@ -6,7 +6,8 @@ const siteConfig = {
     facebook: process.env.NEXT_PUBLIC_FACEBOOK,
     googleMap: process.env.NEXT_PUBLIC_GOOGLE_MAP,
     email: process.env.NEXT_PUBLIC_EMAIL,
-    gaId: process.env.NEXT_PUBLIC_GA_ID
+    gaId: process.env.NEXT_PUBLIC_GA_ID,
+    googleReview: process.env.NEXT_PUBLIC_GOOGLE_REVIEWS_URL
 }
 
 export default siteConfig;

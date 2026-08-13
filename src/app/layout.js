@@ -41,12 +41,6 @@ const schema = {
     }
   },
 
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "9",
-  },
-
   areaServed: {
     "@type": "City",
     name: "Lucknow"

@@ -1,39 +1,69 @@
 import styles from "./Testimonials.module.css";
+import siteConfig  from "@/config/siteConfig";
+
+const GOOGLE_REVIEWS_URL = siteConfig.googleReview;
 
 export default function Testimonials() {
-  const testimonials = [
-    {
-      name: "Rahul Sharma",
-      review:
-        "Excellent airport pickup service. Driver arrived on time and the journey was smooth.",
-    },
-    {
-      name: "Priya Verma",
-      review:
-        "Very professional drivers and clean cars. Highly recommended.",
-    },
-    {
-      name: "Amit Singh",
-      review:
-        "Booked an outstation trip with my family. Great experience and affordable pricing.",
-    },
-  ];
-
   return (
     <section className={styles.testimonials}>
       <div className="container">
-        <h2>What Our Clients Say</h2>
+        <h2>What Our Customers Say</h2>
 
         <div className={styles.grid}>
-          {testimonials.map((item, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p>{item.review}</p>
-
-              <h4>{item.name}</h4>
+          <div className={styles.card}>
+            <div className={styles.stars} aria-label="4.9 out of 5 stars">
+              ★★★★★
             </div>
-          ))}
+
+            <h3>4.9/5 on Google</h3>
+
+            <p>
+              See what our customers have to say about their experience
+              with The Yatra Company.
+            </p>
+
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read Our Google Reviews →
+            </a>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Real Customer Experiences</h3>
+
+            <p>
+              Our Google reviews come directly from customers who have
+              travelled with us.
+            </p>
+
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Reviews on Google →
+            </a>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Travel With Confidence</h3>
+
+            <p>
+              Planning a trip? Check our latest Google reviews before
+              booking your taxi or cab.
+            </p>
+
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See What Customers Say →
+            </a>
+          </div>
         </div>
       </div>
     </section>

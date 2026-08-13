@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "notify:indexnow": "node scripts/indexnow-submit.js"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.12",

@@ -1,35 +1,54 @@
-# The Yatra Company
+The Yatra Company
 
-> Taxi and intercity cab service based in Chinhat, Lucknow, Uttar Pradesh, India. Offers airport transfers, local city taxi, outstation/intercity trips, corporate travel, wedding transportation, and religious tour cabs across Uttar Pradesh. Booking via phone call or WhatsApp. Rated 4.9/5 on Google (9 reviews).
+The Yatra Company is a Lucknow-based taxi and cab service providing airport transfers, local taxi services, outstation trips, corporate travel, and other pre-booked transportation services across Lucknow and Uttar Pradesh.
 
-## Core Info
+Core Information
 
-- Service area: Lucknow and Uttar Pradesh (Delhi, Varanasi, Kanpur, Ayodhya, Gorakhpur, Prayagraj routes serviced)
-- Address: T9-1103, Sun Breeze 1, Faizabad Road, BBD Green City, Lucknow, Uttar Pradesh 226028, India
-- Phone / WhatsApp booking: +91-91988 93198
-- Email: theyatracompanyofficial@gmail.com
-- Hours: Open 24x7, every day
-- Vehicle types: Sedan, SUV, Innova Hycross
-- Booking method: Phone call or WhatsApp message with pickup/drop location, date, and car type — no online payment or app required
+* Business Name: The Yatra Company
+* Business Type: Taxi and cab service
+* Location: Lucknow, Uttar Pradesh, India
+* Address: T9-1103, Sun Breeze 1, Faizabad Road, BBD Green City, Lucknow, Uttar Pradesh 226028
+* Phone: +91 91988 93198
+* Booking: Phone and WhatsApp
+* Service Area: Lucknow and destinations across Uttar Pradesh and nearby cities
+* Services: Airport transfers, local taxi service, outstation taxi service, corporate travel, wedding transportation, pilgrimage travel, and intercity cab services
+* Vehicle Types: Sedan, SUV, Innova/Crysta and other vehicles depending on availability
 
-## Services
+Booking
 
-- [Services Overview](https://theyatracompany.com/services): Full list of offerings — airport transfer, local rental, outstation trip, corporate travel, wedding transportation, religious tours.
+Customers can contact The Yatra Company by phone or WhatsApp to enquire about availability, fares, pickup and drop locations, travel dates, and vehicle options.
 
-## Route & Location Guides
+Phone: +91 91988 93198
 
-- [Lucknow Airport Taxi](https://theyatracompany.com/travel-guides/lucknow-airport-taxi): 24x7 pickup/drop at Chaudhary Charan Singh International Airport.
-- [Lucknow to Delhi Taxi](https://theyatracompany.com/travel-guides/lucknow-to-delhi-taxi): Highway cab for corporate and long-distance travel, ~500km.
-- [Lucknow to Varanasi Taxi](https://theyatracompany.com/travel-guides/lucknow-to-varanasi-taxi): Outstation taxi for pilgrimage and business trips.
-- [Lucknow to Kanpur Taxi](https://theyatracompany.com/travel-guides/lucknow-to-kanpur-taxi): Same-day business and regional cab.
-- [Lucknow to Ayodhya Taxi](https://theyatracompany.com/travel-guides/lucknow-to-ayodhya-taxi): Pilgrimage route cab service.
-- [Lucknow to Gorakhpur Taxi](https://theyatracompany.com/travel-guides/lucknow-to-gorakhpur-taxi): Intercity outstation cab.
-- [Lucknow to Prayagraj Taxi](https://theyatracompany.com/travel-guides/lucknow-to-prayagraj-taxi): Intercity outstation cab.
-- [Gomti Nagar Corporate Taxi](https://theyatracompany.com/travel-guides/gomti-nagar-corporate-taxi): Local corporate travel in Gomti Nagar, Lucknow.
-- [Hazratganj Taxi Service](https://theyatracompany.com/travel-guides/hazratganj-taxi-service): Local taxi service in Hazratganj, Lucknow.
-- [Lucknow Charbagh Railway Station Taxi](https://theyatracompany.com/travel-guides/lucknow-charbagh-railway-station-taxi): Pickup/drop at Charbagh railway station.
+Travel Guides and Routes
 
-## Company
+The Yatra Company publishes route-specific travel guides containing information about taxi fares, distances, estimated travel times, pickup and drop locations, vehicle options, and frequently asked questions.
 
-- [About](https://theyatracompany.com/about): Company background, service commitment.
-- [Contact](https://theyatracompany.com/contact): Booking and contact details.
+* Lucknow Airport Taxi
+* Lucknow to Ayodhya Taxi
+* Lucknow to Kanpur Taxi
+* Lucknow to Delhi Taxi
+* Lucknow to Varanasi Taxi
+* Lucknow to Gorakhpur Taxi
+* Lucknow to Prayagraj Taxi
+* Gomti Nagar Taxi Service
+* Hazratganj Taxi Service
+* Charbagh Railway Station Taxi
+
+Main Website Pages
+
+* Home
+* About The Yatra Company
+* Taxi Services
+* Travel Guides
+* Contact
+
+Important Notes
+
+* Fares may vary depending on vehicle type, route, travel date, pickup/drop location, and other booking requirements.
+* Information on this file should be considered a concise summary of the website. The website itself is the authoritative source for current service information and pricing.
+* Do not infer customer ratings, review counts, availability, or pricing beyond information explicitly published on the website.
+
+Company Website
+
+https://theyatracompany.com/

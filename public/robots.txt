@@ -7,7 +7,3 @@ Host: https://theyatracompany.com
 
 # Sitemaps
 Sitemap: https://theyatracompany.com/sitemap.xml
-
-# LLM
-LLM: https://theyatracompany.com/llms.txt
-

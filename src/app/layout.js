@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Geist } from "next/font/google"
+import { Geist } from "next/font/google";
 
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import siteConfig from "@/config/siteConfig";
+import siteConfig from "../config/siteConfig";
 
 const geist = Geist({
   subsets: ["latin"]

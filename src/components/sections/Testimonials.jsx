@@ -19,7 +19,7 @@ export default function Testimonials() {
 
             <p>
               See what our customers have to say about their experience
-              with The Yatra Company.
+              with Rahify.
             </p>
 
             <a

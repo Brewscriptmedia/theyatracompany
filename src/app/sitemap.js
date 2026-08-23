@@ -1,6 +1,7 @@
 import { guides } from "@/data/travelGuides";
+import siteConfig from "@/config/siteConfig";
 
-const baseUrl = "https://theyatracompany.com";
+const baseUrl = siteConfig.siteUrl;
 
 export default function sitemap(){
     const staticPages = [

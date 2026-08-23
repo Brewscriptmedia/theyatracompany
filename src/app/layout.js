@@ -15,9 +15,9 @@ const schema = {
   "@type": "LocalBusiness",
 
   name: siteConfig.companyName,
-  url: "https://theyatracompany.com",
-  image: "https://theyatracompany.com/Images/logo1.jpeg",
-  logo: "https://theyatracompany.com/Images/logo1.jpeg",
+  url: siteConfig.siteUrl,
+  image: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
+  logo: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
 
   telephone: siteConfig.phone,
   email: siteConfig.email,
@@ -70,16 +70,15 @@ const schema = {
 }
 
 export const metadata = {
-  metadataBase: new URL("https://theyatracompany.com"),
+  metadataBase: new URL(siteConfig.siteUrl),
 
   title: {
-    default: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
-    template: "%s | The Yatra Company",
+    default: "Rahify | Trusted Taxi & Cab Service in Lucknow",
+    template: "%s | Rahify",
   },
 
   description:
-    "Reliable tairport pickup, drop, local, and outstation taxi service in Lucknow. Professional drivers, 24*7 support. Book on Whatsapp or Call now.",
- 
+    "Reliable airport pickup, drop, local, and outstation taxi service in Lucknow. Professional drivers, 24*7 support. Book on WhatsApp or call now.",
 
   keywords: [
     "Taxi Service in Lucknow",
@@ -89,18 +88,18 @@ export const metadata = {
     "Outstation Taxi",
     "Cab Booking",
     "Travel Company",
-    "The Yatra Company"
+    "Rahify"
   ],
 
   author: [
     {
-      name: "The Yatra Company",
+      name: "Rahify",
     },
   ],
 
-  creator: "The Yatra Company",
+  creator: "Rahify",
 
-  publisher: "The Yatra COmpany",
+  publisher: "Rahify",
 
   robots: {
     index: true,
@@ -118,16 +117,16 @@ export const metadata = {
   themeColor: "#f4a100",
 
   openGraph: {
-    title: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
+    title: "Rahify | Trusted Taxi & Cab Service in Lucknow",
     description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
-    url: "https://theyatracompany.com",
-    siteName: "The Yatra Company",
+    url: siteConfig.siteUrl,
+    siteName: "Rahify",
     images: [
       {
-        url: "https://theyatracompany.com/Images/logo1.jpeg",
+        url: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
         width: 1336,
         height: 518,
-        alt: "The Yatra Company Logo",
+        alt: "Rahify Logo",
       },
     ],
     locale: "en_IN",
@@ -136,9 +135,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "The Yatra Company | Trusted Taxi & Cab Service in Lucknow",
+    title: "Rahify | Trusted Taxi & Cab Service in Lucknow",
     description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
-    images: ["https://theyatracompany.com/Images/logo1.jpeg"],
+    images: [`${siteConfig.siteUrl}/Images/logo1.jpeg`],
   },
 };
 

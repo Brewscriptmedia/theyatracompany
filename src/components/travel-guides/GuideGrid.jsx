@@ -11,7 +11,7 @@ export default function GuideGrid() {
 
                     <p>
                         Explore destination guides, airport transfer tips, travel advice, 
-                        and taxi booking information curated by The Yatra Company.
+                        and taxi booking information curated by Rahify.
                     </p>
                 </div>
 

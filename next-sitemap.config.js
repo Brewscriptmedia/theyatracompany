@@ -3,7 +3,7 @@
 const { userAgent } = require('next/server');
 
 module.exports= {
-    siteUrl: "https://theyatracompany.com",
+    siteUrl: "https://rahify.com",
     generateRobotsTxt: true,
     changefreq: "weekly",
     priority: 0.7,

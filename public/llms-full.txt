@@ -1,6 +1,6 @@
-The Yatra Company
+Rahify
 
-The Yatra Company provides professional taxi services from Lucknow to destinations across Uttar Pradesh and nearby states.
+Rahify provides professional taxi services from Lucknow to destinations across Uttar Pradesh and nearby states.
 
 Services include:
 
@@ -39,4 +39,4 @@ Lucknow to Delhi
 Customers can book via phone or WhatsApp.
 
 Website:
-https://theyatracompany.com
+https://rahify.com

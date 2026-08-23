@@ -7,21 +7,18 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay}>
-
         <div className={styles.left}>
-
-          <span className={styles.badge}>
-            Trusted Taxi Service Across India
-          </span>
+          <span className={styles.badge}>Trusted Taxi Service Across India</span>
 
           <h1>
-            Reliable Taxi Services<br />
+            Reliable Taxi Services
+            <br />
             In Lucknow
           </h1>
 
           <p>
-            Airport Pickup • Airport Drop • Local Taxi •
-            Outstation Trips • Corporate Travel
+            Airport Pickup • Airport Drop • Local Taxi • Outstation Trips •
+            Corporate Travel
           </p>
 
           <div className={styles.buttons}>
@@ -36,47 +33,43 @@ export default function Hero() {
             </button>
 
             <button className={styles.secondary}>
-              <a
-                href={`tel:${siteConfig.phone}`}
-              >
-                📞 Call Now
-              </a>
+              <a href={`tel:${siteConfig.phone}`}>📞 Call Now</a>
             </button>
           </div>
 
           <div className={styles.socials}>
-          <a
-            href={siteConfig.instagram}
-            target="_blank"
-            rel="noopener noreferrer" 
-          >
-            <FaInstagram/>
-          </a>
+            <a
+              href={siteConfig.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
 
-          <a
-            href={siteConfig.facebook}
-            target="_blank"
-            rel="noopener noreferrer" 
-          >
-            <FaFacebookF/>
-          </a>
-        </div>
+            <a
+              href={siteConfig.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+          </div>
 
           <div className={styles.features}>
             <span>✔ Professional Drivers</span>
             <span>✔ Safe Journey</span>
             <span>✔ 24×7 Support</span>
           </div>
-
         </div>
 
         <div className={styles.right}>
           <img
-            src="/Images/innova-sada1.png"
-            alt="Taxi"
+            src="/Images/raahify-stacked-transparent.png"
+            alt="Rahify taxi service"
+            width={700}
+            height={700}
           />
         </div>
-
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
 
+import siteConfig from "@/config/siteConfig";
+
 export default function robots(){
     return {
         rules: [
@@ -7,6 +9,6 @@ export default function robots(){
                 allow: "/",
             },
         ],
-        sitemap: "https://theyatracompany.com/sitemap.xml",
+        sitemap: `${siteConfig.siteUrl}/sitemap.xml`,
     };
 }

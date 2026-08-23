@@ -19,9 +19,17 @@
   position: relative;
 }
 
+.logo{
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .logo img {
-  width: auto;
-  height: 58px;
+  width: 180px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
 }
 
 .menu {
@@ -88,7 +96,8 @@
   }
 
   .logo img {
-    height: 48px;
+    width: 135px;
+    height: auto;
   }
 
   .menu {

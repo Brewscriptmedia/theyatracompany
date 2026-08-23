@@ -8,7 +8,7 @@ export const metadata = {
   title: "Taxi Service in Lucknow | Airport Cabs & Outstation Travel",
 
   description:
-    "Book trusted taxi services in Lucknow with The Yatra Company — airport transfers, local cabs, outstation trips, corporate rides & 24×7 professional drivers",
+    "Book trusted taxi services in Lucknow with Rahify — airport transfers, local cabs, outstation trips, corporate rides & 24×7 professional drivers",
 
   keywords: [
     "Taxi Service in Lucknow",
@@ -17,7 +17,7 @@ export const metadata = {
     "Outstation Taxi",
     "Corporate Taxi",
     "Local Taxi",
-    "The Yatra Company",
+    "Rahify",
   ],
 
   alternates: {
@@ -25,17 +25,17 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Taxi Service in Lucknow | The Yatra Company",
+    title: "Taxi Service in Lucknow | Rahify",
     description:
       "Airport transfers, local taxis, outstation trips and corporate travel in Lucknow.",
-    url: "https://theyatracompany.com",
-    siteName: "The Yatra Company",
+    url: "https://rahify.com",
+    siteName: "Rahify",
     images: [
       {
-        url: "https://theyatracompany.com/Images/logo1.jpeg",
+        url: "https://rahify.com/Images/logo1.jpeg",
         width: 1336,
         height: 518,
-        alt: "The Yatra Company",
+        alt: "Rahify",
       },
     ],
     locale: "en_IN",
@@ -44,10 +44,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Service in Lucknow | The Yatra Company",
+    title: "Taxi Service in Lucknow | Rahify",
     description:
       "Airport transfers, local taxis and outstation cab services.",
-    images: ["https://theyatracompany.com/Images/logo1.jpeg"],
+    images: ["https://rahify.com/Images/logo1.jpeg"],
   },
 };
 

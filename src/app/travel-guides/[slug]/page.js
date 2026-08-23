@@ -65,8 +65,8 @@ export default async function GuidePage({ params }) {
       inLanguage: "en-IN",
       isPartOf: {
         "@type": "WebSite",
-        name: "The Yatra Company",
-        url: "https://theyatracompany.com",
+        name: "Rahify",
+        url: "https://rahify.com",
       },
     },
 
@@ -77,8 +77,8 @@ export default async function GuidePage({ params }) {
       description: guide.taxi.service,
       provider: {
         "@type": "LocalBusiness",
-        name: "The Yatra Company",
-        url: "https://theyatracompany.com",
+        name: "Rahify",
+        url: "https://rahify.com",
         telephone: siteConfig.phone,
       },
       areaServed: guide.geo.serviceArea,
@@ -88,9 +88,9 @@ export default async function GuidePage({ params }) {
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "The Yatra Company",
-      image: `https://theyatracompany.com${guide.hero.heroImage}`,
-      url: "https://theyatracompany.com",
+      name: "Rahify",
+      image: `https://rahify.com${guide.hero.heroImage}`,
+      url: "https://rahify.com",
       telephone: siteConfig.phone,
       email: siteConfig.email,
       address: {
@@ -130,13 +130,13 @@ export default async function GuidePage({ params }) {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://theyatracompany.com",
+          item: "https://rahify.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Travel Guides",
-          item: "https://theyatracompany.com/travel-guides",
+          item: "https://rahify.com/travel-guides",
         },
         {
           "@type": "ListItem",
@@ -345,7 +345,7 @@ export default async function GuidePage({ params }) {
           {/* WHY BOOK */}
 
           <section>
-            <h2>Why Book With The Yatra Company?</h2>
+            <h2>Why Book With Rahify?</h2>
 
             <ul>
               {guide.whyBook.map((item) => (

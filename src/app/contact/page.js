@@ -8,10 +8,10 @@ export const metadata = {
   title: "Book a Taxi in Lucknow | Contact ",
 
   description:
-    "Contact The Yatra Company in Lucknow to book airport transfers, local taxis, outstation cabs or corporate travel. Call or WhatsApp us for instant booking.",
+    "Contact Rahify in Lucknow to book airport transfers, local taxis, outstation cabs or corporate travel. Call or WhatsApp us for instant booking.",
 
   keywords: [
-    "Contact The Yatra Company",
+    "Contact Rahify",
     "Taxi Booking Lucknow",
     "Airport Taxi",
     "Cab Booking",
@@ -23,17 +23,17 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Contact The Yatra Company",
+    title: "Contact Rahify",
     description:
       "Book airport, local and outstation taxi services in Lucknow.",
-    url: "https://theyatracompany.com/contact",
-    siteName: "The Yatra Company",
+    url: "https://rahify.com/contact",
+    siteName: "Rahify",
     images: [
       {
-        url: "https://theyatracompany.com/Images/logo1.jpeg",
+        url: "https://rahify.com/Images/logo1.jpeg",
         width: 1336,
         height: 518,
-        alt: "The Yatra Company",
+        alt: "Rahify",
       },
     ],
     locale: "en_IN",
@@ -42,10 +42,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Contact The Yatra Company",
+    title: "Contact Rahify",
     description:
       "Call or WhatsApp us for reliable taxi services in Lucknow.",
-    images: ["https://theyatracompany.com/Images/logo1.jpeg"],
+    images: ["https://rahify.com/Images/logo1.jpeg"],
   },
 };
 

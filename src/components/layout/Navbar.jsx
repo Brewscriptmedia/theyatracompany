@@ -19,8 +19,8 @@ export default function Navbar() {
         <nav className={styles.navbar}>
           <Link href="/" onClick={closeMenu} className={styles.logo}>
             <Image
-              src="/Images/logo1.jpeg"
-              alt="The Yatra Company"
+              src="/Images/logo1.png"
+              alt="Rahify"
               width={180}
               height={60}
               priority

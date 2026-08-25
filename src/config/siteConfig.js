@@ -1,6 +1,6 @@
 const siteConfig = {
-    companyName: process.env.NEXT_PUBLIC_COMPANY_NAME || "Rahify",
-    siteUrl: "https://rahify.com",
+    companyName: process.env.NEXT_PUBLIC_COMPANY_NAME || "Raahify",
+    siteUrl: "https://raahify.com",
     phone: process.env.NEXT_PUBLIC_PHONE,
     whatsapp: process.env.NEXT_PUBLIC_WHATSAPP,
     instagram: process.env.NEXT_PUBLIC_INSTAGRAM,

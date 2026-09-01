@@ -16,7 +16,7 @@ export const guides = [
         "Gomti Nagar to airport taxi",
       ],
       canonical:
-        "https://rahify.com/travel-guides/gomti-nagar-corporate-taxi",
+        "https://raahify.com/travel-guides/gomti-nagar-corporate-taxi",
       ogTitle:
         "Gomti Nagar Corporate Cab Service — Vibhuti Khand Executive Taxi",
       ogDescription:
@@ -205,7 +205,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify provides corporate and executive taxi service across Gomti Nagar and Vibhuti Khand, Lucknow's main IT and business hub, including recurring office bookings, airport transfers, and outstation client trips. Local fares start at ₹349 for a sedan, booked via WhatsApp.",
+        "Raahify provides corporate and executive taxi service across Gomti Nagar and Vibhuti Khand, Lucknow's main IT and business hub, including recurring office bookings, airport transfers, and outstation client trips. Local fares start at ₹349 for a sedan, booked via WhatsApp.",
       keyTakeaways: [
         "Serves Lucknow's primary corporate and IT hub — Gomti Nagar and Vibhuti Khand",
         "Recurring/standing booking option available for offices",
@@ -225,7 +225,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -246,7 +246,7 @@ export const guides = [
         "Lucknow sightseeing taxi",
         "Hazratganj to airport taxi",
       ],
-      canonical: "https://rahify.com/travel-guides/hazratganj-taxi-service",
+      canonical: "https://raahify.com/travel-guides/hazratganj-taxi-service",
       ogTitle: "Hazratganj Taxi Service — City Rentals & Shopping Cabs",
       ogDescription:
         "On-demand and hourly city rental cabs in Hazratganj, Lucknow's central commercial and tourist hub. WhatsApp booking.",
@@ -456,7 +456,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify offers point-to-point and hourly city rental taxis based in Hazratganj, Lucknow's central commercial and tourist district, for shopping, sightseeing, and connections to Charbagh station and the airport. Local drop fares start at ₹299, booked via WhatsApp.",
+        "Raahify offers point-to-point and hourly city rental taxis based in Hazratganj, Lucknow's central commercial and tourist district, for shopping, sightseeing, and connections to Charbagh station and the airport. Local drop fares start at ₹299, booked via WhatsApp.",
       keyTakeaways: [
         "Central Lucknow location — shopping and tourist hub",
         "Local drop fares start at ₹299 (sedan)",
@@ -475,7 +475,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -497,7 +497,7 @@ export const guides = [
         "Lucknow airport drop taxi",
         "LKO airport taxi service",
       ],
-      canonical: "https://rahify.com/travel-guides/lucknow-airport-taxi",
+      canonical: "https://raahify.com/travel-guides/lucknow-airport-taxi",
       ogTitle: "Lucknow Airport Taxi — 24x7 Reliable Pickups & Drops",
       ogDescription:
         "Pre-booked airport taxis at Chaudhary Charan Singh International Airport, Lucknow. Flight tracking, doorstep drop, WhatsApp booking.",
@@ -681,7 +681,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify provides 24x7 taxi pickup and drop service at Chaudhary Charan Singh International Airport (LKO), Lucknow, with flight tracking. City drops start at ₹399 for a sedan, and direct outstation connections to Ayodhya, Varanasi, and Delhi NCR are available straight from the airport via WhatsApp booking.",
+        "Raahify provides 24x7 taxi pickup and drop service at Chaudhary Charan Singh International Airport (LKO), Lucknow, with flight tracking. City drops start at ₹399 for a sedan, and direct outstation connections to Ayodhya, Varanasi, and Delhi NCR are available straight from the airport via WhatsApp booking.",
       keyTakeaways: [
         "24x7 availability with flight-number tracking",
         "City drop fares start at ₹399 (sedan)",
@@ -701,7 +701,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -723,7 +723,7 @@ export const guides = [
         "Charbagh to Ayodhya taxi",
       ],
       canonical:
-        "https://rahify.com/travel-guides/lucknow-charbagh-railway-station-taxi",
+        "https://raahify.com/travel-guides/lucknow-charbagh-railway-station-taxi",
       ogTitle: "Charbagh Railway Station Taxi — Lucknow Station Cab Booking",
       ogDescription:
         "Pre-booked taxis at Lucknow Charbagh Railway Station for city travel and outstation connections. WhatsApp booking.",
@@ -906,7 +906,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify offers 24x7 taxi pickup and drop service at Lucknow Charbagh Railway Station, for both city travel and direct outstation connections to Ayodhya, Varanasi, and Delhi NCR. City drop fares start at ₹299 for a sedan, booked via WhatsApp.",
+        "Raahify offers 24x7 taxi pickup and drop service at Lucknow Charbagh Railway Station, for both city travel and direct outstation connections to Ayodhya, Varanasi, and Delhi NCR. City drop fares start at ₹299 for a sedan, booked via WhatsApp.",
       keyTakeaways: [
         "24x7 availability for all train arrivals",
         "City drop fares start at ₹299 (sedan)",
@@ -926,7 +926,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -949,7 +949,7 @@ export const guides = [
         "Innova cab Lucknow to Ayodhya",
         "Lucknow Ayodhya darshan taxi package",
       ],
-      canonical: "https://rahify.com/travel-guides/lucknow-to-ayodhya-taxi",
+      canonical: "https://raahify.com/travel-guides/lucknow-to-ayodhya-taxi",
       ogTitle: "Lucknow to Ayodhya Taxi — Ram Mandir One-Way Cab Booking",
       ogDescription:
         "Fixed-fare Lucknow to Ayodhya taxis for pilgrims and families. Sedan/SUV/Innova, doorstep pickup, WhatsApp booking.",
@@ -1193,7 +1193,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify offers one-way and round-trip taxis from Lucknow to Ayodhya (approx. 135 km, 2.5–3 hours via NH27) for Ram Mandir darshan. Sedan fares start at ₹2,499, SUV at ₹3,999, and Innova at ₹4,499, with WhatsApp booking and 24x7 support.",
+        "Raahify offers one-way and round-trip taxis from Lucknow to Ayodhya (approx. 135 km, 2.5–3 hours via NH27) for Ram Mandir darshan. Sedan fares start at ₹2,499, SUV at ₹3,999, and Innova at ₹4,499, with WhatsApp booking and 24x7 support.",
       keyTakeaways: [
         "Distance: 135 km, duration 2.5–3 hours via NH27",
         "One-way sedan fare starts at ₹2,499",
@@ -1213,7 +1213,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -1235,7 +1235,7 @@ export const guides = [
         "Lucknow Delhi outstation taxi",
         "Lucknow to Noida Gurgaon cab",
       ],
-      canonical: "https://rahify.com/travel-guides/lucknow-to-delhi-taxi",
+      canonical: "https://raahify.com/travel-guides/lucknow-to-delhi-taxi",
       ogTitle:
         "Lucknow to Delhi Taxi — Premium Highway Cabs for Corporate Travel",
       ogDescription:
@@ -1464,7 +1464,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify offers premium one-way and round-trip taxis from Lucknow to Delhi NCR (approx. 500-555 km, 7.5-8.5 hours via the Lucknow-Agra and Yamuna Expressways). Innova Hycross is available for corporate travel, with sedan fares starting at ₹9,999 and WhatsApp booking.",
+        "Raahify offers premium one-way and round-trip taxis from Lucknow to Delhi NCR (approx. 500-555 km, 7.5-8.5 hours via the Lucknow-Agra and Yamuna Expressways). Innova Hycross is available for corporate travel, with sedan fares starting at ₹9,999 and WhatsApp booking.",
       keyTakeaways: [
         "Distance: 500-555 km, duration 7.5-8.5 hours via Lucknow-Agra + Yamuna Expressway",
         "One-way sedan fare starts at ₹9,999; Innova Hycross available for executive travel",
@@ -1484,7 +1484,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -1505,7 +1505,7 @@ export const guides = [
         "Gorakhnath temple taxi",
         "Lucknow to Gorakhpur outstation cab",
       ],
-      canonical: "https://rahify.com/travel-guides/lucknow-to-gorakhpur-taxi",
+      canonical: "https://raahify.com/travel-guides/lucknow-to-gorakhpur-taxi",
       ogTitle: "Lucknow to Gorakhpur Taxi — One-Way Cab Booking",
       ogDescription:
         "Fixed-fare Lucknow to Gorakhpur taxis for business and regional transit. WhatsApp booking.",
@@ -1724,7 +1724,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify offers one-way and round-trip taxis from Lucknow to Gorakhpur (approx. 270 km, 4.5-5 hours via the Purvanchal Expressway) for business and temple travel. Sedan fares start at ₹4,999, with WhatsApp booking and 24x7 support.",
+        "Raahify offers one-way and round-trip taxis from Lucknow to Gorakhpur (approx. 270 km, 4.5-5 hours via the Purvanchal Expressway) for business and temple travel. Sedan fares start at ₹4,999, with WhatsApp booking and 24x7 support.",
       keyTakeaways: [
         "Distance: 270 km, duration 4.5-5 hours via Purvanchal Expressway",
         "One-way sedan fare starts at ₹4,999",
@@ -1740,7 +1740,7 @@ export const guides = [
     relatedGuides: ["lucknow-to-varanasi-taxi", "lucknow-to-ayodhya-taxi"],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -1761,7 +1761,7 @@ export const guides = [
         "business cab Lucknow to Kanpur",
         "Lucknow to Kanpur one way taxi",
       ],
-      canonical: "https://rahify.com/travel-guides/lucknow-to-kanpur-taxi",
+      canonical: "https://raahify.com/travel-guides/lucknow-to-kanpur-taxi",
       ogTitle: "Lucknow to Kanpur Taxi — Same-Day Business & Regional Cab",
       ogDescription:
         "Fixed-fare Lucknow to Kanpur taxis for business travel and regional transit. WhatsApp booking.",
@@ -1973,7 +1973,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify offers one-way and same-day round-trip taxis from Lucknow to Kanpur (approx. 80 km, 1.5-2 hours via NH27), popular with business travelers. Sedan fares start at ₹1,499, with WhatsApp booking and 24x7 support.",
+        "Raahify offers one-way and same-day round-trip taxis from Lucknow to Kanpur (approx. 80 km, 1.5-2 hours via NH27), popular with business travelers. Sedan fares start at ₹1,499, with WhatsApp booking and 24x7 support.",
       keyTakeaways: [
         "Distance: 80 km, duration 1.5-2 hours via NH27",
         "One-way sedan fare starts at ₹1,499",
@@ -1993,7 +1993,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -2014,7 +2014,7 @@ export const guides = [
         "Lucknow Prayagraj cab fare",
         "Lucknow to Prayagraj weekend trip taxi",
       ],
-      canonical: "https://rahify.com/travel-guides/lucknow-to-prayagraj-taxi",
+      canonical: "https://raahify.com/travel-guides/lucknow-to-prayagraj-taxi",
       ogTitle: "Lucknow to Prayagraj Taxi — One-Way Cab to Sangam",
       ogDescription:
         "Fixed-fare Lucknow to Prayagraj taxis for religious visits and weekend family trips. WhatsApp booking.",
@@ -2241,7 +2241,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify provides one-way and round-trip taxis from Lucknow to Prayagraj (approx. 200 km, 3.5-4 hours via NH30) for Sangam darshan and weekend family travel. Sedan fares start at ₹3,499, with WhatsApp booking and 24x7 support.",
+        "Raahify provides one-way and round-trip taxis from Lucknow to Prayagraj (approx. 200 km, 3.5-4 hours via NH30) for Sangam darshan and weekend family travel. Sedan fares start at ₹3,499, with WhatsApp booking and 24x7 support.",
       keyTakeaways: [
         "Distance: 200 km, duration 3.5-4 hours via NH30",
         "One-way sedan fare starts at ₹3,499",
@@ -2261,7 +2261,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },
@@ -2283,7 +2283,7 @@ export const guides = [
         "Innova cab Lucknow to Varanasi",
         "Lucknow Varanasi outstation taxi",
       ],
-      canonical: "https://rahify.com/travel-guides/lucknow-to-varanasi-taxi",
+      canonical: "https://raahify.com/travel-guides/lucknow-to-varanasi-taxi",
       ogTitle: "Lucknow to Varanasi Taxi — Kashi Vishwanath One-Way Cab",
       ogDescription:
         "Fixed-fare Lucknow to Varanasi taxis for spiritual and heritage travel. Sedan/SUV/Innova, WhatsApp booking.",
@@ -2526,7 +2526,7 @@ export const guides = [
 
     geo: {
       aiSummary:
-        "Rahify runs one-way and round-trip taxis from Lucknow to Varanasi (approx. 320 km, 5.5–6 hours via the Purvanchal Expressway and NH19). Sedan fares start at ₹5,499, with WhatsApp booking and 24x7 support for pilgrim and heritage travel to Kashi Vishwanath and Dashashwamedh Ghat.",
+        "Raahify runs one-way and round-trip taxis from Lucknow to Varanasi (approx. 320 km, 5.5–6 hours via the Purvanchal Expressway and NH19). Sedan fares start at ₹5,499, with WhatsApp booking and 24x7 support for pilgrim and heritage travel to Kashi Vishwanath and Dashashwamedh Ghat.",
       keyTakeaways: [
         "Distance: 320 km, duration 5.5–6 hours via Purvanchal Expressway + NH19",
         "One-way sedan fare starts at ₹5,499",
@@ -2546,7 +2546,7 @@ export const guides = [
     ],
 
     schema: {
-      author: "Rahify",
+      author: "Raahify",
       publishedDate: "2026-08-01",
       lastUpdated: "2026-08-01",
     },

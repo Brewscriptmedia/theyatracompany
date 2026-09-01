@@ -8,7 +8,7 @@ export const metadata = {
   title: "Taxi Service in Lucknow | Airport Cabs & Outstation Travel",
 
   description:
-    "Book trusted taxi services in Lucknow with Rahify — airport transfers, local cabs, outstation trips, corporate rides & 24×7 professional drivers",
+    "Book trusted taxi services in Lucknow with Raahify — airport transfers, local cabs, outstation trips, corporate rides & 24×7 professional drivers",
 
   keywords: [
     "Taxi Service in Lucknow",
@@ -17,7 +17,7 @@ export const metadata = {
     "Outstation Taxi",
     "Corporate Taxi",
     "Local Taxi",
-    "Rahify",
+    "Raahify",
   ],
 
   alternates: {
@@ -25,17 +25,17 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Taxi Service in Lucknow | Rahify",
+    title: "Taxi Service in Lucknow | Raahify",
     description:
       "Airport transfers, local taxis, outstation trips and corporate travel in Lucknow.",
-    url: "https://rahify.com",
-    siteName: "Rahify",
+    url: "https://raahify.com",
+    siteName: "Raahify",
     images: [
       {
-        url: "https://rahify.com/Images/logo1.jpeg",
+        url: "https://raahify.com/Images/logo1.jpeg",
         width: 1336,
         height: 518,
-        alt: "Rahify",
+        alt: "Raahify",
       },
     ],
     locale: "en_IN",
@@ -44,10 +44,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Service in Lucknow | Rahify",
+    title: "Taxi Service in Lucknow | Raahify",
     description:
       "Airport transfers, local taxis and outstation cab services.",
-    images: ["https://rahify.com/Images/logo1.jpeg"],
+    images: ["https://raahify.com/Images/logo1.jpeg"],
   },
 };
 

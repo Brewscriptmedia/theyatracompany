@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://rahify.com
+Host: https://raahify.com
 
 # Sitemaps
-Sitemap: https://rahify.com/sitemap.xml
+Sitemap: https://raahify.com/sitemap.xml

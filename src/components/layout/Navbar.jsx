@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link href="/" onClick={closeMenu} className={styles.logo}>
             <Image
               src="/Images/logo1.png"
-              alt="Rahify"
+              alt="Raahify"
               width={180}
               height={60}
               priority

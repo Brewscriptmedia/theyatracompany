@@ -73,8 +73,8 @@ export const metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
 
   title: {
-    default: "Rahify | Trusted Taxi & Cab Service in Lucknow",
-    template: "%s | Rahify",
+    default: "Raahify | Trusted Taxi & Cab Service in Lucknow",
+    template: "%s | Raahify",
   },
 
   description:
@@ -88,18 +88,18 @@ export const metadata = {
     "Outstation Taxi",
     "Cab Booking",
     "Travel Company",
-    "Rahify"
+    "Raahify"
   ],
 
   author: [
     {
-      name: "Rahify",
+      name: "Raahify",
     },
   ],
 
-  creator: "Rahify",
+  creator: "Raahify",
 
-  publisher: "Rahify",
+  publisher: "Raahify",
 
   robots: {
     index: true,
@@ -117,16 +117,16 @@ export const metadata = {
   themeColor: "#f4a100",
 
   openGraph: {
-    title: "Rahify | Trusted Taxi & Cab Service in Lucknow",
+    title: "Raahify | Trusted Taxi & Cab Service in Lucknow",
     description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
     url: siteConfig.siteUrl,
-    siteName: "Rahify",
+    siteName: "Raahify",
     images: [
       {
         url: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
         width: 1336,
         height: 518,
-        alt: "Rahify Logo",
+        alt: "Raahify Logo",
       },
     ],
     locale: "en_IN",
@@ -135,7 +135,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Rahify | Trusted Taxi & Cab Service in Lucknow",
+    title: "Raahify | Trusted Taxi & Cab Service in Lucknow",
     description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
     images: [`${siteConfig.siteUrl}/Images/logo1.jpeg`],
   },

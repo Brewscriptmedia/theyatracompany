@@ -4,22 +4,22 @@ import HeroGuides from "@/components/travel-guides/HeroGuides";
 
 export const metadata = {
     title: "Travel Guides | Taxi Routes, Airport Transfers & Travel Tips",
-    description: "Explore travel guides, airport transfer information, destination tips and taxi booking advice from Rahify.",
+    description: "Explore travel guides, airport transfer information, destination tips and taxi booking advice from Raahify.",
 
     alternates: {
         canonical: "/travel-guides",
     },
 
     openGraph: {
-        title: "Travel Guides | Rahify",
+        title: "Travel Guides | Raahify",
         description: "Travel guides, airport taxi tips and destination information.",
-        url: "https://rahify.com/travel-guides",
+        url: "https://raahify.com/travel-guides",
         image: ["/Image/logo1.jpeg"],
     },
 
     twitter: {
         card: "summary_large_image",
-        title: "Travel Guides | Rahify",
+        title: "Travel Guides | Raahify",
         description: "Destination guides and taxi booking advice.",
         image: ["/Images/logo1.jpeg"],
     },

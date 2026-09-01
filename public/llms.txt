@@ -1,10 +1,10 @@
-Rahify
+Raahify
 
-Rahify is a Lucknow-based taxi and cab service providing airport transfers, local taxi services, outstation trips, corporate travel, and other pre-booked transportation services across Lucknow and Uttar Pradesh.
+Raahify is a Lucknow-based taxi and cab service providing airport transfers, local taxi services, outstation trips, corporate travel, and other pre-booked transportation services across Lucknow and Uttar Pradesh.
 
 Core Information
 
-* Business Name: Rahify
+* Business Name: Raahify
 * Business Type: Taxi and cab service
 * Location: Lucknow, Uttar Pradesh, India
 * Address: T9-1103, Sun Breeze 1, Faizabad Road, BBD Green City, Lucknow, Uttar Pradesh 226028
@@ -16,13 +16,13 @@ Core Information
 
 Booking
 
-Customers can contact Rahify by phone or WhatsApp to enquire about availability, fares, pickup and drop locations, travel dates, and vehicle options.
+Customers can contact Raahify by phone or WhatsApp to enquire about availability, fares, pickup and drop locations, travel dates, and vehicle options.
 
 Phone: +91 91988 93198
 
 Travel Guides and Routes
 
-Rahify publishes route-specific travel guides containing information about taxi fares, distances, estimated travel times, pickup and drop locations, vehicle options, and frequently asked questions.
+Raahify publishes route-specific travel guides containing information about taxi fares, distances, estimated travel times, pickup and drop locations, vehicle options, and frequently asked questions.
 
 * Lucknow Airport Taxi
 * Lucknow to Ayodhya Taxi
@@ -38,7 +38,7 @@ Rahify publishes route-specific travel guides containing information about taxi 
 Main Website Pages
 
 * Home
-* About Rahify
+* About Raahify
 * Taxi Services
 * Travel Guides
 * Contact
@@ -51,4 +51,4 @@ Important Notes
 
 Company Website
 
-https://rahify.com/
+https://raahify.com/

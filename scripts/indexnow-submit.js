@@ -1,4 +1,4 @@
-const SITE_URL = "https://rahify.com";
+const SITE_URL = "https://raahify.com";
 const INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow";
 const KEY = "043ab4dfa7a4340be0c6dae50c67ba17";
 
@@ -32,7 +32,7 @@ async function submitToIndexNow() {
         "Content-Type": "application/json; charset=utf-8",
       },
       body: JSON.stringify({
-        host: "rahify.com",
+        host: "raahify.com",
         key: KEY,
         keyLocation: `${SITE_URL}/${KEY}.txt`,
         urlList: urls,

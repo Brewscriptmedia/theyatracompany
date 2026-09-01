@@ -6,7 +6,7 @@ export default function HeroAbout(){
             <div className={styles.overlay}>
                 <div className={styles.content}>
 
-                    <span className={styles.badge}>About Rahify</span>
+                    <span className={styles.badge}>About Raahify</span>
 
                     <h1>
                         Your Trusted Travel <br/>
@@ -14,7 +14,7 @@ export default function HeroAbout(){
                     </h1>
 
                     <p>
-                        Rahify provides safe, reliable, and affordable taxi
+                        Raahify provides safe, reliable, and affordable taxi
                         services for airport transfers, local city rides, outstation
                         journeys, and corporate travel. Our mission is to make every
                         journey comfortable, punctual, and stress-free.

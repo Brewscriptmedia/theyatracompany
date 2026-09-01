@@ -8,10 +8,10 @@ export const metadata = {
   title: "Book a Taxi in Lucknow | Contact ",
 
   description:
-    "Contact Rahify in Lucknow to book airport transfers, local taxis, outstation cabs or corporate travel. Call or WhatsApp us for instant booking.",
+    "Contact Raahify in Lucknow to book airport transfers, local taxis, outstation cabs or corporate travel. Call or WhatsApp us for instant booking.",
 
   keywords: [
-    "Contact Rahify",
+    "Contact Raahify",
     "Taxi Booking Lucknow",
     "Airport Taxi",
     "Cab Booking",
@@ -23,17 +23,17 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Contact Rahify",
+    title: "Contact Raahify",
     description:
       "Book airport, local and outstation taxi services in Lucknow.",
-    url: "https://rahify.com/contact",
-    siteName: "Rahify",
+    url: "https://raahify.com/contact",
+    siteName: "Raahify",
     images: [
       {
-        url: "https://rahify.com/Images/logo1.jpeg",
+        url: "https://raahify.com/Images/logo1.jpeg",
         width: 1336,
         height: 518,
-        alt: "Rahify",
+        alt: "Raahify",
       },
     ],
     locale: "en_IN",
@@ -42,10 +42,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Contact Rahify",
+    title: "Contact Raahify",
     description:
       "Call or WhatsApp us for reliable taxi services in Lucknow.",
-    images: ["https://rahify.com/Images/logo1.jpeg"],
+    images: ["https://raahify.com/Images/logo1.jpeg"],
   },
 };
 

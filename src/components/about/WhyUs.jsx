@@ -46,7 +46,7 @@ export default function WhyUs(){
 return(
     <section className={styles.whyUs}>
         <div className={styles.container}>
-            <h2>Why Choose Rahify?</h2>
+            <h2>Why Choose Raahify?</h2>
             <p>
                 Your trusted travel partner committed to making every journey safe,
                 comfortable and hassle-free.

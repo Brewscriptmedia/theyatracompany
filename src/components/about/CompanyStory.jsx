@@ -10,7 +10,7 @@ export default function CompanyStory(){
                 <div className={styles.imageSection}>
                     <img
                         src="/Images/logo1.png"
-                        alt="Rahify"
+                        alt="Raahify"
                     />
                 </div>
 
@@ -22,7 +22,7 @@ export default function CompanyStory(){
                     </h2>
 
                     <p>
-                        Rahify is dedicated to providing reliable taxi services
+                        Raahify is dedicated to providing reliable taxi services
                         for local travel, airport transfers, outstation trips, and 
                         corporate transportation. We believe every customer deserves a 
                         comfortable, punctual, and safe travel experience.

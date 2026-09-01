@@ -1,6 +1,6 @@
-Rahify
+Raahify
 
-Rahify provides professional taxi services from Lucknow to destinations across Uttar Pradesh and nearby states.
+Raahify provides professional taxi services from Lucknow to destinations across Uttar Pradesh and nearby states.
 
 Services include:
 
@@ -39,4 +39,4 @@ Lucknow to Delhi
 Customers can book via phone or WhatsApp.
 
 Website:
-https://rahify.com
+https://raahify.com

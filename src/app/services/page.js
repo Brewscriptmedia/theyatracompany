@@ -9,7 +9,7 @@ export const metadata = {
     "Taxi Services – Airport, Local, Outstation & Corporate",
 
   description:
-    "Explore airport pickup & drop, local taxi, outstation travel, corporate transportation and custom cab services in Lucknow with Rahify.",
+    "Explore airport pickup & drop, local taxi, outstation travel, corporate transportation and custom cab services in Lucknow with Raahify.",
 
   keywords: [
     "Airport Taxi",
@@ -25,17 +25,17 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Taxi Services | Rahify",
+    title: "Taxi Services | Raahify",
     description:
       "Airport, local, corporate and outstation taxi services in Lucknow.",
-    url: "https://rahify.com/services",
-    siteName: "Rahify",
+    url: "https://raahify.com/services",
+    siteName: "Raahify",
     images: [
       {
         url: "/Images/logo1.jpeg",
         width: 1336,
         height: 518,
-        alt: "Rahify",
+        alt: "Raahify",
       },
     ],
     locale: "en_IN",
@@ -44,7 +44,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Services | Rahify",
+    title: "Taxi Services | Raahify",
     description:
       "Professional taxi services in Lucknow for airport, local and outstation travel.",
     images: ["/Images/logo1.jpeg"],

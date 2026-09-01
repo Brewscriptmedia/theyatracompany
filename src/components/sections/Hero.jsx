@@ -65,7 +65,7 @@ export default function Hero() {
         <div className={styles.right}>
           <img
             src="/Images/raahify-stacked-transparent.png"
-            alt="Rahify taxi service"
+            alt="Raahify taxi service"
             width={700}
             height={700}
           />

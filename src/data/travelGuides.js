@@ -4,9 +4,9 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Gomti Nagar Corporate Cab Service | Vibhuti Khand Taxi",
+        "Gomti Nagar Corporate Taxi | Fixed Fare Cabs",
       metaDescription:
-        "Reliable corporate taxi service in Gomti Nagar & Vibhuti Khand, Lucknow. Executive drops, airport transfers, outstation cabs. WhatsApp booking, 24x7 support.",
+        "Corporate cab service for Gomti Nagar & Vibhuti Khand offices. Fixed fare, no surge, executive sedans. Book instantly on WhatsApp.",
       keywords: [
         "Gomti Nagar taxi service",
         "Vibhuti Khand corporate cab",
@@ -235,9 +235,9 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Hazratganj Taxi Service | Lucknow City Rental & Shopping Cab",
+        "Hazratganj Taxi Service | Fixed Fare City Cabs",
       metaDescription:
-        "Book a taxi in Hazratganj, Lucknow for city rentals, shopping trips, and sightseeing. Sedan, SUV cabs, fixed fare, WhatsApp booking, 24x7 support.",
+        "Book taxi in Hazratganj for shopping, sightseeing & city travel. Fixed fare, sedan/SUV options, WhatsApp booking, 24x7 support.",
       keywords: [
         "Hazratganj taxi booking",
         "Lucknow city rental cab Hazratganj",
@@ -711,9 +711,9 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Charbagh Railway Station Taxi | Lucknow Station Cab Booking",
+        "Charbagh Station Taxi, Lucknow | Fixed Fare",
       metaDescription:
-        "Book a taxi at Lucknow Charbagh Railway Station for city rentals or outstation trips to Ayodhya, Varanasi, and Delhi. Fixed fare, WhatsApp booking, 24x7 support.",
+        "Pre-book taxi at Lucknow Charbagh Railway Station. Fixed fare, verified drivers, instant WhatsApp booking. City & outstation to Ayodhya, Varanasi, Delhi.",
       keywords: [
         "Lucknow Charbagh railway station taxi",
         "Charbagh station cab booking",

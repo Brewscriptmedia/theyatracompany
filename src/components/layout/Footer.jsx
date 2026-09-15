@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import Container from "../ui/Container";
@@ -48,8 +50,8 @@ export default function Footer(){
 
                     <div>
                         <h3>Contact</h3>
-                        <p>📞 +91-91988 93198</p>
-                        <p>✉ theyatracompanyofficial@gmail.com</p>
+                        <p><a href={`tel:${siteConfig.phone}`} onClick={() => { if (typeof window !== "undefined" && window.gtag) window.gtag("event", "call_click", { event_category: "lead", event_label: "footer" }); }}>📞 +91-91988 93198</a></p>
+                        <p><a href={`mailto:${siteConfig.email}`}>✉ theyatracompanyofficial@gmail.com</a></p>
                     </div>
 
                 </div>

@@ -75,8 +75,8 @@ export default function Navbar() {
             <a
               href={`tel:${siteConfig.phone}`}
               className={styles.callButton}
-              onClick={closeMenu}
-            >
+            onClick={() => { closeMenu(); if (typeof window !== "undefined" && window.gtag) window.gtag("event", "call_click", { event_category: "lead", event_label: "navbar" }); }}
+              >
               📞 Call Now
             </a>
           </div>

@@ -218,6 +218,26 @@
   background: #fff7df;
 }
 
+/* Tables with sentence-length cells: let them wrap */
+.textTable td {
+  line-height: 1.6;
+}
+
+/* Section anchors (#id links) land below the fixed navbar */
+.page section h2[id] {
+  scroll-margin-top: 110px;
+}
+
+/* Links inside body copy, tips and FAQ answers */
+.page section:not(.cta) p a,
+.page section:not(.cta) li a,
+.page section:not(.cta) td a,
+.page details p a {
+  color: #0f5fa8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ===========================================================
    TESTIMONIALS
 =========================================================== */
@@ -504,6 +524,23 @@
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+  }
+
+  .table.textTable {
+    display: table;
+    table-layout: fixed;
+    white-space: normal;
+  }
+
+  .table.textTable th,
+  .table.textTable td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+    overflow-wrap: break-word;
+  }
+
+  .table.textTable th {
+    font-size: 0.72rem;
   }
 
   .table th,

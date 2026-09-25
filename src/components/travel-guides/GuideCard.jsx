@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import LinkedText from "@/components/ui/LinkedText";
+
 import styles from "./GuideCard.module.css";
 
 export default function GuideCard({ guide }) {
@@ -22,7 +24,9 @@ export default function GuideCard({ guide }) {
 
         <h3>{guide.hero.title}</h3>
 
-        <p>{guide.hero.description}</p>
+        <p>
+          <LinkedText text={guide.card?.description ?? guide.hero.description} />
+        </p>
 
         <Link
           href={`/travel-guides/${guide.slug}`}

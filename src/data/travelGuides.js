@@ -804,6 +804,7 @@ export const guides = [
         "Share your train number while booking — we track delays where possible",
         "Charbagh has multiple exit gates (Old and New station side) — confirm which one with your driver",
         "Book a direct outstation connection (e.g., to Ayodhya) to skip a city stopover after a long train journey",
+        "Heading east from Charbagh? Read the [Lucknow to Gorakhpur via Purvanchal Expressway](/travel-guides/lucknow-to-gorakhpur-taxi#lucknow-to-gorakhpur-distance-via-purvanchal-expressway) guide for distance and timing",
       ],
     },
 
@@ -928,7 +929,7 @@ export const guides = [
     schema: {
       author: "Raahify",
       publishedDate: "2026-08-01",
-      lastUpdated: "2026-08-01",
+      lastUpdated: "2026-09-25",
     },
   },
   {
@@ -1041,6 +1042,7 @@ export const guides = [
         "Carry a valid ID — checks are common near the temple complex",
         "Phones, cameras, and leather items aren't allowed inside Ram Mandir — ask your driver about safe storage",
         "Same-day return is comfortable if you start early",
+        "Continuing to Gorakhpur after darshan? Compare the NH27 road with the [Lucknow to Gorakhpur distance via Purvanchal Expressway](/travel-guides/lucknow-to-gorakhpur-taxi#lucknow-to-gorakhpur-distance-via-purvanchal-expressway)",
       ],
     },
 
@@ -1215,7 +1217,7 @@ export const guides = [
     schema: {
       author: "Raahify",
       publishedDate: "2026-08-01",
-      lastUpdated: "2026-08-01",
+      lastUpdated: "2026-09-25",
     },
   },
   {
@@ -1494,9 +1496,9 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Gorakhpur Taxi | One-Way Cab Booking",
+        "Lucknow to Gorakhpur Taxi ₹4,999+ | Expressway Cab",
       metaDescription:
-        "Book a Lucknow to Gorakhpur taxi for business and regional travel. Sedan, SUV, Innova cabs, fixed fare, WhatsApp booking, 24x7 support.",
+        "Lucknow to Gorakhpur distance via Purvanchal Expressway: about 282 km of expressway, 4.5-5 hrs. One-way cab from ₹4,999, toll included. Call or WhatsApp.",
       keywords: [
         "Lucknow to Gorakhpur taxi",
         "Lucknow to Gorakhpur cab",
@@ -1504,9 +1506,11 @@ export const guides = [
         "Lucknow Gorakhpur cab fare",
         "Gorakhnath temple taxi",
         "Lucknow to Gorakhpur outstation cab",
+        "Lucknow to Gorakhpur distance via Purvanchal Expressway",
+        "Lucknow to Gorakhpur expressway route",
       ],
       canonical: "https://raahify.com/travel-guides/lucknow-to-gorakhpur-taxi",
-      ogTitle: "Lucknow to Gorakhpur Taxi — One-Way Cab Booking",
+      ogTitle: "Lucknow to Gorakhpur Taxi from ₹4,999 | Fast Expressway Cab",
       ogDescription:
         "Fixed-fare Lucknow to Gorakhpur taxis for business and regional transit. WhatsApp booking.",
       ogImage: "/Images/routes/lucknow-gorakhpur-og.png",
@@ -1526,14 +1530,15 @@ export const guides = [
     quickInfo: {
       from: "Lucknow (all areas + Airport/Charbagh pickup)",
       to: "Gorakhpur (Gorakhnath Temple, Railway Station)",
-      distance: "Approx. 270 km",
+      distance:
+        "About 282 km on expressways (plus the city stretch at each end)",
       duration: "Approx. 4.5 – 5 hours (one-way)",
       estimatedFare:
         "Starting ₹4,999 (Sedan) | ₹7,499 (SUV) | ₹8,499 (Innova/Innova Crysta)",
       bestTimeToVisit:
         "October to March for comfortable travel; year-round for business trips",
       route:
-        "Lucknow → Purvanchal Expressway → Gorakhpur link road → Gorakhpur",
+        "Lucknow → Purvanchal Expressway → Gorakhpur Link Expressway → Gorakhpur",
     },
 
     destination: {
@@ -1584,7 +1589,7 @@ export const guides = [
 
     route: {
       mapLink: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1827219.688940398!2d80.83730254499378!3d26.55906305740368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x3991446a0c332489%3A0x1ff3f97fdcc6bfa2!2sGorakhpur%2C%20Uttar%20Pradesh!3m2!1d26.760554499999998!2d83.3731675!5e0!3m2!1sen!2sin!4v1785770875729!5m2!1sen!2sin",
-      highway: "Purvanchal Expressway to the Gorakhpur link road",
+      highway: "Purvanchal Expressway to the Gorakhpur Link Expressway",
       stops: ["Ambedkar Nagar / Azamgarh area (break point)"],
       tolls: "Expressway toll included in fare unless stated otherwise",
       roadCondition:
@@ -1593,6 +1598,7 @@ export const guides = [
         "Morning departures are ideal for a comfortable single-day drive",
         "Gorakhpur Junction has multiple entry gates — confirm the correct one with your driver",
         "Book round-trip if you have same-day return meetings",
+        "Also heading to Kashi? See the [Lucknow to Varanasi taxi](/travel-guides/lucknow-to-varanasi-taxi) guide for that route",
       ],
     },
 
@@ -1646,7 +1652,7 @@ export const guides = [
     ],
 
     whyBook: [
-      "Fixed fares for the full 270 km expressway route",
+      "Fixed fares for the full Lucknow to Gorakhpur expressway route",
       "Drivers experienced with the Purvanchal Expressway and Gorakhpur city access",
       "Sedan, SUV, and Innova options for solo, family, or business travel",
       "WhatsApp booking with instant confirmation",
@@ -1676,6 +1682,11 @@ export const guides = [
 
     faqs: [
       {
+        question: "What is the Lucknow to Gorakhpur distance via Purvanchal Expressway?",
+        answer:
+          "The Lucknow to Gorakhpur distance via Purvanchal Expressway is about 282 km of expressway driving: roughly 191 km on the Purvanchal Expressway from Chand Saray in Lucknow to the Salarpur interchange in Azamgarh, then about 91 km on the Gorakhpur Link Expressway to Jaitpur on the Gorakhpur bypass. Add the city stretch at each end, which depends on your pickup and drop points, and the trip takes around 4.5 to 5 hours. The older NH27 route through Barabanki, Ayodhya and Basti is about 270-275 km but usually takes 5 to 6 hours, so the expressway is the faster way to reach Gorakhpur. A one-way Lucknow to Gorakhpur taxi with Raahify starts at ₹4,999 (sedan), including fuel, driver allowance and expressway toll. See the [full route breakdown](#lucknow-to-gorakhpur-distance-via-purvanchal-expressway) on this page, or WhatsApp us on 91988 93198 to book.",
+      },
+      {
         question: "How much does a Lucknow to Gorakhpur taxi cost?",
         answer:
           "One-way fares start at ₹4,999 for a sedan, ₹7,499 for an SUV, and ₹8,499 for an Innova, including fuel, driver allowance, and expressway toll.",
@@ -1683,7 +1694,7 @@ export const guides = [
       {
         question: "How long is the Lucknow to Gorakhpur drive?",
         answer:
-          "The 270 km route via the Purvanchal Expressway takes approximately 4.5 to 5 hours.",
+          "The Lucknow to Gorakhpur drive takes approximately 4.5 to 5 hours. Most of it is on the Purvanchal Expressway and the Gorakhpur Link Expressway, about 282 km of access-controlled road, plus the city stretch at each end.",
       },
       {
         question: "Can I extend the trip to Kushinagar?",
@@ -1722,11 +1733,116 @@ export const guides = [
       button: "WhatsApp Booking for Gorakhpur Cabs",
     },
 
+    card: {
+      description:
+        "One-way cabs to Gorakhpur on the expressway route. See the [Lucknow to Gorakhpur distance via Purvanchal Expressway](/travel-guides/lucknow-to-gorakhpur-taxi#lucknow-to-gorakhpur-distance-via-purvanchal-expressway) and fixed fares.",
+    },
+
+    extraSections: [
+      {
+        id: "lucknow-to-gorakhpur-distance-via-purvanchal-expressway",
+        heading: "Lucknow to Gorakhpur Distance via Purvanchal Expressway",
+        blocks: [
+          {
+            type: "p",
+            text: "How far is Gorakhpur from Lucknow if you take the Purvanchal Expressway? The short answer: about 282 km of expressway, and roughly 4.5 to 5 hours behind the wheel. Here is where those kilometres come from, how the expressway route compares with the older highway, and how to plan the drive.",
+          },
+          {
+            type: "h3",
+            text: "Route breakdown: Lucknow to Gorakhpur via Purvanchal and Gorakhpur Link Expressway",
+          },
+          {
+            type: "table",
+            head: ["Leg", "Road", "Distance"],
+            rows: [
+              [
+                "Your pickup in Lucknow to Chand Saray, where the expressway starts",
+                "City roads and the Sultanpur Road side",
+                "Depends on your pickup point",
+              ],
+              [
+                "Chand Saray (Lucknow) to the Salarpur interchange (Azamgarh)",
+                "Purvanchal Expressway",
+                "About 191 km",
+              ],
+              [
+                "Salarpur to Jaitpur on the Gorakhpur bypass",
+                "Gorakhpur Link Expressway",
+                "About 91 km",
+              ],
+              [
+                "Jaitpur to your drop point in Gorakhpur",
+                "Bypass and city roads",
+                "Depends on your drop point",
+              ],
+              [
+                "Expressway distance, Lucknow to Gorakhpur",
+                "Both expressways",
+                "About 282 km",
+              ],
+            ],
+          },
+          {
+            type: "p",
+            text: "The drive runs on the six-lane Purvanchal Expressway past Barabanki, Sultanpur and Ambedkar Nagar and into Azamgarh district, where it turns onto the Gorakhpur Link Expressway. The link road runs through Ambedkar Nagar and Sant Kabir Nagar districts and delivers you to the Gorakhpur bypass, close to the city. Both roads are access-controlled, with no level crossings and no market towns to crawl through.",
+          },
+          {
+            type: "h3",
+            text: "Purvanchal Expressway vs the NH27 route: which is better for Lucknow to Gorakhpur?",
+          },
+          {
+            type: "table",
+            head: ["Compare", "Purvanchal + Gorakhpur Link Expressway", "NH27 via Barabanki, Ayodhya, Basti"],
+            rows: [
+              [
+                "Distance",
+                "About 282 km on expressways, plus city stretches",
+                "About 270-275 km",
+              ],
+              [
+                "Typical time",
+                "4.5 to 5 hours",
+                "Roughly 5 to 6 hours, more on busy days",
+              ],
+              [
+                "Road",
+                "Access-controlled expressway",
+                "National highway through several towns",
+              ],
+              [
+                "Best for",
+                "Business trips, early trains and flights, tired passengers",
+                "Stopping at Ayodhya on the way",
+              ],
+            ],
+          },
+          {
+            type: "p",
+            text: "The expressway route is a little longer in kilometres, but faster overall because you skip the town traffic, the level crossings and the slow patches around Basti. If you want to combine Ayodhya darshan with Gorakhpur, the NH27 road is the natural choice; see our [Lucknow to Ayodhya taxi](/travel-guides/lucknow-to-ayodhya-taxi) guide. Tell us your plan when you book and we will suggest the route.",
+          },
+          { type: "h3", text: "Travel time and when to leave" },
+          {
+            type: "p",
+            text: "Plan for 4.5 to 5 hours plus stops. Leave Lucknow before 7 am to reach Gorakhpur by lunch, and avoid the last hours before dark in winter, when fog can slow the expressway. Fill the tank before you enter the expressway, and take a 15-minute break around the halfway mark; your driver will pick a good stop.",
+          },
+          { type: "h3", text: "Cab fare for the Lucknow to Gorakhpur expressway route" },
+          {
+            type: "p",
+            text: "One-way fares start at ₹4,999 for a sedan, ₹7,499 for an SUV and ₹8,499 for an Innova/Crysta, including fuel, driver allowance and expressway toll. See the full fare table below, or message us on WhatsApp with your date and pickup point for a fixed fare before you travel.",
+          },
+          {
+            type: "p",
+            text: "Continuing to Kushinagar, or want to see the Gorakhnath Temple on arrival? Mention it when you book and we will add it to the itinerary. More questions? See the [frequently asked questions](/services#faq) or call 91988 93198.",
+          },
+        ],
+      },
+    ],
+
     geo: {
       aiSummary:
-        "Raahify offers one-way and round-trip taxis from Lucknow to Gorakhpur (approx. 270 km, 4.5-5 hours via the Purvanchal Expressway) for business and temple travel. Sedan fares start at ₹4,999, with WhatsApp booking and 24x7 support.",
+        "Raahify offers one-way and round-trip taxis from Lucknow to Gorakhpur (about 282 km on the Purvanchal and Gorakhpur Link Expressways, 4.5-5 hours) for business and temple travel. Sedan fares start at ₹4,999, with WhatsApp booking and 24x7 support.",
       keyTakeaways: [
-        "Distance: 270 km, duration 4.5-5 hours via Purvanchal Expressway",
+        "Distance: about 282 km on expressways (Purvanchal + Gorakhpur Link), duration 4.5-5 hours",
         "One-way sedan fare starts at ₹4,999",
         "Common for both business travel and Gorakhnath Temple visits",
         "Booking is via WhatsApp at 91988 93198",
@@ -1742,7 +1858,7 @@ export const guides = [
     schema: {
       author: "Raahify",
       publishedDate: "2026-08-01",
-      lastUpdated: "2026-08-01",
+      lastUpdated: "2026-09-25",
     },
   },
   {
@@ -2379,6 +2495,7 @@ export const guides = [
         "Old-city lanes near Vishwanath Temple are narrow — cars stop short, be ready to walk",
         "Book a boat separately if you want a sunrise Ganga view",
         "Carry ID for security checks near the temple",
+        "The same Purvanchal Expressway also leads to Gorakhpur; see how the [Lucknow to Gorakhpur expressway route](/travel-guides/lucknow-to-gorakhpur-taxi#lucknow-to-gorakhpur-distance-via-purvanchal-expressway) compares",
       ],
     },
 
@@ -2548,7 +2665,7 @@ export const guides = [
     schema: {
       author: "Raahify",
       publishedDate: "2026-08-01",
-      lastUpdated: "2026-08-01",
+      lastUpdated: "2026-09-25",
     },
   },
 ];

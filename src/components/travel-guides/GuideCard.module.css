@@ -66,3 +66,7 @@
 .button:hover{
     color:#111827;
 }
+.content p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

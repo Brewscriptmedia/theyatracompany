@@ -3,6 +3,7 @@ import Image from "next/image";
 import siteConfig from "@/config/siteConfig";
 
 import { guides } from "@/data/travelGuides";
+import LinkedText, { plainText } from "@/components/ui/LinkedText";
 
 import styles from "./GuidePage.module.css";
 
@@ -117,7 +118,7 @@ export default async function GuidePage({ params }) {
         "name": faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": faq.answer,
+          "text": plainText(faq.answer),
         },
       })),
     },
@@ -291,10 +292,61 @@ export default async function GuidePage({ params }) {
 
             <ul>
               {guide.route.travelTips.map((tip) => (
-                <li key={tip}>{tip}</li>
+                <li key={tip}>
+                  <LinkedText text={tip} />
+                </li>
               ))}
             </ul>
           </section>
+
+          {/* EXTRA SECTIONS (optional, per guide) */}
+
+          {guide.extraSections?.map((section) => (
+            <section key={section.id}>
+              <h2 id={section.id}>{section.heading}</h2>
+
+              {section.blocks.map((block, index) => {
+                if (block.type === "h3") {
+                  return <h3 key={index}>{block.text}</h3>;
+                }
+
+                if (block.type === "table") {
+                  return (
+                    <table
+                      key={index}
+                      className={`${styles.table} ${styles.textTable}`}
+                    >
+                      <thead>
+                        <tr>
+                          {block.head.map((cell) => (
+                            <th key={cell}>{cell}</th>
+                          ))}
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        {block.rows.map((row) => (
+                          <tr key={row[0]}>
+                            {row.map((cell, cellIndex) => (
+                              <td key={cellIndex}>
+                                <LinkedText text={cell} />
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  );
+                }
+
+                return (
+                  <p key={index}>
+                    <LinkedText text={block.text} />
+                  </p>
+                );
+              })}
+            </section>
+          ))}
 
           {/* THINGS TO DO */}
 
@@ -379,7 +431,9 @@ export default async function GuidePage({ params }) {
               <details key={faq.question}>
                 <summary>{faq.question}</summary>
 
-                <p>{faq.answer}</p>
+                <p>
+                  <LinkedText text={faq.answer} />
+                </p>
               </details>
             ))}
           </section>

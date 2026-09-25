@@ -485,7 +485,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow Airport Taxi | 24x7 CCS Airport Pickup & Drop",
+        "Lucknow Airport Taxi from ₹399 | 24x7 Pickup | Raahify",
       metaDescription:
         "Book reliable 24x7 taxi pickups and drops at Chaudhary Charan Singh International Airport, Lucknow. Sedan, SUV, Innova cabs, flight-tracking, WhatsApp booking.",
       keywords: [
@@ -937,7 +937,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Ayodhya Taxi | One-Way Cab to Ram Mandir",
+        "Lucknow to Ayodhya Taxi from ₹2,499 | Raahify",
       metaDescription:
         "Book a reliable Lucknow to Ayodhya taxi for Ram Mandir darshan. Sedan, SUV & Innova one-way cabs, fixed fares, WhatsApp booking, 24x7 support. Book now.",
       keywords: [
@@ -1225,7 +1225,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Delhi Taxi | Innova Hycross Highway Cab",
+        "Lucknow to Delhi Taxi from ₹9,999 | Raahify",
       metaDescription:
         "Premium Lucknow to Delhi NCR taxi for corporate & long-distance travel. Innova Hycross, SUV & Sedan fleet, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -1866,7 +1866,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Kanpur Taxi | Same-Day Business Cab",
+        "Lucknow to Kanpur Taxi from ₹1,499 | Raahify",
       metaDescription:
         "Book a Lucknow to Kanpur taxi for business trips and same-day travel. Sedan, SUV cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -2119,7 +2119,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Prayagraj Taxi | One-Way Cab to Sangam",
+        "Lucknow to Prayagraj Taxi from ₹3,499 | Raahify",
       metaDescription:
         "Book a Lucknow to Prayagraj taxi for Sangam, Kumbh, and weekend family trips. Sedan, SUV, Innova cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [
@@ -2387,7 +2387,7 @@ export const guides = [
 
     seo: {
       metaTitle:
-        "Lucknow to Varanasi Taxi | One-Way Cab to Kashi Vishwanath",
+        "Lucknow to Varanasi Taxi from ₹5,499 | Raahify",
       metaDescription:
         "Book a Lucknow to Varanasi one-way taxi for Kashi Vishwanath darshan & Ganga Aarti. Sedan, SUV, Innova cabs, fixed fare, WhatsApp booking, 24x7 support.",
       keywords: [

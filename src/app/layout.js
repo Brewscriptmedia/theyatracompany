@@ -3,6 +3,8 @@ import { Geist } from "next/font/google";
 
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import StickyCallBar from "../components/layout/StickyCallBar";
+import GA4TrackingSetup from "../components/layout/GA4TrackingSetup";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import siteConfig from "../config/siteConfig";
 
@@ -150,7 +152,9 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
 
         <Footer />
-        <script 
+        <StickyCallBar />
+        <GA4TrackingSetup />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schema),

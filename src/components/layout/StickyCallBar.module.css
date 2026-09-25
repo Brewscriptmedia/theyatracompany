@@ -1,0 +1,57 @@
+.stickyBar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: linear-gradient(135deg, #f4a100 0%, #e88f00 100%);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  gap: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .stickyBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  height: 100%;
+}
+
+.button:last-child {
+  border-right: none;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: scale(0.98);
+}
+
+.button svg {
+  flex-shrink: 0;
+}

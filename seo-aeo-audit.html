@@ -1,0 +1,2170 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Yatra Company — SEO &amp; AEO Audit + Growth Plan</title>
+<style>
+:root{
+  --bg:#0d1117; --bg2:#141b24; --bg3:#1b2530; --line:#26313d;
+  --tx:#e6edf3; --tx2:#9fb0c0; --tx3:#6e8298;
+  --brand:#f4a100; --brand2:#ffc555;
+  --crit:#ff5c5c; --high:#ff9f43; --med:#ffd93d; --low:#5ac8fa; --ok:#34d399;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  --r:14px; --maxw:1180px;
+}
+html[data-theme="light"]{
+  --bg:#f7f8fa; --bg2:#ffffff; --bg3:#eef1f5; --line:#dde3ea;
+  --tx:#141b24; --tx2:#4a5a6b; --tx3:#7b8b9c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--brand2);text-decoration:none}
+a:hover{text-decoration:underline}
+code,kbd{font-family:var(--mono);font-size:.86em;background:var(--bg3);padding:.15em .4em;border-radius:5px;border:1px solid var(--line)}
+pre{font-family:var(--mono);font-size:13px;line-height:1.6;background:var(--bg3);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+pre code{background:none;border:none;padding:0;font-size:inherit}
+h1,h2,h3,h4{line-height:1.25;font-weight:700;letter-spacing:-.02em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* ---- header ---- */
+.hdr{border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--bg2),var(--bg));position:relative;overflow:hidden}
+.hdr::after{content:"";position:absolute;inset:auto -10% -60% 40%;height:340px;background:radial-gradient(closest-side,rgba(244,161,0,.16),transparent);pointer-events:none}
+.hdr .wrap{padding-top:52px;padding-bottom:44px;position:relative;z-index:1}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:16px}
+.hdr h1{font-size:clamp(30px,5vw,50px);margin-bottom:14px}
+.hdr h1 span{color:var(--brand)}
+.sub{color:var(--tx2);font-size:18px;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.meta div{background:var(--bg3);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--tx2)}
+.meta b{color:var(--tx)}
+.themebtn{position:absolute;top:20px;right:22px;z-index:3;background:var(--bg3);border:1px solid var(--line);color:var(--tx2);border-radius:999px;padding:7px 14px;font:600 12px var(--sans);cursor:pointer}
+
+/* ---- nav ---- */
+.toc{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{white-space:nowrap;font:600 13px var(--sans);color:var(--tx2);padding:7px 12px;border-radius:8px}
+.toc a:hover{background:var(--bg3);color:var(--tx);text-decoration:none}
+
+/* ---- sections ---- */
+section{padding:60px 0;border-bottom:1px solid var(--line)}
+.snum{font:700 12px/1 var(--mono);color:var(--brand);letter-spacing:.14em;margin-bottom:10px}
+section>.wrap>h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:12px}
+.lede{color:var(--tx2);font-size:17px;max-width:70ch;margin-bottom:32px}
+
+/* ---- scorecard ---- */
+.scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:28px}
+.sc{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;gap:14px;align-items:center}
+.sc svg{flex:0 0 58px}
+.sc .lbl{font:600 13px var(--sans);color:var(--tx2);margin-bottom:2px}
+.sc .val{font:800 22px var(--sans);letter-spacing:-.02em}
+.overall{background:linear-gradient(135deg,rgba(244,161,0,.14),transparent 60%),var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-wrap:wrap;gap:26px;align-items:center;margin-bottom:26px}
+.overall .big{font:800 62px/1 var(--sans);letter-spacing:-.04em;color:var(--brand)}
+.overall .big small{font-size:22px;color:var(--tx3);font-weight:600}
+.tallies{display:flex;flex-wrap:wrap;gap:10px}
+.tally{border-radius:10px;padding:10px 16px;border:1px solid var(--line);background:var(--bg3);font-size:13px}
+.tally b{display:block;font-size:22px;line-height:1.2}
+
+/* ---- pills ---- */
+.pill{display:inline-flex;align-items:center;gap:6px;font:700 10.5px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;padding:5px 10px;border-radius:999px;border:1px solid}
+.p-crit{color:var(--crit);border-color:color-mix(in srgb,var(--crit) 45%,transparent);background:color-mix(in srgb,var(--crit) 12%,transparent)}
+.p-high{color:var(--high);border-color:color-mix(in srgb,var(--high) 45%,transparent);background:color-mix(in srgb,var(--high) 12%,transparent)}
+.p-med{color:var(--med);border-color:color-mix(in srgb,var(--med) 45%,transparent);background:color-mix(in srgb,var(--med) 12%,transparent)}
+.p-low{color:var(--low);border-color:color-mix(in srgb,var(--low) 45%,transparent);background:color-mix(in srgb,var(--low) 12%,transparent)}
+.p-ok{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 45%,transparent);background:color-mix(in srgb,var(--ok) 12%,transparent)}
+.tag{display:inline-block;font:700 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--tx3);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+
+/* ---- finding cards ---- */
+.find{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);margin-bottom:14px;overflow:hidden}
+.find>summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.find>summary::-webkit-details-marker{display:none}
+.find>summary:hover{background:var(--bg3)}
+.find summary .ttl{flex:1 1 320px;font-weight:700;font-size:16.5px;min-width:0}
+.find summary .arw{color:var(--tx3);font-size:13px;transition:transform .18s}
+.find[open] summary .arw{transform:rotate(90deg)}
+.find[open]>summary{border-bottom:1px solid var(--line)}
+.body{padding:20px 18px 22px}
+.body h4{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--brand);margin:20px 0 8px;font-family:var(--mono)}
+.body h4:first-child{margin-top:0}
+.body p{color:var(--tx2);margin-bottom:10px}
+.body p strong,.body li strong{color:var(--tx)}
+.body ul,.body ol{color:var(--tx2);padding-left:20px;margin-bottom:10px}
+.body li{margin-bottom:6px}
+.principle{border-left:3px solid var(--brand);background:color-mix(in srgb,var(--brand) 7%,transparent);padding:12px 16px;border-radius:0 10px 10px 0;margin:6px 0 4px}
+.principle p{color:var(--tx);margin:0}
+.prompt{position:relative}
+.prompt .cp{position:absolute;top:8px;right:8px;background:var(--bg2);border:1px solid var(--line);color:var(--tx2);border-radius:7px;padding:5px 10px;font:600 11px var(--sans);cursor:pointer}
+.prompt .cp:hover{color:var(--tx);border-color:var(--brand)}
+
+/* ---- tables ---- */
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);margin-bottom:18px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);font:700 12px var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--tx2)}
+tr:last-child td{border-bottom:none}
+td b{color:var(--tx)}
+
+/* ---- misc blocks ---- */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.box h3{font-size:17px;margin-bottom:8px}
+.box p,.box li{color:var(--tx2);font-size:14.5px}
+.box ul{padding-left:18px;margin-top:8px}
+.box li{margin-bottom:5px}
+.callout{border:1px solid color-mix(in srgb,var(--brand) 40%,var(--line));background:color-mix(in srgb,var(--brand) 8%,transparent);border-radius:var(--r);padding:20px;margin-bottom:22px}
+.callout h3{color:var(--brand2);font-size:16px;margin-bottom:8px}
+.callout p{color:var(--tx2)}
+.chk{list-style:none;padding:0}
+.chk li{position:relative;padding-left:28px;margin-bottom:9px;color:var(--tx2);font-size:15px}
+.chk li::before{content:"☐";position:absolute;left:0;top:-1px;color:var(--brand);font-size:16px}
+.chk li b{color:var(--tx)}
+.bad,.good{border-radius:10px;padding:12px 14px;font-size:14.5px;border:1px solid}
+.bad{border-color:color-mix(in srgb,var(--crit) 40%,transparent);background:color-mix(in srgb,var(--crit) 8%,transparent)}
+.good{border-color:color-mix(in srgb,var(--ok) 40%,transparent);background:color-mix(in srgb,var(--ok) 8%,transparent)}
+.bad b,.good b{display:block;font:700 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.bad b{color:var(--crit)} .good b{color:var(--ok)}
+footer{padding:44px 0 60px;color:var(--tx3);font-size:14px}
+@media(max-width:640px){
+  section{padding:44px 0}
+  .overall{padding:20px}
+  .overall .big{font-size:46px}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <button class="themebtn" onclick="var h=document.documentElement;h.dataset.theme=h.dataset.theme==='dark'?'light':'dark'">◐ Theme</button>
+  <div class="wrap">
+    <div class="eyebrow">SEO · AEO · CRO Audit &amp; Growth Plan</div>
+    <h1>The Yatra <span>Company</span><br>What's broken, why, and how to fix it</h1>
+    <p class="sub">A full teardown of <a href="https://theyatracompany.com/" target="_blank" rel="noopener">theyatracompany.com</a> — the Next.js codebase, the rendered HTML, the structured data, the copy, the positioning, and the conversion path. Every finding explains the underlying principle so you can apply it to the next 100 pages, not just fix this one.</p>
+    <div class="meta">
+      <div>Audited <b>12 Aug 2026</b></div>
+      <div>Stack <b>Next.js 16 · App Router · Vercel</b></div>
+      <div>Indexable URLs <b>15</b></div>
+      <div>Findings <b id="fcount">—</b></div>
+      <div>Status <b>Plan only — no code changed</b></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#start">Start here</a>
+  <a href="#score">Scorecard</a>
+  <a href="#principles">How search works now</a>
+  <a href="#tech">Technical</a>
+  <a href="#arch">Architecture</a>
+  <a href="#content">Content &amp; text</a>
+  <a href="#schema">Schema &amp; AEO</a>
+  <a href="#perf">Performance</a>
+  <a href="#cro">CRO &amp; design</a>
+  <a href="#position">Positioning</a>
+  <a href="#measure">Measurement</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#playbooks">Page playbooks</a>
+  <a href="#prompts">Prompt library</a>
+</div></nav>
+
+<section id="start">
+<div class="wrap">
+  <div class="snum">00 — READ THIS FIRST</div>
+  <h2>Three things before the findings</h2>
+
+  <div class="callout">
+    <h3>1. Sync your local checkout before implementing any of this</h3>
+    <p><b>This audit is current.</b> It was run against <code>origin/main</code> at <code>5e9fdc7</code> — which includes all of your shipped SEO work: <code>travel-guides</code>, <code>sitemap.js</code>, <code>robots.js</code>, the JSON-LD, GA4, <code>llms.txt</code> — plus the live production HTML at theyatracompany.com. Every finding below refers to code that is deployed right now.</p>
+    <p>The caveat is local only: the working copy at <code>C:\Users\ASUS\theyatracompany</code> was sitting at <code>01c208e</code>, 27 commits behind. Run <code>git pull</code> before you paste any fix prompt into an editor session, or the assistant will be looking at a version of the site that no longer exists and will rebuild work you already shipped.</p>
+  </div>
+
+  <div class="callout">
+    <h3>2. The single highest-ROI fix is not new work — it's rendering work you already paid for</h3>
+    <p><code>src/data/travelGuides.js</code> is 2,554 lines and contains, per guide: <code>geo.aiSummary</code>, <code>geo.keyTakeaways</code>, <code>relatedGuides</code>, <code>taxi.inclusions</code>, <code>taxi.exclusions</code>, <code>route.tolls</code>, <code>route.stops</code>, <code>destination.nearestAirport</code>, <code>destination.nearestRailwayStation</code>, <code>quickInfo.bestTimeToVisit</code>, <code>attractions</code>, <code>localFood</code>, <code>nearbyDestinations</code>. <b>None of it is rendered.</b> The guide template ignores roughly a third of the content and 100% of the internal-linking data. Rendering it is a one-file change that fixes thin content, AI-citability, and orphaned pages simultaneously.</p>
+  </div>
+
+  <div class="callout">
+    <h3>3. You are ranking-optimising a funnel with no bottom</h3>
+    <p>The booking form on <code>/contact</code> writes nothing to a database, sends no email, and fires no analytics event — it opens WhatsApp with <code>window.open()</code> and forgets. GA4 is installed but tracks zero conversions. You currently cannot answer "did SEO make money?" for any page. Fix measurement and lead capture <i>before</i> you scale content, or you will scale blind.</p>
+  </div>
+</div>
+</section>
+
+<section id="score">
+<div class="wrap">
+  <div class="snum">01 — SCORECARD</div>
+  <h2>Where the site stands</h2>
+  <p class="lede">Scores are relative to what a local service business needs to win a competitive Indian intercity-cab SERP, not to a generic "SEO checklist" baseline.</p>
+
+  <div class="overall">
+    <div><div class="big">44<small>/100</small></div><div style="color:var(--tx2);font-size:14px">Overall readiness</div></div>
+    <div style="flex:1;min-width:260px">
+      <p style="color:var(--tx2);font-size:15px">The technical foundation is genuinely better than most small business sites — App Router metadata, canonicals, dynamic sitemap, JSON-LD, <code>llms.txt</code>. What holds it back is <b>execution depth</b>: broken schema properties, an unrendered content layer, zero internal linking, unoptimised LCP imagery, and no conversion instrumentation. These are fixable in weeks, not quarters.</p>
+    </div>
+    <div class="tallies" id="tallies"></div>
+  </div>
+
+  <div class="scores" id="scores"></div>
+
+  <div class="grid2">
+    <div class="box"><h3 style="color:var(--ok)">✓ Already right — protect these</h3>
+      <ul>
+        <li>App Router <code>metadata</code> API used properly, with <code>metadataBase</code> and per-page <code>alternates.canonical</code></li>
+        <li>Dynamic <code>app/sitemap.js</code> driven off the guides data source — it scales automatically</li>
+        <li>HTTPS + HSTS, clean 308 trailing-slash normalisation, correct 404 for unknown slugs</li>
+        <li>Server-rendered HTML — all content is in the initial response, nothing hidden behind hydration</li>
+        <li><code>llms.txt</code> published. Most competitors have never heard of it</li>
+        <li>FAQPage + BreadcrumbList + Service JSON-LD already attempted on guides</li>
+        <li>Guide copy is genuinely good — specific, local, non-generic. The writing is not the problem</li>
+      </ul>
+    </div>
+    <div class="box"><h3 style="color:var(--crit)">✗ The seven that matter most</h3>
+      <ul>
+        <li><b>CRO-01</b> Booking form loses every lead it doesn't hand to WhatsApp</li>
+        <li><b>MEA-01</b> Zero conversion events in GA4 — no attribution at all</li>
+        <li><b>CNT-01</b> ~35% of written guide content never renders</li>
+        <li><b>ARC-01</b> Guide pages have zero contextual internal links</li>
+        <li><b>PRF-01</b> Homepage LCP is a 530 KB raw <code>&lt;img&gt;</code> with no dimensions</li>
+        <li><b>SCH-01</b> Opening hours schema uses invalid property names</li>
+        <li><b>SCH-02</b> <code>aggregateRating</code> declared with no reviews on the page</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="principles">
+<div class="wrap">
+  <div class="snum">02 — THE MODEL</div>
+  <h2>How search and answer engines actually decide</h2>
+  <p class="lede">Every fix below traces back to one of these five mechanics. Learn the mechanics and you stop needing checklists.</p>
+
+  <div class="grid2">
+    <div class="box">
+      <h3>1. Crawl → Render → Index → Rank → Present</h3>
+      <p>Five separate gates. A page can pass four and fail the fifth. Most "SEO problems" are actually one specific gate failing:</p>
+      <ul>
+        <li><b>Crawl</b> — can a bot reach the URL? (links, sitemap, robots)</li>
+        <li><b>Render</b> — is the content in the HTML? (yours: yes, RSC-rendered)</li>
+        <li><b>Index</b> — is it worth storing? (uniqueness, depth, duplication)</li>
+        <li><b>Rank</b> — is it the best answer? (relevance, links, experience signals)</li>
+        <li><b>Present</b> — does anyone click? (title, description, rich results, OG)</li>
+      </ul>
+      <p style="margin-top:10px">Your site fails hardest at <b>Crawl</b> (orphaned guides) and <b>Present</b> (no price in titles, broken rich-result eligibility).</p>
+    </div>
+
+    <div class="box">
+      <h3>2. Answer engines retrieve passages, not pages</h3>
+      <p>ChatGPT, Perplexity, Gemini and AI Overviews chunk your page, embed each chunk, retrieve the best-matching chunks, then synthesise. Consequences:</p>
+      <ul>
+        <li>A chunk must be <b>self-contained</b>. "It costs ₹2,499" is useless out of context; "A Lucknow to Ayodhya sedan taxi costs ₹2,499 one-way" is citable.</li>
+        <li><b>Numbers, named entities and units</b> raise retrieval scores. Vague adjectives lower them.</li>
+        <li>Short, declarative, <b>question-shaped headings</b> create clean chunk boundaries.</li>
+        <li>Tables and lists survive chunking better than long prose paragraphs.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>3. Entities, not keywords</h3>
+      <p>Google resolves your site to an <i>entity</i> — a business with a name, address, phone, service area and reputation — and then decides which queries that entity deserves. Every inconsistency (Chinhat vs BBD Green City, "Across India" vs "Lucknow", 4.9★ vs 9 reviews vs "5000+ customers") weakens entity confidence. <b>Consistency is a ranking input</b>, not a tidiness preference.</p>
+    </div>
+
+    <div class="box">
+      <h3>4. Internal links are how you spend authority</h3>
+      <p>Your homepage accumulates whatever authority the domain has. Links distribute it. A page with no inbound internal links receives roughly nothing and is crawled rarely. Right now every guide is one hop from a single hub page and links to nothing — you have built ten cul-de-sacs. Anchor text is also a direct relevance signal: <code>Read Guide →</code> transfers zero meaning; <code>Lucknow to Ayodhya taxi fares</code> transfers exactly the right meaning.</p>
+    </div>
+
+    <div class="box">
+      <h3>5. Search Experience Optimisation (SXO)</h3>
+      <p>Google measures whether the click <i>worked</i>. Slow LCP, layout shift, a CTA that opens a blocked popup, a form with no labels — these are ranking-relevant because they produce pogo-sticking. For a phone-first taxi business on mobile 4G, <b>the CTA is the SEO</b>. A page that ranks #1 and converts nothing will not stay at #1.</p>
+    </div>
+
+    <div class="box">
+      <h3>6. Proof beats assertion</h3>
+      <p>"Trusted", "Reliable", "Professional" are unfalsifiable and carry no weight with users, Google, or an LLM summarising you. Falsifiable claims do: <i>"₹2,499 fixed one-way — toll, driver allowance and GST included; nothing added at drop-off."</i> That sentence can be quoted by an AI, compared by a user, and rewarded by Google. Every adjective in your copy should be replaced by a number, a name, or a policy.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="tech">
+<div class="wrap">
+  <div class="snum">03 — TECHNICAL</div>
+  <h2>Technical foundation</h2>
+  <p class="lede">Crawl, render and document-integrity issues. Cheap to fix, and they block everything downstream.</p>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">TEC-01</span><span class="ttl">Google Fonts import is misspelled twice — the font never loads and the request is wasted</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* src/app/globals.css line 1 */
+&#64;import url('https://fonts.googleapis.com/css2?family=Poopins:wght&#64;300;400;500;600;700;800&amp;displey=swap');
+
+body{ font-family: 'Poopins', sans-serif; }</code></pre>
+<p><code>Poopins</code> should be <code>Poppins</code>. <code>displey</code> should be <code>display</code>. The family does not exist, so the request fails and <code>font-family:'Poopins'</code> resolves to nothing.</p>
+<h4>Why it matters</h4>
+<p>Three separate costs. (1) A <b>render-blocking</b> stylesheet request to a third-party origin on every page load — CSS <code>&#64;import</code> is serialised <i>after</i> the parent stylesheet downloads, which is the slowest possible way to load a font. (2) It fails, so you pay the latency and get nothing. (3) You already load <b>Geist</b> via <code>next/font/google</code> in <code>layout.js</code>, which self-hosts the font, preloads it, and eliminates layout shift. You are running two font strategies and the broken one is the blocking one.</p>
+<div class="principle"><p><b>Principle —</b> Never load fonts with CSS <code>&#64;import</code>. In Next.js, <code>next/font</code> self-hosts, sets <code>font-display:swap</code>, emits a preload, and computes a size-adjusted fallback so text does not reflow. Anything else is a regression.</p></div>
+<h4>Fix</h4>
+<ul><li>Delete the <code>&#64;import</code> line entirely.</li><li>Pick one typeface. If you want Poppins, swap the <code>next/font/google</code> import in <code>layout.js</code> from <code>Geist</code> to <code>Poppins</code> with explicit weights.</li><li>Replace <code>body{font-family:'Poopins',sans-serif}</code> with the CSS variable <code>next/font</code> exposes.</li></ul>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/app/globals.css, delete the Google Fonts @import on line 1 entirely.
+
+In src/app/layout.js, replace the Geist next/font import with Poppins:
+  import { Poppins } from "next/font/google";
+  const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["300","400","500","600","700","800"],
+    display: "swap",
+    variable: "--font-poppins",
+  });
+Apply poppins.variable to the &lt;html&gt; className, and set
+body { font-family: var(--font-poppins), system-ui, sans-serif; } in globals.css.
+
+Leave no reference to 'Poopins'. Then grep all of src/ for "fonts.googleapis"
+and confirm zero matches.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">TEC-02</span><span class="ttl">Two competing robots.txt files and three competing sitemaps ship in the same build</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>src/app/robots.js        →  serves /robots.txt        (WINS)
+public/robots.txt        →  dead file, never served
+src/app/sitemap.js       →  serves /sitemap.xml       (WINS)
+public/sitemap.xml       →  dead file
+public/sitemap-0.xml     →  STILL RETURNS HTTP 200 with a full URL list
+next-sitemap.config.js   →  present, but package.json has no "postbuild" script</code></pre>
+<p>Verified live: <code>/robots.txt</code> returns the App Router output (no <code>Host:</code>, no <code>LLM:</code> line), while <code>public/robots.txt</code> — the one that points at <code>llms.txt</code> — is never served. <code>/sitemap-0.xml</code> is a live, orphaned, duplicate discovery surface.</p>
+<h4>Why it matters</h4>
+<p>You have <b>two sources of truth</b> for the two files that control crawling, and you have been editing the one that does nothing. The stale <code>/sitemap-0.xml</code> hands Google a second, unmaintained URL list with wrong <code>lastmod</code> values — a direct hit to the credibility of your freshness signal.</p>
+<div class="principle"><p><b>Principle —</b> One generator per file, always. In the App Router, <code>app/robots.js</code> and <code>app/sitemap.js</code> take precedence over <code>public/</code> equivalents. Keep the dynamic ones — they scale with your data and cannot drift.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Delete these files: public/robots.txt, public/sitemap.xml, public/sitemap-0.xml,
+next-sitemap.config.js. Remove any next-sitemap dependency or postbuild script
+from package.json.
+
+Then rewrite src/app/robots.js to return:
+- rule 1: userAgent "*", allow "/"
+- explicit allow rules for: GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot,
+  Claude-User, PerplexityBot, Google-Extended, Bingbot, Applebot-Extended
+- sitemap: "https://theyatracompany.com/sitemap.xml"
+- host: "https://theyatracompany.com"
+
+Run `npm run build` and confirm /robots.txt and /sitemap.xml still generate and
+that nothing in public/ shadows them.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">TEC-03</span><span class="ttl">The primary "Book Your Ride" CTA is an anchor nested inside a button — invalid and keyboard-broken</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* src/components/sections/Hero.jsx */
+&lt;button className={styles.primary}&gt;
+  &lt;a href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer"&gt;
+    Book Your Ride
+  &lt;/a&gt;
+&lt;/button&gt;</code></pre>
+<h4>Why it matters</h4>
+<p>The HTML spec forbids interactive content inside a <code>&lt;button&gt;</code>. Browsers recover differently, screen readers announce a confusing nested control, keyboard users get two tab stops for one action, and the clickable area is the anchor's text only — so the padded button around it is <b>dead space on mobile</b>. This is the highest-intent element on your highest-traffic page. "Call Now" has the same bug.</p>
+<div class="principle"><p><b>Principle —</b> Anything that navigates is an <code>&lt;a&gt;</code>. Anything that acts on the current page is a <code>&lt;button&gt;</code>. Style the anchor to look like a button; never nest them. Accessibility failures on the conversion path are SXO failures — Google measures whether the click worked.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/components/sections/Hero.jsx, remove the &lt;button&gt; wrappers around the two
+&lt;a&gt; elements and render the anchors directly, moving styles.primary and
+styles.secondary onto the anchors.
+
+Change the CTA text from "Book Your Ride" to "Book on WhatsApp" and from
+"Call Now" to "Call +91 91988 93198". Add descriptive aria-label attributes and
+data-cta="hero_whatsapp" / data-cta="hero_call" so analytics can bind to them later.
+
+Then grep all of src/ for any other &lt;button&gt; wrapping an &lt;a&gt; and fix those too.
+Update the CSS modules so the anchors render as inline-flex with the old padding
+and a minimum 48px tap height.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">TEC-04</span><span class="ttl">Guide pages render a second <code>&lt;main&gt;</code> inside the layout's <code>&lt;main&gt;</code></span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Verified on live HTML: <code>/travel-guides/lucknow-to-ayodhya-taxi</code> contains <b>two</b> <code>&lt;main&gt;</code> elements. <code>layout.js</code> wraps children in one; <code>app/travel-guides/[slug]/page.js</code> opens another.</p>
+<h4>Why it matters</h4>
+<p>Exactly one <code>&lt;main&gt;</code> landmark is allowed per document. Google's main-content detection, browser Reader modes, and the boilerplate-stripping stage of every AI crawler use landmarks to separate content from chrome. Ambiguous landmarks make your guide body <i>less</i> likely to be extracted cleanly for citation.</p>
+<div class="principle"><p><b>Principle —</b> One <code>&lt;main&gt;</code>, one <code>&lt;h1&gt;</code>, one <code>&lt;header&gt;</code>, one <code>&lt;footer&gt;</code> per page. Semantic landmarks are the cheapest AEO investment available: they tell a machine which text is yours.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/app/travel-guides/[slug]/page.js, change the outer &lt;main className={styles.page}&gt;
+to &lt;article className={styles.page}&gt; so only layout.js emits a &lt;main&gt; landmark.
+Keep styling identical. Then grep src/app and src/components for "&lt;main" and
+confirm layout.js is the only match.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">TEC-05</span><span class="ttl">Metadata API misuse: wrong export for <code>themeColor</code>, invalid <code>author</code> key, brand-name typo in production</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* src/app/layout.js */
+export const metadata = {
+  themeColor: "#f4a100",                     // deprecated here since Next 14 — belongs in `viewport`
+  author: [{ name: "The Yatra Company" }],   // invalid key; correct key is `authors`
+  publisher: "The Yatra COmpany",            // typo — live in &lt;meta name="publisher"&gt;
+  description: "Reliable tairport pickup, drop, ..."   // typo: "tairport"
+};</code></pre>
+<p>Also: <code>/contact</code> sets <code>title: "Book a Taxi in Lucknow | Contact "</code> with a trailing space, producing a double space before the brand in the live <code>&lt;title&gt;</code>.</p>
+<h4>Why it matters</h4>
+<p><code>themeColor</code> in <code>metadata</code> is ignored and logs a build warning, so the browser UI colour never applies on Android Chrome — most of your traffic. <code>author</code> emits nothing silently. The <b>"COmpany"</b> typo is not cosmetic: <code>publisher</code> is an entity-name signal, and you are telling Google your brand has two spellings. The layout description typo is inherited by any future page that omits its own.</p>
+<div class="principle"><p><b>Principle —</b> Your brand string is a primary key. It must be byte-identical across <code>&lt;title&gt;</code>, <code>publisher</code>, <code>creator</code>, JSON-LD <code>name</code>, <code>llms.txt</code>, your Google Business Profile and every directory listing. Entity resolution is fuzzy but not free — each variant costs confidence.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/app/layout.js:
+1. Remove themeColor from the metadata export; add a separate export:
+   export const viewport = { themeColor: "#f4a100", width: "device-width", initialScale: 1 };
+2. Rename `author` to `authors`.
+3. Fix "The Yatra COmpany" -> "The Yatra Company".
+4. Fix "Reliable tairport pickup, drop," -> "Reliable airport pickup, drop,".
+5. Add verification: { google: "REPLACE_WITH_GSC_TOKEN" } as a placeholder.
+
+In src/app/contact/page.js change the title to "Contact &amp; Taxi Booking in Lucknow"
+with no trailing space.
+
+Then grep src/ and public/ for "COmpany", "tairport" and "Poopins" and confirm
+zero matches.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">TEC-06</span><span class="ttl">GA4 renders as a sibling of <code>&lt;body&gt;</code>; a client-only library is imported into a server component</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* layout.js — GoogleAnalytics sits OUTSIDE &lt;body&gt;, inside &lt;html&gt; */
+&lt;html lang="en"&gt;
+  &lt;body&gt;...&lt;/body&gt;
+  &lt;GoogleAnalytics gaId={siteConfig.gaId}/&gt;
+&lt;/html&gt;
+
+/* src/app/about/page.js — unused, and framer-motion is a client library */
+import { keyframes } from "framer-motion";</code></pre>
+<h4>Why it matters</h4>
+<p>Only <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> may be children of <code>&lt;html&gt;</code>. React relocates the node, but you are depending on error recovery for your <b>only</b> analytics tag — the thing that will eventually prove SEO ROI. The dead <code>framer-motion</code> import in a server component is a latent build error.</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/app/layout.js, move &lt;GoogleAnalytics gaId={siteConfig.gaId}/&gt; inside &lt;body&gt;,
+as the last child after &lt;Footer /&gt;.
+
+In src/app/about/page.js, delete the unused `import { keyframes } from "framer-motion"`.
+
+Then check package.json: mongoose, axios, react-hook-form and zod are declared but
+appear unused. List every file importing each one and report back before removing
+anything.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">TEC-07</span><span class="ttl"><code>www.theyatracompany.com</code> does not resolve — no canonical host redirect</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p><code>curl -I https://www.theyatracompany.com/</code> returns no response at all. The apex works; the <code>www</code> host is not configured.</p>
+<h4>Why it matters</h4>
+<p>A large share of people typing or writing a URL by hand include <code>www</code>. Each one hits a dead host — a lost visitor, and more expensively a lost <b>backlink</b> or <b>AI citation</b>. Directories, journalists and aggregators frequently normalise to <code>www</code>, and a link to a dead host passes nothing.</p>
+<div class="principle"><p><b>Principle —</b> Exactly one canonical host; every other host 301s to it. Apex-vs-www, HTTP-vs-HTTPS, trailing-slash-vs-not. You already handle two of the three.</p></div>
+<h4>Fix</h4>
+<p>Dashboard change, not code. Add <code>www.theyatracompany.com</code> as a domain in the Vercel project, set it to redirect to the apex, and add the matching CNAME at your registrar.</p>
+</div></details>
+
+<details class="find" data-sev="low"><summary><span class="pill p-low">Low</span><span class="tag">TEC-08</span><span class="ttl">A 19.7 MB unused image is committed to the repository</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p><code>public/Images/hero-car.jpeg</code> — 19,756,597 bytes, referenced nowhere in <code>src/</code>. Route OG source PNGs run 628 KB–1.78 MB each; <code>public/Images</code> totals roughly 30 MB.</p>
+<h4>Why it matters</h4>
+<p>It is never served, so it does not hurt users directly — but it uploads on every deploy, slows every clone and CI run, and it signals that image hygiene is not part of the workflow. That same gap <i>is</i> hurting users elsewhere (see PRF-01 and PRF-05).</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Confirm public/Images/hero-car.jpeg is referenced nowhere in src/ (grep "hero-car"
+across .js, .jsx, .css). If there are zero matches, delete it.
+
+Then list every file under public/Images larger than 300 KB with its byte size and
+report which component or CSS module references each, so I can decide what to
+re-encode.</code></pre></div>
+</div></details>
+
+</div>
+</section>
+
+<section id="arch">
+<div class="wrap">
+  <div class="snum">04 — ARCHITECTURE</div>
+  <h2>Site architecture &amp; internal linking</h2>
+  <p class="lede">This is where the largest ranking upside sits. You have good pages that Google barely values because nothing points at them.</p>
+
+<details class="find" data-sev="crit" open><summary><span class="pill p-crit">Critical</span><span class="tag">ARC-01</span><span class="ttl">Guide pages contain zero contextual internal links — and the link data is already written</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Every internal <code>href</code> on <code>/travel-guides/lucknow-to-ayodhya-taxi</code>, extracted from the live HTML:</p>
+<pre><code>/  /about  /services  /contact  /travel-guides</code></pre>
+<p>That is the global nav and footer. <b>Nothing else.</b> Meanwhile <code>src/data/travelGuides.js</code> contains, for every guide:</p>
+<pre><code>relatedGuides: ["lucknow-airport-taxi", "lucknow-to-delhi-taxi", "hazratganj-taxi-service"],
+nearbyDestinations: [{ name: "Hazratganj", distance: "8 km", description: "..." }, ...]</code></pre>
+<p>Neither array is rendered. The final CTA on each guide links to WhatsApp only — not even to <code>/contact</code>.</p>
+<h4>Why it matters</h4>
+<p>Three compounding losses:</p>
+<ul>
+<li><b>Authority never circulates.</b> Each guide is one hop from a single hub and links nowhere. Whatever authority the domain earns pools at the homepage and drips into ten dead ends.</li>
+<li><b>Anchor text is wasted.</b> The only link pointing at a guide says <code>Read Guide →</code>. That anchor tells Google nothing. <code>Lucknow to Ayodhya taxi fares</code> tells it exactly what to rank the page for.</li>
+<li><b>Crawl frequency drops.</b> Google recrawls in proportion to perceived importance; importance is inferred substantially from internal links. Pages with one inbound link get crawled rarely, so your edits take weeks to register.</li>
+</ul>
+<div class="principle"><p><b>Principle —</b> Internal links are the only ranking factor you fully control. Treat them as a budget you allocate deliberately: every page should link <i>up</i> to its hub, <i>sideways</i> to 3–5 genuine siblings, and <i>down</i> to the conversion page — with descriptive anchor text, placed inside body content rather than only in nav.</p></div>
+<h4>Fix</h4>
+<ol>
+<li>Render a <b>Related routes</b> block at the end of every guide from <code>relatedGuides</code>, with anchors reading <i>"{title} — fares &amp; booking"</i>.</li>
+<li>Render <code>nearbyDestinations</code> as text, linking any name that matches an existing guide slug.</li>
+<li>Add visible <b>breadcrumbs</b> (Home › Travel Guides › {title}) — you already emit BreadcrumbList JSON-LD with no visible counterpart.</li>
+<li>Add a <b>Popular routes</b> module to the homepage and to <code>/services</code>, linking the six highest-value guides.</li>
+<li>Add a <b>Routes</b> column to the footer with the top six guides.</li>
+<li>Link the guide CTA to <code>/contact</code> alongside WhatsApp, so the booking page accumulates internal authority.</li>
+</ol>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Goal: eliminate orphaned guide pages by rendering internal-link data that already
+exists in src/data/travelGuides.js.
+
+1. Create src/components/travel-guides/RelatedGuides.jsx. It takes the current
+   guide object, resolves guide.relatedGuides (array of slugs) against the guides
+   array, and renders a &lt;nav aria-label="Related routes"&gt; with a heading
+   "Related taxi routes from Lucknow" and one Link per related guide. Anchor text
+   must be the guide's hero.title followed by " — fares & booking". Never render
+   "Read more" or "Click here".
+
+2. Create src/components/travel-guides/Breadcrumbs.jsx rendering a visible
+   &lt;nav aria-label="Breadcrumb"&gt; with an ordered list: Home / Travel Guides /
+   {current title}. The last item is plain text, not a link. Match the existing
+   BreadcrumbList JSON-LD exactly.
+
+3. In src/app/travel-guides/[slug]/page.js: render Breadcrumbs directly under the
+   opening container, and RelatedGuides just above the CTA section. In the
+   nearbyDestinations section, if a destination name matches an existing guide's
+   quickInfo.to or hero.title, wrap that name in a Link to that guide.
+
+4. In the guide CTA section, add a secondary link to /contact with the anchor text
+   "Get a fixed fare quote" next to the existing WhatsApp link.
+
+5. Create src/components/sections/PopularRoutes.jsx that renders the six guides
+   whose slugs I list here: lucknow-to-ayodhya-taxi, lucknow-airport-taxi,
+   lucknow-to-delhi-taxi, lucknow-to-varanasi-taxi, lucknow-to-kanpur-taxi,
+   lucknow-to-prayagraj-taxi. Add it to the homepage between WhyChooseUs and
+   Testimonials, and to /services after ServicesGrid.
+
+6. In src/components/layout/Footer.jsx add a fourth column "Popular Routes" with
+   those same six links.
+
+Do not change any copy in travelGuides.js. Reuse existing CSS module patterns.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">ARC-02</span><span class="ttl">15 indexable URLs is too small a footprint to compete for route and service queries</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Sitemap contains 5 static pages + 10 guides. Competitors ranking for <i>"Lucknow to Ayodhya taxi"</i> — CabBazar, Savaari, OneWay.Cab, HurryUp, ChikuCab — run hundreds to thousands of city-pair pages generated from one template.</p>
+<h4>Why it matters</h4>
+<p>Route queries are a long tail of near-identical intents: <i>Lucknow to X taxi</i>, <i>X to Lucknow cab</i>, <i>Lucknow to X one-way fare</i>, <i>Lucknow airport to X</i>. Each needs its own URL because each needs its own fare table and its own H1. Ten pages cover ten intents. You are not losing on quality — your guide copy is better than most aggregator pages — you are losing on <b>coverage</b>.</p>
+<div class="principle"><p><b>Principle —</b> Programmatic SEO is legitimate when every generated page carries genuinely distinct data (distinct fares, distances, durations, landmarks, FAQs). It becomes thin-content spam the moment pages differ only by a swapped city name. Your data model already enforces the good version — each guide has real per-route content. Scale the model, not the template.</p></div>
+<h4>Recommended expansion, in priority order</h4>
+<div class="tblwrap"><table>
+<thead><tr><th>Tier</th><th>Pattern</th><th>Count</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td><b>1</b></td><td><code>/travel-guides/lucknow-to-{city}-taxi</code></td><td>+15</td><td>Sitapur, Barabanki, Faizabad, Rae Bareli, Sultanpur, Bahraich, Hardoi, Unnao, Jhansi, Agra, Mathura, Haridwar, Chitrakoot, Naimisharanya, Dudhwa</td></tr>
+<tr><td><b>1</b></td><td><code>/travel-guides/{city}-to-lucknow-taxi</code></td><td>+8</td><td>Return-leg queries are separate searches with separate intent (airport arrivals, one-way drops)</td></tr>
+<tr><td><b>2</b></td><td><code>/services/{service}</code></td><td>+6</td><td>Airport transfer, corporate travel, wedding, pilgrimage, tempo traveller, monthly rental — currently six cards on one page competing for six different head terms</td></tr>
+<tr><td><b>2</b></td><td><code>/cars/{vehicle}</code></td><td>+4</td><td>"Innova Crysta booking Lucknow", "Urbania rental Lucknow", "tempo traveller Lucknow 17 seater" — high-intent vehicle queries you already serve</td></tr>
+<tr><td><b>3</b></td><td><code>/lucknow/{area}-taxi</code></td><td>+8</td><td>You already have Gomti Nagar and Hazratganj. Add Indira Nagar, Aliganj, Alambagh, Chinhat, Mahanagar, Aminabad, Charbagh, Sushant Golf City</td></tr>
+<tr><td><b>3</b></td><td><code>/blog/{topic}</code></td><td>ongoing</td><td>Informational top-of-funnel: "best time to visit Ayodhya", "Lucknow airport arrival guide", "Ram Mandir darshan timings"</td></tr>
+</tbody></table></div>
+<p><b>Sequencing matters:</b> do not generate Tier 1 until ARC-01 (internal linking), CNT-01 (render existing content) and the schema fixes are done. Otherwise you multiply the same defects across 40 pages.</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Do not write any new page yet. First, produce a content plan.
+
+Read src/data/travelGuides.js and infer the exact object schema a guide must
+satisfy (every key, nested shape, and which keys the [slug] template actually
+renders today).
+
+Then output a markdown table of 15 proposed new Lucknow outstation routes with,
+for each: slug, target primary keyword, estimated one-way distance in km,
+estimated drive time, the single strongest differentiating angle for that route,
+and which 3 existing guides it should cross-link to.
+
+Rank them by (my likely booking volume x keyword commercial intent), and flag any
+route where the destination is too small to sustain 900+ words of genuinely
+distinct content. I will approve the list before you write anything.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">ARC-03</span><span class="ttl">Every sitemap URL gets today's date as <code>lastmod</code> on every build</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* src/app/sitemap.js */
+{ url: baseUrl, lastModified: new Date(), ... }   // ← re-stamped on every deploy</code></pre>
+<p>Live sitemap shows all five static URLs carrying the identical timestamp <code>2026-08-10T18:18:53.441Z</code> — the build time, not a content-change time.</p>
+<h4>Why it matters</h4>
+<p><code>lastmod</code> is a hint Google uses to prioritise recrawling. If it changes when content did not, Google learns your <code>lastmod</code> is noise and <b>discounts it entirely</b> — including on the pages where you genuinely did update something. You are spending a real signal on nothing. The guide pages already do this correctly, deriving from <code>guide.schema.lastUpdated</code>. Extend that pattern to static pages.</p>
+<div class="principle"><p><b>Principle —</b> Never emit a freshness signal you cannot back with an actual content change. This applies equally to <code>dateModified</code> in JSON-LD and to visible "Updated on" labels. Fake freshness is worse than no freshness because it burns the channel.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/app/sitemap.js, replace `lastModified: new Date()` on the five static pages
+with hardcoded ISO date strings from a new constant at the top of the file:
+
+const PAGE_UPDATED = {
+  "/":              "2026-08-10",
+  "/about":         "2026-07-18",
+  "/services":      "2026-08-01",
+  "/travel-guides": "2026-08-10",
+  "/contact":       "2026-07-18",
+};
+
+Add a comment explaining these must be bumped by hand only when the page's visible
+content actually changes. Keep the guide-page logic as it is, since it already
+derives from guide.schema.lastUpdated.
+
+Also change the homepage loc from "https://theyatracompany.com" to
+"https://theyatracompany.com/" and make the canonical in layout/page metadata
+match that exactly.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">ARC-04</span><span class="ttl">The <code>/travel-guides</code> hub is thin and has no ItemList schema</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Hub page content: an H1 ("Travel Guides"), one H2, a 2-line intro, ten cards, a CTA. Meta description is 117 characters. No JSON-LD beyond the site-wide LocalBusiness. No grouping, no filtering, no editorial framing.</p>
+<h4>Why it matters</h4>
+<p>A hub page has two jobs: rank for the category term (<i>"Lucknow taxi routes and fares"</i>), and distribute authority to its children. Yours does the second weakly and the first not at all. Hubs that rank carry <b>original synthesis</b> — a comparison table across all routes, a fare-per-km summary, a "which route for which occasion" section — not just a card grid.</p>
+<div class="principle"><p><b>Principle —</b> A hub must be worth reading on its own. If removing the child links would leave nothing, it is a sitemap with styling, not a page. The synthesis you add to a hub (comparison tables, aggregate numbers) is also the most citable content on the site for AI engines, because it answers comparative questions no single child page can.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Upgrade src/app/travel-guides/page.js and its components:
+
+1. Add ItemList JSON-LD listing all guides in order, each as a ListItem with
+   position, name (hero.title), and url (seo.canonical).
+
+2. Add a new component AllRoutesTable.jsx rendering a single sortable-looking
+   HTML table across every guide: Route | Distance | Drive time | Sedan one-way |
+   SUV one-way | Guide link. Pull the values from quickInfo and pricing[0]/[1].
+   The route name cell links to the guide.
+
+3. Expand the intro copy to 150-200 words explaining how Lucknow outstation fares
+   are structured (fixed one-way vs round trip, what is included, why one-way
+   costs more per km than round trip). Write it as genuine explanation, not filler.
+
+4. Rewrite the meta description to 150-160 characters and lead with the numbers:
+   how many routes covered and the starting fare.
+
+Everything must come from the existing data file. Do not invent fares.</code></pre></div>
+</div></details>
+
+</div>
+</section>
+
+<section id="content">
+<div class="wrap">
+  <div class="snum">05 — CONTENT &amp; TEXT</div>
+  <h2>Content, copy and text signals</h2>
+  <p class="lede">Your writing quality is above the SERP average. The problems are what you don't render, what contradicts itself, and what you leave on the table in titles.</p>
+
+<details class="find" data-sev="crit" open><summary><span class="pill p-crit">Critical</span><span class="tag">CNT-01</span><span class="ttl">Roughly a third of every guide's written content is never rendered</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Fields present in <code>src/data/travelGuides.js</code> for every guide but absent from <code>app/travel-guides/[slug]/page.js</code>:</p>
+<div class="tblwrap"><table>
+<thead><tr><th>Unrendered field</th><th>What it contains</th><th>What it would fix</th></tr></thead>
+<tbody>
+<tr><td><code>geo.aiSummary</code></td><td>A 40–60 word self-contained summary naming the service, area, fares and booking method</td><td><b>The single most citable passage on the page</b> for AI Overviews, ChatGPT and Perplexity</td></tr>
+<tr><td><code>geo.keyTakeaways</code></td><td>4 bullet facts with numbers</td><td>Featured-snippet and AI-extraction bait; scannable above the fold</td></tr>
+<tr><td><code>relatedGuides</code></td><td>3 sibling slugs</td><td>Internal linking (see ARC-01)</td></tr>
+<tr><td><code>nearbyDestinations</code></td><td>Name + distance + description</td><td>Entity coverage, contextual links, local relevance</td></tr>
+<tr><td><code>taxi.inclusions</code> / <code>exclusions</code></td><td>Driver allowance, fuel, tolls, parking, waiting charges</td><td><b>Directly answers the #1 objection</b> in cab booking: "what will I actually pay?"</td></tr>
+<tr><td><code>route.tolls</code>, <code>route.stops</code></td><td>Toll status and stopping points</td><td>High-intent query coverage ("Lucknow Ayodhya toll charges")</td></tr>
+<tr><td><code>destination.nearestAirport</code> / <code>nearestRailwayStation</code></td><td>Named transport nodes with distances</td><td>Entity grounding; captures airport/station modifier queries</td></tr>
+<tr><td><code>quickInfo.bestTimeToVisit</code></td><td>Seasonal guidance</td><td>Informational query coverage</td></tr>
+<tr><td><code>attractions</code>, <code>localFood</code></td><td>Destination detail</td><td>Topical depth, dwell time</td></tr>
+</tbody></table></div>
+<p>Rendered word count on a live guide: <b>~845 words</b>. Aggregator pages ranking for the same terms run 1,500–2,500 words. The missing fields would close most of that gap using copy that is already written and already good.</p>
+<h4>Why it matters</h4>
+<p>This is not a content problem, it is a <b>plumbing</b> problem — which makes it the highest ROI item in this entire document. You paid for the writing. The template throws it away.</p>
+<p>The <code>aiSummary</code> loss is the sharpest. AI engines retrieve <i>passages</i>. A 50-word paragraph that names the route, the vehicle classes, the fare and the booking channel in one self-contained block is exactly the shape of text that gets quoted. You wrote ten of them and published none.</p>
+<div class="principle"><p><b>Principle —</b> When content lives in a data layer, the template is the publication. Add a build-time or test-time assertion that every key in your guide schema is either rendered or explicitly marked <code>internalOnly</code>. Silent data loss is invisible until someone diffs the JSON against the DOM.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/app/travel-guides/[slug]/page.js, render every field in the guide object
+that is currently unused. Specifically:
+
+1. Directly below the H1 and hero description, before the hero image, add a
+   summary block: a &lt;p class="answer"&gt; containing guide.geo.aiSummary, followed by
+   a &lt;ul&gt; of guide.geo.keyTakeaways under an h2 "Key facts". This block must be the
+   first substantial text in the document so it chunks cleanly for AI retrieval.
+
+2. In the Quick Information grid, add a "Best time to travel" cell from
+   quickInfo.bestTimeToVisit.
+
+3. In the "Taxi Service" section, add two sub-blocks under h3 "What's included" and
+   h3 "What's not included", rendering taxi.inclusions and taxi.exclusions as lists.
+
+4. In the "Taxi Route" section, add h3 "Tolls" rendering route.tolls, and h3
+   "Stops along the way" rendering route.stops (skip the heading entirely if the
+   array is empty).
+
+5. In the "About Destination" section, add h3 "Nearest airport" and h3 "Nearest
+   railway station" from destination.nearestAirport and nearestRailwayStation.
+
+6. Add a new section h2 "Attractions" rendering the attractions array and h2
+   "What to eat" rendering localFood — both skipped entirely when the array is empty.
+
+7. Add a new section h2 "Nearby destinations" rendering nearbyDestinations as a
+   definition-style list: name, distance, description.
+
+Rules: never render an empty heading for an empty array. Keep heading hierarchy
+strictly h1 > h2 > h3. Do not alter any text in travelGuides.js.
+
+Finally, write a small script scripts/check-guide-coverage.mjs that imports the
+guides array, walks every leaf key path, and prints any key path that does not
+appear as a string reference in the [slug]/page.js source. I want to run this
+whenever I add a field.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">CNT-02</span><span class="ttl">The site contradicts itself on geography: "Across India" versus "Lucknow"</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<div class="grid2" style="margin-bottom:14px">
+<div class="bad"><b>Says national</b>Hero badge: "Trusted Taxi Service Across India" · About H1: "Your Trusted Travel Partner Across India" · Footer: "Reliable Taxi Services across India" · Homepage CTA: "taxi services across India" · About: "PAN India Coverage"</div>
+<div class="good"><b>Says local</b>Title: "Taxi Service in Lucknow" · JSON-LD <code>areaServed: City/Lucknow</code> · Every guide: Lucknow origin · <code>llms.txt</code>: "Lucknow and Uttar Pradesh"</div>
+</div>
+<h4>Why it matters</h4>
+<p>Google builds one understanding of what your business is and where it operates, then decides which queries you deserve. When the most prominent on-page text claims national coverage while the structured data claims one city, you weaken both. You will not rank for national terms — a ten-page site cannot — and the national claim <b>dilutes</b> the local relevance that you can win.</p>
+<p>It also costs conversions. "Across India" reads as an aggregator. Your actual advantage is the opposite: a named local operator in Lucknow with real drivers and a phone number that a human answers.</p>
+<div class="principle"><p><b>Principle —</b> Positioning is a subtraction exercise. The narrower and more consistent your claim, the more relevance you concentrate. Win Lucknow completely, then expand to Kanpur and Varanasi as separate, earned surface area — not as an adjective.</p></div>
+<h4>Fix</h4>
+<p>Standardise on <b>"Lucknow &amp; Uttar Pradesh"</b> everywhere, with outstation coverage stated as routes <i>from</i> Lucknow. Replace every instance of "across India" and "PAN India".</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Grep the whole src/ tree for "across India", "Across India", "PAN India" and
+"India's most trusted", and list every file and line before changing anything.
+
+Then replace the positioning consistently with "Lucknow & Uttar Pradesh", phrasing
+outstation coverage as routes from Lucknow. Specific replacements:
+
+- Hero badge: "Trusted Taxi Service Across India"
+  -> "Lucknow's own taxi service — since 2020"
+- About H1: "Your Trusted Travel Partner Across India"
+  -> "Lucknow's Trusted Travel Partner"
+- Footer tagline: "Reliable Taxi Services across India..."
+  -> "Reliable taxi service in Lucknow. Airport transfers, local cabs and
+      outstation routes across Uttar Pradesh."
+- WhyUs card "PAN India Coverage" / "Airport, local and outstation travel across India"
+  -> "All of Uttar Pradesh" / "Airport, local and outstation routes from Lucknow
+      to Ayodhya, Varanasi, Kanpur, Prayagraj, Gorakhpur and Delhi."
+- MissionVision "To become India's most trusted taxi service"
+  -> "To be the most trusted taxi service in Lucknow and Uttar Pradesh"
+
+Also update the layout.js metadata description and the site-wide JSON-LD areaServed
+to include both the City "Lucknow" and the State "Uttar Pradesh".</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">CNT-03</span><span class="ttl">Trust claims contradict each other and none are verifiable</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<div class="tblwrap"><table>
+<thead><tr><th>Claim</th><th>Where</th><th>Problem</th></tr></thead>
+<tbody>
+<tr><td>"5000+ Happy Customers"</td><td>About page, twice</td><td>No source, no method, no date</td></tr>
+<tr><td>"1500+ Airport Transfers"</td><td>CompanyStory</td><td>Inconsistent with 5000+ elsewhere</td></tr>
+<tr><td>"50+ Professional Drivers"</td><td>Stats</td><td>Implausible next to a 9-review profile; unverifiable</td></tr>
+<tr><td>"4.9⭐️ Customer Rating"</td><td>Stats</td><td>Source not named</td></tr>
+<tr><td><code>aggregateRating 4.9 / reviewCount 9</code></td><td>JSON-LD, <code>llms.txt</code></td><td>9 reviews vs "5000+ customers" — the numbers fight each other</td></tr>
+<tr><td>Three named testimonials with 5 hardcoded stars</td><td>Homepage</td><td>No date, no route, no platform, no link</td></tr>
+</tbody></table></div>
+<h4>Why it matters</h4>
+<p>Two distinct risks. First, <b>user trust</b>: a visitor comparing you against CabBazar sees round numbers with no provenance, which reads as decoration rather than evidence. Second, <b>policy</b>: unattributed review content plus an <code>aggregateRating</code> that the page cannot substantiate is exactly the pattern Google's structured-data guidelines treat as ineligible, and at worst as grounds for a manual action (see SCH-02).</p>
+<div class="principle"><p><b>Principle —</b> A specific small number beats a vague large one. <i>"9 Google reviews, 4.9 average, read them here →"</i> outperforms <i>"5000+ happy customers"</i> on trust, on click-through, and on AI citation — because it is checkable. Being checkable <b>is</b> the trust signal. Precision reads as honesty; round numbers read as marketing.</p></div>
+<h4>Fix</h4>
+<ul>
+<li>Replace unverifiable counters with facts you can defend: years operating, routes served, vehicle types, response time, cancellation policy.</li>
+<li>Show the real Google rating with the real count, linked to the Google Business Profile.</li>
+<li>Attribute every testimonial: first name, route taken, month, and platform.</li>
+<li>Make review acquisition an operational habit — see MEA-04.</li>
+</ul>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Rework the trust/proof layer so every claim is verifiable.
+
+1. In src/components/about/Stats.jsx and CompanyStory.jsx, replace the current
+   counters with these defensible ones (keep the same visual treatment):
+   - "10 routes" / "Documented fares published"
+   - "24x7" / "Dispatch on WhatsApp"
+   - "4.9 / 5" / "Google rating, 9 reviews" -- and make this card a link to the
+     Google Business Profile URL, which I will supply as
+     NEXT_PUBLIC_GOOGLE_REVIEWS_URL in siteConfig.
+   - "Fixed fares" / "Tolls and driver allowance included"
+
+2. In src/components/sections/Testimonials.jsx, extend each testimonial object with
+   route, month and source fields, and render them as a visible attribution line
+   under each quote, e.g. "Lucknow to Ayodhya - July 2026 - Google review".
+   Replace the hardcoded star string with an accessible rating element that has
+   aria-label="Rated 5 out of 5".
+
+3. Do not add Review or aggregateRating JSON-LD anywhere yet -- I will handle that
+   separately once the reviews are genuinely on-page and attributed.
+
+Ask me for the real values for anything you are unsure about rather than inventing
+a number.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">CNT-04</span><span class="ttl">Full street address appears in schema but nowhere on any page</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>JSON-LD carries <code>T9-1103, Sun Breeze 1, Faizabad Road, BBD Green City, Lucknow, 226028</code>. The footer shows only a phone number and an email. <code>/contact</code> shows "Lucknow, Uttar Pradesh". <code>llms.txt</code> opens with <i>"based in Chinhat, Lucknow"</i> — a <b>third</b> version of the location.</p>
+<h4>Why it matters</h4>
+<p>Local pack ranking depends on NAP (Name, Address, Phone) consistency across your site, your Google Business Profile, and third-party citations. Google cross-checks the <b>visible, crawlable</b> address against your GBP — structured data alone is a weaker signal because it is trivially spoofable. Three different location statements across your own domain is the worst case: it looks like inconsistency rather than a single missing field.</p>
+<div class="principle"><p><b>Principle —</b> NAP must be identical, visible and crawlable everywhere — same abbreviations, same order, same postcode formatting. Put it in the footer so it appears on every page, wrap it in <code>&lt;address&gt;</code>, and mirror it exactly in JSON-LD and in your GBP.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Add a single canonical NAP block and use it everywhere.
+
+1. Add the full address to src/config/siteConfig.js as a structured object
+   (streetAddress, locality, region, postalCode, country) sourced from env vars,
+   plus a formatted single-line string.
+
+2. In src/components/layout/Footer.jsx, render it inside a semantic &lt;address&gt;
+   element under the Contact heading, with the phone as a tel: link and the email
+   as a mailto: link.
+
+3. In src/components/contact/ContactInfo.jsx, replace "Lucknow, Uttar Pradesh" in
+   the Location card with the full formatted address.
+
+4. In src/app/layout.js JSON-LD, build the PostalAddress from the same siteConfig
+   object so the two can never drift.
+
+5. In public/llms.txt, fix the opening line: it currently says "based in Chinhat,
+   Lucknow" which contradicts the schema address. Make it match the canonical
+   address exactly.
+
+The visible text and the JSON-LD must be byte-identical, including abbreviations.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">CNT-05</span><span class="ttl">Title tags overflow, waste 20 characters on the brand, and omit the one thing searchers scan for — price</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>Live: "Lucknow to Ayodhya Taxi | One-Way Cab to Ram Mandir | The Yatra Company"   (71 chars — truncated)
+Live: "Taxi Services – Airport, Local, Outstation &amp; Corporate | The Yatra Company"  (74 chars — truncated)
+Live: "Book a Taxi in Lucknow | Contact  | The Yatra Company"                        (double space)</code></pre>
+<p>Competitor titles on the same SERP: <i>"Lucknow to Ayodhya Cab At ₹1620"</i>, <i>"Lucknow to Ayodhya Cab at ₹1749 | Book Taxi Online 24x7"</i>, <i>"Lucknow to Ayodhya Taxi Booking | One Way Cab Fare ₹1350"</i>.</p>
+<h4>Why it matters</h4>
+<p>The <code>%s | The Yatra Company</code> template consumes 20 characters of a ~60-character budget on a brand nobody is searching for yet. Meanwhile every competitor puts a rupee figure in the title, because on a commercial SERP <b>price is the scannable differentiator</b>. You are the only result on the page that makes the user click to find out what it costs — so many of them won't.</p>
+<div class="principle"><p><b>Principle —</b> A title tag is ad copy with a hard character limit. Budget it: primary keyword first (it must survive truncation), then the single strongest differentiator, then brand only if characters remain. On commercial queries the strongest differentiator is almost always a number.</p></div>
+<h4>Fix</h4>
+<div class="tblwrap"><table>
+<thead><tr><th>Page</th><th>Now</th><th>Proposed</th></tr></thead>
+<tbody>
+<tr><td>Ayodhya guide</td><td>71 chars, no price</td><td><code>Lucknow to Ayodhya Taxi ₹2,499 | Fixed One-Way Fare</code> (51)</td></tr>
+<tr><td>Airport guide</td><td>—</td><td><code>Lucknow Airport Taxi | 24×7 Pickup &amp; Drop, Fixed Fare</code> (53)</td></tr>
+<tr><td>Services</td><td>74 chars</td><td><code>Taxi Services in Lucknow | Airport, Local &amp; Outstation</code> (54)</td></tr>
+<tr><td>Contact</td><td>double space</td><td><code>Contact &amp; Taxi Booking in Lucknow | 24×7 WhatsApp</code> (49)</td></tr>
+</tbody></table></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Retitle every page against a strict budget.
+
+Rule set:
+- Root layout template stays "%s | The Yatra Company", so every page-level title
+  must be at most 40 characters to keep the rendered title under 60.
+- Primary keyword must appear in the first 30 characters.
+- For any page with a fare in the data, include the lowest one-way fare in the title
+  as "₹X,XXX" pulled from guide.pricing[0].oneWay.
+- No page title may contain more than one pipe character.
+- Meta descriptions: 150-160 characters, must contain the primary keyword, one
+  number, and one explicit call to action.
+
+Apply this to src/app/page.js, about, services, contact, travel-guides, and to the
+seo.metaTitle / seo.metaDescription of all 10 guides in src/data/travelGuides.js.
+
+Output a before/after table with rendered character counts for every page, and flag
+anything that still exceeds 60 characters rendered.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">CNT-06</span><span class="ttl">No visible publish/update date, author, or editorial ownership on guides</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p><code>guide.schema.publishedDate</code> and <code>lastUpdated</code> exist in the data and are emitted in JSON-LD, but appear nowhere on the rendered page. There is no author byline anywhere on the site, no "about the author", no editorial policy, no fare-update cadence statement.</p>
+<h4>Why it matters</h4>
+<p>Fares change. A page quoting ₹2,499 with no date is a page a user cannot trust and an AI engine will hedge on. Visible dates are an E-E-A-T signal <i>and</i> a conversion signal: <i>"Fares verified 10 August 2026"</i> answers the reader's actual question, which is "is this still true?"</p>
+<div class="principle"><p><b>Principle —</b> Experience is demonstrated, not claimed. A named human, a verification date, and a stated update cadence do more for E-E-A-T than any amount of "trusted" and "professional" in body copy. For price-bearing pages the date is load-bearing.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>On src/app/travel-guides/[slug]/page.js, render a byline block directly under the
+H1: "Fares verified {guide.schema.lastUpdated formatted as '10 August 2026'} by
+The Yatra Company dispatch team" with the date in a &lt;time dateTime="..."&gt; element.
+
+Add a short line at the end of the pricing section: "Fares shown are fixed
+one-way rates including driver allowance and fuel. Tolls and parking as listed
+under What's not included. Last checked {date}."
+
+Then add an "author" field to the schema object of each guide in travelGuides.js
+defaulting to "The Yatra Company dispatch team", and reference it in the WebPage
+JSON-LD as an author of type Organization.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="low"><summary><span class="pill p-low">Low</span><span class="tag">CNT-07</span><span class="ttl">Copy errors and inconsistent notation across pages</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>about/CompanyStory.jsx   "we'er always ready to serve you"
+about/CompanyStory.jsx   "24*7"  vs  "24×7"  vs  "24x7"  vs  "24/7"   — all four in use
+layout.js                "The Yatra COmpany"
+layout.js                "Reliable tairport pickup"
+Hero.jsx                 "Reliable Taxi Services&lt;br/&gt;In Lucknow"  — mid-sentence capital "In"</code></pre>
+<h4>Why it matters</h4>
+<p>Individually trivial. Collectively they are a quality signal, and quality signals are exactly what a rater — human or model — uses to judge a site with few backlinks. Four spellings of "24×7" also fragments the exact-match text for a phrase users genuinely search.</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Do a copy pass across all of src/ and public/llms.txt:
+
+1. Fix "we'er" -> "we're".
+2. Normalise every variant of 24*7 / 24x7 / 24/7 to "24x7" in body copy and to
+   "24x7" in metadata. Pick one and use it everywhere, including llms.txt.
+3. Fix "The Yatra COmpany" and "tairport".
+4. In Hero.jsx change the H1 to "Reliable Taxi Service in Lucknow" as a single
+   line without the &lt;br/&gt; mid-sentence capital.
+5. Report any other spelling or grammar errors you find, but do not rewrite tone
+   or restructure sentences.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">CNT-08</span><span class="ttl">No pricing page, no cancellation policy, no terms, no privacy policy</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Site has 5 static routes. There is no <code>/pricing</code>, <code>/terms</code>, <code>/privacy</code>, <code>/cancellation-policy</code>, or <code>/refund-policy</code>. You collect name, phone, email, pickup, drop and travel date through a form.</p>
+<h4>Why it matters</h4>
+<p>Three angles. <b>Trust:</b> "what happens if my flight is delayed and I cancel?" is a top-three pre-booking question and you answer it nowhere. <b>Search:</b> "Lucknow taxi cancellation charges" and "Lucknow to Ayodhya taxi fare per km" are real queries with commercial intent. <b>Compliance:</b> you process personal data and run GA4 without a privacy policy.</p>
+<div class="principle"><p><b>Principle —</b> Policy pages look like overhead and behave like conversion assets. They remove the last objection before a booking, they capture long-tail informational queries competitors ignore, and they are the pages AI engines cite when asked "is this company legitimate?"</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Create four new pages under src/app, each following the existing metadata pattern
+with its own title, 150-160 char description and canonical:
+
+/pricing            - Fare structure explained: how one-way vs round trip is
+                      calculated, what per-km rates apply beyond package limits,
+                      what is included by default, GST treatment, night charges,
+                      waiting charges. Include a comparison table pulled from
+                      src/data/travelGuides.js showing every route's sedan/SUV/Innova
+                      one-way fare. Add Offer JSON-LD.
+/cancellation-policy - Free cancellation window, charges after that, what happens
+                      on flight delay, no-show policy, driver-cancellation remedy.
+/terms              - Standard service terms for a taxi operator in India.
+/privacy            - What we collect via the booking form, that we use GA4, how
+                      to request deletion, contact email.
+
+Draft the content but mark every number, window and percentage as
+[CONFIRM: ...] so I can verify each against actual operating policy before
+publishing. Add all four to the footer under a "Company" column and to
+src/app/sitemap.js with priority 0.4 and changeFrequency yearly.</code></pre></div>
+</div></details>
+
+</div>
+</section>
+
+<section id="schema">
+<div class="wrap">
+  <div class="snum">06 — SCHEMA &amp; AEO</div>
+  <h2>Structured data and answer-engine optimisation</h2>
+  <p class="lede">You are further ahead here than most competitors and simultaneously carrying two errors that neutralise the effort — one invalid, one risky.</p>
+
+<details class="find" data-sev="high" open><summary><span class="pill p-high">High</span><span class="tag">SCH-01</span><span class="ttl">Opening hours use invalid property names — Google discards your 24×7 claim</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* src/app/layout.js — site-wide LocalBusiness */
+openingHoursSpecification: [{
+  "@type": "OpeningHoursSpecification",
+  dayOfWeek: ["Monday", ... "Sunday"],
+  open:  "00:00",     // ← invalid. Schema.org property is `opens`
+  close: "23:59"      // ← invalid. Schema.org property is `closes`
+}]</code></pre>
+<h4>Why it matters</h4>
+<p>Unrecognised properties are silently dropped. The single most commercially important attribute of a taxi company — <b>that it operates at 3 a.m.</b> — is absent from your structured data on every page. "24 hour taxi Lucknow" and "taxi near me open now" are queries where the hours attribute is a direct eligibility input for the local pack.</p>
+<div class="principle"><p><b>Principle —</b> Schema.org is a controlled vocabulary, not free-form JSON. Anything not in the spec is ignored without warning — there is no error, so it feels like it worked. Validate every change against the Rich Results Test and the Schema.org validator; treat "no error" as unverified rather than as passing.</p></div>
+<h4>Fix</h4>
+<pre><code>openingHoursSpecification: [{
+  "@type": "OpeningHoursSpecification",
+  dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+  opens: "00:00",
+  closes: "23:59"
+}]</code></pre>
+<p>For a genuinely 24×7 operation, <code>opens: "00:00", closes: "23:59"</code> is the correct idiom.</p>
+</div></details>
+
+<details class="find" data-sev="high" open><summary><span class="pill p-high">High</span><span class="tag">SCH-02</span><span class="ttl"><code>aggregateRating</code> is declared with no reviews on the page — ineligible, and a manual-action risk</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* layout.js — emitted on EVERY page including /contact and /about */
+aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "9" }</code></pre>
+<p>No <code>Review</code> objects accompany it. No reviews are visible on the pages where it is emitted. The same 4.9/9 figure is repeated in <code>llms.txt</code>. The About page separately claims "5000+ Happy Customers".</p>
+<h4>Why it matters</h4>
+<p>Google's structured-data policy for review snippets is explicit on two points relevant here: reviews must be <b>visible to users on the page carrying the markup</b>, and ratings that a business collects about itself and publishes on its own site (<i>self-serving reviews</i>) are <b>not eligible</b> for LocalBusiness rich results. Emitting an unsupported <code>aggregateRating</code> site-wide is at best inert; at worst it triggers a structured-data manual action, which suppresses <i>all</i> your rich results — including the FAQ and breadcrumb markup that currently work.</p>
+<div class="principle"><p><b>Principle —</b> Structured data describes what is on the page. It is not a place to assert things the page does not show. Every schema property should have a visible on-page counterpart a human could point at. That rule keeps you compliant automatically and is also what makes markup useful to AI engines.</p></div>
+<h4>Fix — pick one</h4>
+<ol>
+<li><b>Safest, do this now:</b> remove <code>aggregateRating</code> from the site-wide LocalBusiness entirely. Link to your Google Business Profile instead — Google already has your real rating and will show it in the local pack, where it actually converts.</li>
+<li><b>Later, if you want on-page reviews:</b> render genuine attributed reviews on a specific page and mark up each with a <code>Review</code> object containing <code>author</code>, <code>datePublished</code> and <code>reviewRating</code>, with the <code>aggregateRating</code> computed over exactly those visible reviews and emitted <b>only on that page</b>.</li>
+</ol>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>In src/app/layout.js, remove the aggregateRating block from the site-wide
+LocalBusiness JSON-LD entirely. Also fix openingHoursSpecification: rename `open`
+to `opens` and `close` to `closes`.
+
+In public/llms.txt, remove the "Rated 4.9/5 on Google (9 reviews)" claim from the
+summary line, and instead add a line under Core Info:
+"- Google Business Profile: {URL}" using the value I will add to siteConfig as
+NEXT_PUBLIC_GOOGLE_REVIEWS_URL.
+
+Do not add Review schema anywhere yet. Then paste me the full JSON-LD output for
+the homepage so I can run it through the Rich Results Test.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">SCH-03</span><span class="ttl">Every guide page emits three unlinked LocalBusiness entities — Google cannot tell they are the same company</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>On a single guide page:</p>
+<ul>
+<li><code>layout.js</code> → LocalBusiness (with address, hours, sameAs)</li>
+<li><code>[slug]/page.js</code> → Service with <code>provider</code>: LocalBusiness (name, url, telephone)</li>
+<li><code>[slug]/page.js</code> → a second standalone LocalBusiness (address, geo, areaServed)</li>
+</ul>
+<p>None carries an <code>@id</code>. Nothing references anything else. Three separate JSON-LD blocks, five root objects, zero connections.</p>
+<h4>Why it matters</h4>
+<p>Without <code>@id</code>, a consumer sees three businesses that happen to share a name — one with hours and no coordinates, one with coordinates and no hours, one with almost nothing. Attributes do not merge. You get the <b>weakest</b> version of your entity rather than the union of what you published.</p>
+<div class="principle"><p><b>Principle —</b> Use a single <code>@graph</code> with stable <code>@id</code> URIs, declare each entity exactly once, and reference it everywhere else by <code>@id</code>. Convention: <code>https://site.com/#organization</code>, <code>#website</code>, <code>#localbusiness</code>, and per-page <code>{url}#webpage</code>. This is how a small site builds one strong entity instead of many weak ones.</p></div>
+<h4>Target structure</h4>
+<pre><code>{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization",  "@id": "https://theyatracompany.com/#organization", ... },
+    { "@type": "WebSite",       "@id": "https://theyatracompany.com/#website",
+      "publisher": { "@id": "https://theyatracompany.com/#organization" } },
+    { "@type": ["LocalBusiness","TaxiService"],
+      "@id": "https://theyatracompany.com/#localbusiness",
+      "parentOrganization": { "@id": "https://theyatracompany.com/#organization" },
+      "address": {...}, "geo": {...}, "openingHoursSpecification": [...],
+      "areaServed": [{"@type":"City","name":"Lucknow"},{"@type":"State","name":"Uttar Pradesh"}],
+      "currenciesAccepted": "INR", "paymentAccepted": "Cash, UPI, Bank transfer",
+      "knowsLanguage": ["en","hi"], "hasMap": "..." },
+    { "@type": "WebPage", "@id": "{pageUrl}#webpage",
+      "isPartOf": { "@id": "https://theyatracompany.com/#website" },
+      "about":    { "@id": "https://theyatracompany.com/#localbusiness" },
+      "breadcrumb": { "@id": "{pageUrl}#breadcrumb" } },
+    { "@type": "Service", "provider": { "@id": "https://theyatracompany.com/#localbusiness" }, ... }
+  ]
+}</code></pre>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Refactor all JSON-LD on the site into a single shared @graph builder.
+
+1. Create src/lib/schema.js exporting:
+   - organizationNode()   -> Organization, @id ".../#organization"
+   - websiteNode()        -> WebSite, @id ".../#website", publisher by @id ref
+   - localBusinessNode()  -> @type ["LocalBusiness","TaxiService"],
+                             @id ".../#localbusiness", parentOrganization by @id ref,
+                             address, geo, openingHoursSpecification (opens/closes),
+                             areaServed City Lucknow + State Uttar Pradesh,
+                             currenciesAccepted "INR",
+                             paymentAccepted "Cash, UPI, Bank transfer",
+                             knowsLanguage ["en","hi"], sameAs, hasMap, priceRange
+   - webPageNode({url,name,description,datePublished,dateModified})
+   - breadcrumbNode(items)
+   - serviceNode({name,description,areaServed})
+   - faqNode(faqs)
+   - buildGraph(...nodes) -> { "@context":"https://schema.org", "@graph":[...] }
+
+   All address, phone and email values must come from siteConfig, never hardcoded.
+
+2. In layout.js emit ONLY organization + website + localBusiness via buildGraph.
+
+3. In travel-guides/[slug]/page.js emit ONE script tag with buildGraph(webPage,
+   breadcrumb, service, faq) where service.provider and webPage.about are @id
+   references to "#localbusiness" -- never re-declare the business inline.
+
+4. Remove the duplicate LocalBusiness currently declared inside the guide template.
+
+5. Do the same on /services (Service nodes + FAQ), /contact (ContactPage +
+   ContactPoint), /about (AboutPage), /travel-guides (CollectionPage + ItemList).
+   The FAQ component should stop emitting its own standalone script and instead
+   accept its nodes from the page-level graph.
+
+Then print the complete JSON-LD for the homepage and for one guide page so I can
+validate both.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">SCH-04</span><span class="ttl">Fare tables are rendered as plain HTML with no Offer markup — the exact data the query is about</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Each guide renders a four-column pricing table (Car / One Way / Round Trip / Capacity) from <code>guide.pricing</code>. No <code>Offer</code>, <code>PriceSpecification</code>, or <code>priceRange</code> markup anywhere near it.</p>
+<h4>Why it matters</h4>
+<p>The dominant modifier on these queries is <b>fare</b> — "Lucknow to Ayodhya taxi fare", "cab price", "rate". Competitors put the number in the title <i>and</i> mark it up. Structured price data is what lets an AI answer "how much is a cab from Lucknow to Ayodhya?" by quoting <b>you</b> with a figure, instead of quoting an aggregator. Right now the number is on your page but not in a machine-readable form tied to a named service.</p>
+<div class="principle"><p><b>Principle —</b> Mark up the thing the query is actually about. Generic <code>LocalBusiness</code> markup tells a machine you exist. <code>Offer</code> markup on a specific route with a specific vehicle and a specific price tells it what to answer with. Specificity is what earns the citation.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Add Offer markup for guide fares.
+
+1. In src/data/travelGuides.js, add machine-readable numeric fields alongside each
+   existing pricing row, without removing the display strings:
+     { car, oneWay, roundTrip, capacity,
+       oneWayPrice: 2499, roundTripPrice: 4299, priceCurrency: "INR",
+       seats: 4 }
+   Derive the numbers from the existing display strings; do not change any fare.
+
+2. In src/lib/schema.js add offerCatalogNode(guide) producing, for the guide's
+   Service node, a hasOfferCatalog of type OfferCatalog whose itemListElement is
+   one Offer per vehicle:
+     - name: "{car} - Lucknow to {destination} one way"
+     - priceSpecification: PriceSpecification with price, priceCurrency "INR",
+       and valueAddedTaxIncluded set appropriately
+     - availability: https://schema.org/InStock
+     - areaServed from guide.geo.serviceArea
+     - url: the guide canonical
+
+3. Attach the catalog to the guide's Service node inside the page graph.
+
+4. Add a visible line directly above the pricing table: "Fares are fixed one-way
+   rates in INR, inclusive of driver allowance and fuel." so the markup has a
+   visible counterpart.
+
+Validate with the Rich Results Test and report any warnings.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">AEO-01</span><span class="ttl">No direct-answer block on any page — the highest-leverage AEO fix you can make</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Guide pages open with a badge, an H1, a one-sentence marketing description, then a large hero image, then a "Quick Information" grid. The <code>geo.aiSummary</code> — a purpose-written, self-contained, number-bearing summary — is in the data and never rendered (see CNT-01).</p>
+<h4>Why it matters</h4>
+<p>Answer engines chunk a document and score chunks for retrieval. The chunks that win are: near the top, self-contained, 40–80 words, containing the entity names and the numbers, phrased as a direct statement rather than a pitch. Your current opening chunk is <i>"Lucknow's IT and corporate district runs on tight schedules…"</i> — evocative, and almost useless for retrieval.</p>
+<div class="principle"><p><b>Principle — the Answer-First pattern.</b> Every page states its answer in the first 60 words, in a form that survives being quoted with no surrounding context. Marketing prose comes after. This costs nothing in user experience — users skim for the answer too — and it is the difference between being cited and being crawled.</p></div>
+<h4>The pattern, concretely</h4>
+<div class="grid2">
+<div class="bad"><b>Current opening chunk</b>"Ayodhya is one of India's holiest cities and the site of the Ram Mandir. Our comfortable and reliable taxi service ensures a smooth journey for pilgrims and families alike."<br><br><i>Unquotable. No route, no distance, no price, no operator, no booking method.</i></div>
+<div class="good"><b>Answer-first opening chunk</b>"A Lucknow to Ayodhya taxi covers 135 km in about 3 hours via NH27. The Yatra Company charges a fixed ₹2,499 one-way for a sedan, ₹3,999 for an SUV and ₹4,499 for an Innova, including driver allowance and fuel. Booking is by WhatsApp on +91 91988 93198, available 24x7."<br><br><i>Every entity, every number, self-contained, directly quotable.</i></div>
+</div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Implement the Answer-First pattern across the site.
+
+1. Create src/components/ui/AnswerBlock.jsx: renders a &lt;div&gt; with a distinct
+   visual treatment (left border in brand colour, slightly larger type) containing
+   a single &lt;p&gt; of summary text and an optional &lt;ul&gt; of key facts under a visually
+   small "Key facts" h2.
+
+2. On travel-guides/[slug], render AnswerBlock immediately after the H1 and before
+   the hero image, fed by guide.geo.aiSummary and guide.geo.keyTakeaways.
+
+3. Audit every guide's geo.aiSummary against these rules and rewrite any that fail,
+   keeping each to 45-70 words:
+   - names the origin and destination explicitly
+   - states distance in km and drive time
+   - states the lowest and highest one-way fare with the vehicle class
+   - names the booking channel and phone number
+   - contains no adjectives that cannot be verified ("comfortable", "reliable",
+     "best", "trusted" are all banned in this block)
+   - reads as a complete statement with zero pronouns referring outside itself
+
+4. Write equivalent 45-70 word answer summaries for the homepage, /services,
+   /travel-guides and /contact, and render an AnswerBlock high on each.
+
+Show me the before/after for all 10 guide summaries in a table.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">AEO-02</span><span class="ttl">FAQ answers are too short and too generic to be extracted</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>Q: "Can I book a taxi on Whatsapp?"
+A: "Absolutely! You can call or message us directly on Whatsapp."
+
+Q: "Are your drivers verified?"
+A: "Yes, Every driver is experienced, licensed and professionally trained."</code></pre>
+<h4>Why it matters</h4>
+<p>These answers contain no number, no name, no process and no proof. An AI engine choosing between your answer and an aggregator's 80-word answer with a phone number and a policy will not choose yours. FAQ blocks are among the most-retrieved chunks on any page precisely because they are self-contained — but only if they say something.</p>
+<div class="principle"><p><b>Principle —</b> An extractable answer is 40–80 words, restates the question's subject in the first sentence (so it stands alone), gives one concrete fact — a number, a name, a timeframe, a policy — and ends without a cliffhanger. "Absolutely!" is not an answer, it is a reaction.</p></div>
+<h4>Rewrite example</h4>
+<div class="grid2">
+<div class="bad"><b>Before — 11 words</b>"Absolutely! You can call or message us directly on Whatsapp."</div>
+<div class="good"><b>After — 52 words</b>"Yes. WhatsApp is the primary booking channel for The Yatra Company. Message +91 91988 93198 with your pickup point, drop location, travel date and vehicle preference, and dispatch confirms a fixed fare within about 10 minutes, 24x7. No app download or advance online payment is required; you pay the driver directly."</div>
+</div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Rewrite every FAQ answer on the site to be extraction-ready.
+
+Rules for each answer:
+- 40-80 words
+- first sentence restates the subject so the answer stands alone out of context
+- contains at least one concrete fact: a number, a named place, a timeframe or a policy
+- no exclamation marks, no "Absolutely", no "Of course"
+- never starts with "Yes," alone -- "Yes." then a full restating sentence
+
+Apply to src/components/services/FAQ.jsx (5 questions) and to the faqs array of all
+10 guides in src/data/travelGuides.js.
+
+Then add 4 new questions to the services FAQ covering: cancellation policy, what is
+included in the quoted fare, whether one-way fares include the return-leg cost, and
+payment methods accepted. Mark any number you are unsure of as [CONFIRM: ...].</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">AEO-03</span><span class="ttl"><code>llms.txt</code> is published but contradicts the site, and the file pointing to it is dead</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<ul>
+<li><code>llms.txt</code> says <i>"based in Chinhat, Lucknow"</i>; JSON-LD says BBD Green City, Faizabad Road. Two different addresses.</li>
+<li>It repeats the unsupported <i>"Rated 4.9/5 on Google (9 reviews)"</i> claim (see SCH-02).</li>
+<li>The <code>LLM: https://theyatracompany.com/llms.txt</code> pointer lives in <code>public/robots.txt</code> — which is never served (see TEC-02).</li>
+<li><code>llms-full.txt</code> exists and is served but is referenced nowhere.</li>
+</ul>
+<h4>Why it matters</h4>
+<p>Be clear-eyed about what <code>llms.txt</code> is: an emerging convention, not a standard any major engine has committed to honouring. Google has said it does not use it. Publishing it costs almost nothing and may pay off later — but it must not <b>contradict</b> your authoritative sources, because if anything does consume it, you have handed a model a conflicting address for your business. Treat it as a summary of the site, never as an independent source of facts.</p>
+<div class="principle"><p><b>Principle —</b> Machine-readable surfaces are downstream of one source of truth. Generate <code>llms.txt</code> from the same config and data that render the pages, so it cannot drift. A hand-maintained parallel file will always diverge — the only question is when.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Make llms.txt generated rather than hand-written.
+
+1. Create src/app/llms.txt/route.js as a Route Handler returning text/plain,
+   building the file at build time from siteConfig plus the guides array so the
+   address, phone, email and route list can never drift from the site.
+
+2. Content structure: H1 brand name, a blockquote summary (drawn from the same
+   copy as the homepage answer block), a Core Info list (address, phone, email,
+   hours, service area, vehicle types, booking method, GBP link), then a Routes
+   section generated by mapping over guides, then Company links.
+
+3. Remove the "Rated 4.9/5 on Google (9 reviews)" claim and the "based in Chinhat"
+   line. Use the canonical address from siteConfig.
+
+4. Delete public/llms.txt and public/llms-full.txt, since the route handler
+   replaces them. Add the LLM pointer line to src/app/robots.js output.
+
+Verify /llms.txt still returns 200 with correct content-type after build.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">AEO-04</span><span class="ttl">No entity grounding — Ayodhya, Ram Mandir and Lucknow Airport are strings, not linked entities</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Guides mention Ram Mandir, Hanuman Garhi, Chaudhary Charan Singh International Airport, Charbagh Railway Station, NH27, Sangam. None appear in <code>about</code> or <code>mentions</code> schema properties, and none link to an authoritative external reference.</p>
+<h4>Why it matters</h4>
+<p>Both Google and LLM retrieval systems operate over entity graphs. Explicitly connecting your page to a known entity (via <code>sameAs</code> to Wikipedia or Wikidata inside an <code>about</code>/<code>mentions</code> node) says "this page is about <i>that</i> Ayodhya" with no ambiguity. It is cheap, it is honest, and almost no local competitor does it.</p>
+<div class="principle"><p><b>Principle —</b> Ambiguity is the enemy of retrieval. Whenever your content depends on a well-known entity, name it precisely and link it to a public identifier. You are not linking out for "link juice" — you are declaring a coordinate in a graph.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Add entity grounding to the guide schema.
+
+1. Add an `entities` array to each guide in src/data/travelGuides.js. Each entry:
+   { name, type, sameAs } where type is a schema.org type such as Place,
+   TouristAttraction, PlaceOfWorship, Airport or TrainStation, and sameAs is the
+   Wikipedia URL. Cover the main destination plus the 2-4 landmarks already named
+   in that guide's copy. Do not invent landmarks -- only use ones already mentioned.
+
+2. In src/lib/schema.js, extend webPageNode to accept these and emit them as an
+   `about` node for the primary destination and `mentions` nodes for the rest.
+
+3. In the guide template, where a landmark name appears in destination.about or
+   thingsToDo, no visible change is needed -- this is markup only.
+
+Report which Wikipedia URLs you used so I can verify each one resolves.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="low"><summary><span class="pill p-low">Low</span><span class="tag">AEO-05</span><span class="ttl">Missing schema types on non-guide pages</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<div class="tblwrap"><table>
+<thead><tr><th>Page</th><th>Has</th><th>Missing</th></tr></thead>
+<tbody>
+<tr><td><code>/</code></td><td>LocalBusiness</td><td>WebSite, Organization, WebPage, ItemList of services</td></tr>
+<tr><td><code>/services</code></td><td>LocalBusiness, FAQPage</td><td>Service node per offering, OfferCatalog, BreadcrumbList</td></tr>
+<tr><td><code>/contact</code></td><td>LocalBusiness</td><td>ContactPage, ContactPoint, BreadcrumbList</td></tr>
+<tr><td><code>/about</code></td><td>LocalBusiness</td><td>AboutPage, Organization founding info, BreadcrumbList</td></tr>
+<tr><td><code>/travel-guides</code></td><td>LocalBusiness</td><td>CollectionPage, ItemList, BreadcrumbList</td></tr>
+</tbody></table></div>
+<p>Only guide pages emit BreadcrumbList — and even there, no visible breadcrumbs accompany it.</p>
+<h4>Why it matters</h4>
+<p>Breadcrumbs are the most reliably-granted rich result on the SERP and they replace the ugly URL line under your title. Six service offerings currently sit as unmarked cards on one page; each is a <code>Service</code> Google could understand. This is all covered by the <code>@graph</code> refactor in SCH-03 — listed separately so nothing gets missed.</p>
+</div></details>
+
+</div>
+</section>
+
+<section id="perf">
+<div class="wrap">
+  <div class="snum">07 — PERFORMANCE</div>
+  <h2>Core Web Vitals &amp; images</h2>
+  <p class="lede">Server response is excellent — 160–450 ms TTFB from Vercel's Mumbai edge. Everything after that is undone by images.</p>
+
+  <div class="tblwrap"><table>
+  <thead><tr><th>Asset</th><th>Bytes</th><th>How it's loaded</th><th>Verdict</th></tr></thead>
+  <tbody>
+  <tr><td><code>innova-sada1.png</code> (homepage LCP)</td><td><b>529,846</b></td><td>Raw <code>&lt;img&gt;</code>, no dimensions</td><td><span class="pill p-crit">Critical</span></td></tr>
+  <tr><td><code>logo1.jpeg</code> (About body + all OG)</td><td><b>420,433</b></td><td>Raw <code>&lt;img&gt;</code> / OG URL</td><td><span class="pill p-high">High</span></td></tr>
+  <tr><td><code>lucknow-ayodhya-hero.png</code></td><td><b>746,602</b></td><td><code>next/image</code> (optimised in delivery)</td><td><span class="pill p-med">OG raw</span></td></tr>
+  <tr><td><code>lucknow-gorakhpur-og.png</code></td><td><b>1,783,658</b></td><td>OG image URL — raw</td><td><span class="pill p-high">High</span></td></tr>
+  <tr><td><code>travel-guides-hero.JPG</code></td><td>250,476</td><td>CSS <code>background-image</code></td><td><span class="pill p-med">Medium</span></td></tr>
+  <tr><td><code>WhatsApp Image 2026-08-02 at 01.37.35.jpeg</code></td><td>61,809</td><td>CSS <code>background-image</code>, spaces in filename</td><td><span class="pill p-med">Medium</span></td></tr>
+  </tbody></table></div>
+
+<details class="find" data-sev="crit" open><summary><span class="pill p-crit">Critical</span><span class="tag">PRF-01</span><span class="ttl">The homepage LCP element is a 530 KB raw <code>&lt;img&gt;</code> with no width, height or priority</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* src/components/sections/Hero.jsx — line 1 */
+/* eslint-disable @next/next/no-img-element */   ← the warning was silenced, not fixed
+...
+&lt;img src="/Images/innova-sada1.png" alt="Taxi" /&gt;</code></pre>
+<p>Served as <code>image/png</code>, 529,846 bytes, at full size to every device including a 360 px phone. The same pattern appears in <code>CompanyStory.jsx</code> with the 420 KB logo.</p>
+<h4>Why it matters</h4>
+<p>Four failures at once on the page that receives most of your traffic:</p>
+<ul>
+<li><b>LCP</b> — half a megabyte on Indian mobile data is multiple seconds before the largest element paints.</li>
+<li><b>CLS</b> — no <code>width</code>/<code>height</code> means no aspect ratio reserved, so the layout jumps when it lands. The hero is above the fold, so this is the most visible possible shift.</li>
+<li><b>No responsive delivery</b> — a phone downloads the same bytes as a 4K desktop.</li>
+<li><b>No modern format</b> — PNG for a photographic subject; AVIF/WebP would be roughly 80–90% smaller.</li>
+</ul>
+<p>The <code>eslint-disable</code> comment on line 1 is the tell: the tooling caught this and the warning was suppressed. <code>alt="Taxi"</code> also wastes a relevance slot.</p>
+<div class="principle"><p><b>Principle —</b> The LCP element deserves individual attention on every template. In Next.js that means <code>next/image</code> with explicit <code>width</code>/<code>height</code> (or <code>fill</code> plus <code>sizes</code>), <code>priority</code> on the one above-the-fold image, and a <code>sizes</code> value that matches the CSS. Everything else lazy-loads. And when a linter flags something, fix it or write down why — never disable it silently.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Fix the homepage LCP image.
+
+1. In src/components/sections/Hero.jsx, remove the eslint-disable comment and
+   replace the raw &lt;img&gt; with next/image:
+     import Image from "next/image";
+     &lt;Image src="/Images/innova-sada1.png" alt="Toyota Innova Crysta taxi from
+      The Yatra Company, Lucknow" width={650} height={430} priority
+      sizes="(max-width: 992px) 90vw, 50vw" /&gt;
+   Use the real intrinsic dimensions of the file -- read them and tell me what
+   they are rather than guessing.
+
+2. Do the same in src/components/about/CompanyStory.jsx for the logo image
+   (no priority there, it is below the fold), with alt text
+   "The Yatra Company logo".
+
+3. In next.config.mjs add:
+     images: { formats: ["image/avif", "image/webp"] }
+
+4. In src/components/travel-guides/GuideCard.jsx the &lt;Image fill&gt; has no `sizes`
+   prop, so the browser assumes 100vw and downloads oversized images for a
+   3-column grid. Add sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw".
+
+5. Grep src/ for any remaining raw &lt;img&gt; tags or eslint-disable comments
+   mentioning no-img-element and report them.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">PRF-02</span><span class="ttl">OG images are 420 KB–1.78 MB — too large for WhatsApp previews, and WhatsApp is your booking channel</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>All main pages  → https://theyatracompany.com/Images/logo1.jpeg   420 KB, 1336x518 (2.58:1)
+Guide pages     → /Images/routes/*.png                            628 KB - 1.78 MB</code></pre>
+<h4>Why it matters</h4>
+<p>WhatsApp's link preview fetcher is strict about size and commonly drops the thumbnail on large images. Your entire booking flow runs through WhatsApp — customers share your links, you send links to customers. <b>A link with no preview card converts materially worse than one with a picture of a car and a fare.</b> This is a conversion bug wearing an SEO costume.</p>
+<p>Separately, the aspect ratio is wrong: 1336×518 is 2.58:1, while every platform crops to 1.91:1 (1200×630). Your logo is being cropped unpredictably. And a logo is the wrong content for a share card — it says nothing about the offer.</p>
+<div class="principle"><p><b>Principle —</b> The OG image is your only creative asset in the share channel. Design it as an ad, not as a logo: 1200×630, under 300 KB, readable at thumbnail size, with the route and the fare as text baked in. Generate one per route from a template so it scales.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Replace all static OG images with generated ones using Next.js ImageResponse.
+
+1. Create src/app/opengraph-image.js (site default) and
+   src/app/travel-guides/[slug]/opengraph-image.js using next/og ImageResponse,
+   size 1200x630, runtime edge.
+
+2. The guide OG image should render: the route name as the headline, the distance
+   and drive time as a subline, the lowest one-way fare as a large price badge,
+   the brand name and phone number in a footer bar, on the brand amber/navy
+   palette. Pull every value from the guides data by slug.
+
+3. Remove the manual `images` entries from openGraph and twitter metadata in
+   layout.js, page.js and generateMetadata for guides, so Next uses the generated
+   file-based images automatically.
+
+4. Delete the now-unused public/Images/routes/*-og.* files after confirming
+   nothing else references them.
+
+Confirm each generated image is under 300 KB and validate one URL in a WhatsApp
+link preview and in the X card validator.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">PRF-03</span><span class="ttl">Three page heroes load their images through CSS <code>background-image</code></span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>HeroAbout.module.css     background-image: url("/Images/WhatsApp Image 2026-08-02 at 01.37.35.jpeg");
+HeroServices.module.css  background-image: url("/Images/innova-sada1.jpeg");   /* 299 KB */
+HeroGuides.module.css    url("/Images/travel-guides-hero.JPG");                /* 250 KB */</code></pre>
+<h4>Why it matters</h4>
+<p>A CSS background is invisible to the browser's <b>preload scanner</b> — it cannot start downloading until the stylesheet is parsed and the element is matched, which puts it on the critical path late. There is no <code>srcset</code>, so every device gets the same file, and no format negotiation, so nobody gets AVIF. On the About page the LCP candidate is a background image with spaces in its filename, which is also a URL-encoding hazard.</p>
+<div class="principle"><p><b>Principle —</b> Decorative textures can be CSS backgrounds. Anything that is the LCP candidate must be a real <code>&lt;img&gt;</code>/<code>next/image</code> element so the preload scanner can find it, responsive variants can be served, and the browser can negotiate format.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Convert the three CSS background heroes to next/image.
+
+For src/components/about/HeroAbout, services/HeroServices and
+travel-guides/HeroGuides:
+- render &lt;Image fill priority sizes="100vw" className={styles.bgImage}
+   alt="" role="presentation" /&gt; as the first child of the hero section
+- position it absolutely behind the existing overlay via CSS, keeping the current
+  gradient/overlay treatment exactly as it looks now
+- remove the background-image declaration from each CSS module
+
+Also rename public/Images/WhatsApp Image 2026-08-02 at 01.37.35.jpeg to
+about-hero.jpeg (no spaces, lowercase, descriptive) and update the reference.
+Rename travel-guides-hero.JPG to travel-guides-hero.jpg (lowercase extension).
+
+Then report the intrinsic dimensions and byte size of each of the three files so I
+can decide which to re-encode.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">PRF-04</span><span class="ttl">Four unused dependencies ship in the project; icons are pulled from a large pack</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>"mongoose": "^9.7.4"        ← a MongoDB ODM in a fully static marketing site
+"axios": "^1.18.1"          ← no network calls anywhere in src/
+"react-hook-form": "^7.81"  ← the booking form uses raw useState
+"zod": "^4.4.3"             ← no schema validation anywhere
+"framer-motion": "^12.42"   ← imported once, unused (see TEC-06)</code></pre>
+<h4>Why it matters</h4>
+<p>Unused dependencies mostly cost build time and install time rather than client bytes, since tree-shaking handles the rest. The real signal is different: <code>mongoose</code>, <code>zod</code> and <code>react-hook-form</code> together describe a <b>lead-capture backend that was planned and never built</b> — which is exactly the gap in CRO-01. Keep them if you are about to build it; remove them if not. Do not leave the question open.</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Audit dependencies. For each of mongoose, axios, react-hook-form, zod and
+framer-motion, list every file in src/ that imports it. Produce a table:
+package | import count | files | verdict (keep / remove / needed for planned
+lead-capture work).
+
+Do not remove anything yet -- I want to decide after seeing the table, because
+zod and react-hook-form are likely needed for the booking API work.
+
+Separately, confirm whether react-icons/fa imports are being tree-shaken in the
+production build by reporting the size of the largest client chunk before and
+after replacing the five Hero/Footer icons with inline SVG.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="low"><summary><span class="pill p-low">Low</span><span class="tag">PRF-05</span><span class="ttl"><code>next.config.mjs</code> is empty — no image formats, cache headers, or security headers</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>const nextConfig = {
+  /* config options here */
+};</code></pre>
+<p>Live response headers show HSTS (Vercel default) but no <code>X-Content-Type-Options</code>, <code>Referrer-Policy</code>, or <code>Permissions-Policy</code>.</p>
+<h4>Why it matters</h4>
+<p>Not a direct ranking factor, but security headers are a Lighthouse Best Practices item, and <code>Referrer-Policy</code> affects whether referral traffic is attributable in your analytics. Long-lived cache headers on <code>/Images</code> reduce repeat-visit load. Cheap wins bundled into one file.</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Populate next.config.mjs:
+
+- images: { formats: ["image/avif","image/webp"], minimumCacheTTL: 2678400 }
+- an async headers() returning, for source "/(.*)":
+    X-Content-Type-Options: nosniff
+    Referrer-Policy: strict-origin-when-cross-origin
+    Permissions-Policy: camera=(), microphone=(), geolocation=(self)
+    X-Frame-Options: SAMEORIGIN
+- and for source "/Images/:path*":
+    Cache-Control: public, max-age=31536000, immutable
+
+Make sure the Google Maps iframes on /contact and the guide pages still render
+after the X-Frame-Options change -- that header applies to framing OUR pages, not
+to iframes we embed, so confirm rather than assume. Run npm run build and report
+any warnings.</code></pre></div>
+</div></details>
+
+</div>
+</section>
+
+<section id="cro">
+<div class="wrap">
+  <div class="snum">08 — CRO &amp; DESIGN</div>
+  <h2>Conversion path and design system</h2>
+  <p class="lede">Traffic you cannot convert or measure is a cost, not an asset. This section is where the money actually leaks.</p>
+
+<details class="find" data-sev="crit" open><summary><span class="pill p-crit">Critical</span><span class="tag">CRO-01</span><span class="ttl">The booking form stores nothing, sends nothing and tracks nothing</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>/* src/components/contact/BookingForm.jsx */
+const sendWhatsApp = () =&gt; {
+  if (!form.name || !form.phone || ...) { alert("Please fill all required fields."); return; }
+  const url = `https://wa.me/${siteConfig.phone}?text=${encodeURIComponent(whatsappMessage)}`;
+  window.open(url, "_blank");
+};</code></pre>
+<p>Ten fields collected. No <code>&lt;form&gt;</code> element, no server action, no API route, no database write, no email, no analytics event. The button is <code>type="button"</code>, so Enter does not submit and browser validation never runs.</p>
+<h4>Why it matters</h4>
+<p>Every lead that does not complete the WhatsApp handoff is <b>gone with no record</b>. Popup blockers on mobile Safari and Chrome frequently block <code>window.open</code> when it is not treated as a direct user gesture. If WhatsApp is not installed, the user lands on a web page and has to re-enter everything. You have no remarketing list, no follow-up ability, no measure of form abandonment, and no way to tell which page produced the booking.</p>
+<p>Additional bug: <code>wa.me/${siteConfig.phone}</code> uses the <b>phone</b> value, which is formatted for <code>tel:</code> links. <code>wa.me</code> requires digits only with country code and no <code>+</code>, spaces or dashes. There is a separate <code>siteConfig.whatsapp</code> value used everywhere else. This link is likely malformed.</p>
+<div class="principle"><p><b>Principle —</b> Capture first, then hand off. Persist the lead server-side the instant it is submitted, then open WhatsApp. If the handoff fails, you still have the lead. A conversion you cannot attribute is a conversion you cannot repeat — and SEO without attribution is guesswork.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Rebuild the booking form as a real, measurable lead-capture flow.
+
+1. Wrap the fields in a proper &lt;form onSubmit&gt; with button type="submit" so Enter
+   works and native validation applies. Add required, inputMode, autoComplete and
+   pattern attributes to each field (tel: inputMode="tel" autoComplete="tel").
+
+2. Add a zod schema in src/lib/bookingSchema.js validating name, phone (Indian
+   10-digit or +91 format), optional email, pickup, drop, date not in the past,
+   time, passengers 1-17, trip type enum, message max 500. Use react-hook-form
+   with the zod resolver -- both packages are already installed.
+
+3. Replace alert() with inline per-field error messages rendered under each input,
+   with aria-invalid and aria-describedby wired up.
+
+4. Create a POST route at src/app/api/bookings/route.js that validates with the
+   same zod schema, writes to MongoDB via mongoose (model in src/models/Booking.js
+   with fields plus createdAt, sourcePage, utm fields), and returns { id }.
+   Read MONGODB_URI from env. Handle connection reuse for serverless.
+
+5. On submit: POST first, await the id, THEN open WhatsApp. If the POST fails,
+   still open WhatsApp but log the error -- never block the user.
+
+6. Fire a GA4 event on success: gtag("event","generate_lead",{ method:"booking_form",
+   trip_type, page_location }). Use the next/third-parties sendGAEvent helper.
+
+7. Fix the WhatsApp URL: use siteConfig.whatsapp, and add a normaliser in
+   siteConfig that strips +, spaces and dashes for the wa.me path.
+
+8. Redirect to a new /thank-you page after successful submit so there is a
+   conversion URL to configure as a GA4 key event.
+
+Do not commit any credentials. Add MONGODB_URI to .env.example.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">CRO-02</span><span class="ttl">Form inputs have placeholders instead of labels</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>All ten inputs use <code>placeholder</code> only. No <code>&lt;label&gt;</code> elements anywhere in the form. Date and time inputs have no placeholder at all, so they are unlabelled entirely.</p>
+<h4>Why it matters</h4>
+<p>Placeholders vanish on focus — the user forgets what the field was, especially on a ten-field form on a phone. Screen readers get inconsistent support. Autofill matches poorly without labels and <code>autoComplete</code>. The bare date/time inputs are unlabelled controls, a direct WCAG failure. On mobile, this form is a wall of grey boxes.</p>
+<div class="principle"><p><b>Principle —</b> Every input gets a persistent visible label. Placeholders are for format examples ("e.g. Hazratganj, Lucknow"), never for the field name. Long forms on mobile convert on clarity, not on compactness — and each removed field raises completion more than any styling change.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Rework the booking form's field UI.
+
+1. Give every input a visible &lt;label htmlFor&gt; above it. Keep placeholders only as
+   format examples, e.g. pickup placeholder "e.g. Hazratganj, Lucknow".
+2. Mark required fields with an asterisk plus a legend explaining it, not by
+   putting "*" inside the placeholder.
+3. Group into two fieldsets with legends: "Your details" and "Trip details".
+4. Set min={today} on the date input.
+5. Change passengers from a free number input to a select of 1-17.
+6. Ensure every control has a minimum 44px touch target and 16px font size so iOS
+   does not zoom on focus.
+7. Reduce required fields to the four that actually matter -- name, phone, pickup,
+   drop -- and make date and time optional with the label "(optional -- we'll
+   confirm on WhatsApp)".
+
+Keep the existing CSS module approach and visual style.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">CRO-03</span><span class="ttl">No persistent call/WhatsApp affordance on mobile</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Conversion points: a nav "Call Now" that scrolls away, two hero buttons, and one CTA block per page. On a guide page there are <b>845 words between the hero CTA and the next one</b>, with nothing in between.</p>
+<h4>Why it matters</h4>
+<p>Taxi booking is an impulse, phone-first action. The moment of intent arrives unpredictably — after the fare table, after the FAQ about cancellation, after seeing the drive time. If the CTA is not on screen at that moment, the intent dissipates. A sticky bottom bar is consistently among the highest-impact changes available to a local service site on mobile.</p>
+<div class="principle"><p><b>Principle —</b> Match CTA density to page length and to how intent arrives. Long pages need a persistent affordance plus contextual CTAs at each decision point — after pricing, after FAQs, after reviews. Not one CTA at the bottom that assumes the reader arrives in a straight line.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Add a sticky mobile action bar and contextual CTAs.
+
+1. Create src/components/ui/StickyCTA.jsx: fixed to the bottom of the viewport,
+   visible only under 768px, containing two equal-width actions -- "Call" (tel:)
+   and "WhatsApp" (wa.me). 56px tall, safe-area-inset-bottom padding, subtle top
+   border and shadow. Add data-cta attributes for analytics. Add bottom padding to
+   &lt;main&gt; on mobile so it never covers the footer.
+
+2. Render it in layout.js so it appears on every page.
+
+3. On travel-guides/[slug], add an inline CTA card immediately after the pricing
+   table with the heading "Lock this fare on WhatsApp" and the route's lowest fare
+   repeated in the button label, e.g. "Book sedan from Rs 2,499".
+
+4. Add a second inline CTA after the FAQ section reading "Still deciding? Ask us
+   anything on WhatsApp -- usually replies in 10 minutes."
+
+Every CTA must carry a distinct data-cta value so GA4 can attribute which position
+converts.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="high"><summary><span class="pill p-high">High</span><span class="tag">CRO-04</span><span class="ttl">No proof above the fold, and no instant fare answer</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>The homepage hero offers a badge, an H1, a services list, two buttons, two social icons and three checkmark features. There is no rating, no review count, no fare, no vehicle photo with a price, no "verified drivers" evidence. The word "Trusted" appears without any adjacent proof.</p>
+<h4>Why it matters</h4>
+<p>Visitors arrive from a SERP where every competing result showed a price. Yours did not. If the landing page also does not, the visitor's first action is to leave and check a competitor. Meanwhile the site's actual advantages — fixed fares, no surge, direct operator, WhatsApp confirmation in minutes — are stated nowhere near the top.</p>
+<div class="principle"><p><b>Principle —</b> Above the fold answers three questions in this order: <i>what is this, what does it cost, why should I believe you.</i> Most sites answer only the first. Proof means a number with a source; price means a real starting figure with what it includes.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Rework the homepage hero for proof and price.
+
+1. Under the H1, replace the current bullet line with a single benefit sentence
+   that includes a real starting fare, e.g. "Fixed-fare airport transfers from
+   Rs 899 and outstation cabs from Rs 2,499 -- driver allowance, fuel and tolls
+   included, confirmed on WhatsApp in minutes."
+
+2. Replace the three generic checkmark features with a proof row of four items,
+   each a number plus a label: Google rating with review count (linked to the GBP),
+   years operating, routes with published fares, average WhatsApp reply time.
+   Use only values I confirm -- mark each as [CONFIRM: ...] in a comment.
+
+3. Add a compact "Popular routes with fares" strip directly below the hero showing
+   four routes as: route name, distance, sedan one-way fare, and a WhatsApp button.
+   Pull the data from src/data/travelGuides.js. Each route name links to its guide.
+
+4. Move the Instagram and Facebook icons out of the hero and into the footer --
+   they are outbound links competing with the primary CTA at the highest-intent
+   moment on the page.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">CRO-05</span><span class="ttl">No design tokens — four different "brand amber" values are in use</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<pre><code>#ffb400   Hero badge, primary button
+#f59e0b   Scrollbar thumb
+#f4b400   Hero social hover
+#f4a100   metadata themeColor</code></pre>
+<p>No CSS custom properties exist in <code>globals.css</code>. Every colour, radius and spacing value is hardcoded per module, across 25 CSS module files.</p>
+<h4>Why it matters</h4>
+<p>Four ambers is not a visual crime at a glance, but it makes the brand feel slightly out of register everywhere, and it makes every future change a 25-file search-and-replace. When adding pages is supposed to be routine, an inconsistent system is what makes each new page expensive — and expensive pages are the reason content programmes stall.</p>
+<div class="principle"><p><b>Principle —</b> A design system is a velocity tool before it is an aesthetic one. Tokens for colour, spacing, radius, shadow and type scale mean a new landing page is composition rather than invention. That is what lets you ship 15 route pages without 15 rounds of design.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Introduce design tokens without changing the current look.
+
+1. In src/app/globals.css define a :root block with custom properties:
+   --brand (pick ONE amber -- audit the four in use and tell me which is most
+   common before choosing), --brand-dark, --ink, --ink-2, --ink-3, --surface,
+   --surface-2, --line, --navy (#172032 from the hero gradient),
+   --radius-sm/md/lg/pill, --space-1 through --space-8 on a 4px scale,
+   --shadow-sm/md, --font-size-* on a modular scale.
+
+2. Replace every hardcoded colour, radius and padding value across all 25 CSS
+   modules with the corresponding token. Do not change any rendered value except
+   the three amber variants, which all become --brand.
+
+3. Add a mobile override for the global `section { padding: 90px 0 }` rule:
+   under 768px it should be var(--space-7) 0, since 90px on a phone pushes real
+   content below the fold on every section.
+
+4. Produce a short docs/design-tokens.md listing each token, its value and when to
+   use it, so new pages can be built without inventing values.
+
+Screenshot-compare the homepage before and after to confirm nothing shifted.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">CRO-06</span><span class="ttl">Emoji are used as interface icons</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p><code>📞 Call Now</code> in the navbar and hero; <code>🚖 ✈️ 🏢 🏙️ 💍 🛕</code> as the six service icons; <code>📞 💬 📧 📍</code> on the contact cards; <code>🎯 🚖</code> on mission/vision; <code>🚖 Book on WhatsApp</code> on the form button.</p>
+<h4>Why it matters</h4>
+<p>Emoji render differently on every platform and can fall back to tofu boxes on older Android — which is a meaningful share of Indian mobile traffic. Screen readers announce them by their full Unicode name ("telephone receiver, Call Now"). Against competitors using proper iconography, emoji read as informal, which cuts against a business asking for trust and money. You already ship <code>react-icons</code> and use it correctly in other components.</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Replace every emoji used as a UI icon with a react-icons component, matching the
+existing usage pattern in WhyChooseUs.jsx.
+
+Files: layout/Navbar.jsx, sections/Hero.jsx, sections/CTA.jsx,
+services/ServicesGrid.jsx, contact/ContactInfo.jsx, contact/BookingForm.jsx,
+about/MissionVision.jsx.
+
+Every icon must have aria-hidden="true" since the adjacent text already carries the
+meaning. Keep emoji only inside the WhatsApp message template string in
+BookingForm.jsx, where they are content sent to a chat, not interface.
+
+Also replace the hardcoded star string in Testimonials.jsx with react-icons stars
+wrapped in an element carrying aria-label="Rated 5 out of 5".</code></pre></div>
+</div></details>
+
+</div>
+</section>
+
+<section id="position">
+<div class="wrap">
+  <div class="snum">09 — POSITIONING</div>
+  <h2>Positioning: you are priced above the market and saying nothing about why</h2>
+  <p class="lede">This is a strategy finding, not a bug. It determines whether the SEO work converts.</p>
+
+  <div class="tblwrap"><table>
+  <thead><tr><th>Lucknow → Ayodhya, sedan, one way</th><th>Advertised fare</th><th>Gap vs you</th></tr></thead>
+  <tbody>
+  <tr><td>Saarthi Cabs</td><td>₹1,350</td><td>−46%</td></tr>
+  <tr><td>HurryUp Cabs</td><td>₹1,620</td><td>−35%</td></tr>
+  <tr><td>Chiku Cab</td><td>₹1,700</td><td>−32%</td></tr>
+  <tr><td>CabBazar</td><td>₹1,749</td><td>−30%</td></tr>
+  <tr><td>MakeMyTrip</td><td>₹1,858</td><td>−26%</td></tr>
+  <tr><td><b>The Yatra Company</b></td><td><b>₹2,499</b></td><td>—</td></tr>
+  <tr><td>Lakshya Cabs</td><td>₹2,247</td><td>−10%</td></tr>
+  </tbody></table></div>
+
+  <p style="color:var(--tx2);margin-bottom:22px;max-width:72ch">You are the most expensive result on the page and your guide does not contain a single sentence explaining why. Worse, the page invites the comparison — you publish a clean fare table, so a user can line it up against a competitor tab in five seconds and see only one difference.</p>
+
+  <div class="grid2" style="margin-bottom:22px">
+    <div class="bad"><b>What the page currently implies</b>"Same service as everyone else, 35% more expensive." Nothing on the page contradicts that reading. The advantages you list — professional drivers, 24×7, safe, affordable — are claimed verbatim by every competitor on that SERP, so they carry zero differentiating weight. "Affordable" while being the priciest is actively counterproductive.</div>
+    <div class="good"><b>What is almost certainly true</b>Aggregator fares are teaser rates: tolls, state permit, driver allowance and GST are frequently added at drop-off, and the "operator" is whichever local vendor accepted the job. You are a direct operator quoting an all-in fixed fare with a named dispatch team that answers WhatsApp. <b>That is a real product difference — you just never say it.</b></div>
+  </div>
+
+  <div class="callout">
+    <h3>The positioning move: compete on total-cost certainty, not on headline price</h3>
+    <p>You cannot win a headline-price race against aggregators with venture funding and no fleet cost. You can win the <b>second</b> comparison — the one the customer makes after being surprised by a ₹700 toll charge at the end of a previous trip. Reframe from "our fare" to "your total, guaranteed", and make the comparison explicit on the page rather than leaving it to the user's other tab.</p>
+  </div>
+
+  <h3 style="font-size:19px;margin:26px 0 10px">Five concrete moves</h3>
+  <ol style="color:var(--tx2);padding-left:22px;max-width:78ch">
+    <li style="margin-bottom:10px"><b>Publish an all-in fare with a breakdown.</b> Show base + driver allowance + fuel + toll + GST = ₹2,499, and state plainly that nothing is added at drop-off. A higher number that is fully itemised beats a lower number that is provisional.</li>
+    <li style="margin-bottom:10px"><b>Add a "what aggregators don't include" comparison block</b> to each route guide. Not competitor-bashing — a neutral table of typical extra charges on one-way outstation bookings, with your column showing "included".</li>
+    <li style="margin-bottom:10px"><b>Name the operator.</b> "Booked directly with The Yatra Company's own dispatch — not resold to an unknown vendor." This is the single strongest thing you have and it appears nowhere on the site.</li>
+    <li style="margin-bottom:10px"><b>Delete the word "affordable" everywhere.</b> It currently appears in the hero, services, About and multiple guides. You are not the cheapest; claiming it invites the exact comparison you lose. Replace with "fixed" and "all-inclusive".</li>
+    <li style="margin-bottom:10px"><b>Introduce a genuine entry price.</b> Local Lucknow drops start at ₹349 per your own Gomti Nagar data — that number belongs on the homepage. It changes the first impression from "expensive" to "starts cheap, scales honestly".</li>
+  </ol>
+
+  <h4 style="font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--brand);margin:24px 0 8px;font-family:var(--mono)">Prompt for Claude</h4>
+  <div class="prompt"><button class="cp">Copy</button><pre><code>Reposition the site from "affordable taxi" to "fixed all-inclusive fares from a
+direct local operator".
+
+1. Grep src/ for "affordable", "cheap", "best price", "lowest" and list every
+   occurrence. Replace each with language about fixed, all-inclusive, no-surprise
+   fares. Do not claim to be cheapest anywhere.
+
+2. Add a FareBreakdown component rendered under each guide's pricing table showing,
+   for the sedan fare: base fare, driver allowance, fuel, tolls, GST, and the
+   all-in total -- with a line stating "This is the amount you pay. Nothing is
+   added at drop-off." Add the component's inputs as new fields on each pricing row
+   in travelGuides.js, marked [CONFIRM: ...] so I can supply real splits.
+
+3. Add a WhatIsIncluded comparison component to each guide: a two-column table of
+   typical one-way outstation charges (toll, state permit, driver allowance, night
+   charge, waiting beyond 30 min, GST) with columns "Typical aggregator booking"
+   and "The Yatra Company". Keep it factual and neutral; name no competitor.
+
+4. Add a "Booked direct, not resold" trust block to the homepage and every guide,
+   explaining that the trip is dispatched by our own team with a named driver
+   confirmed on WhatsApp before pickup.
+
+5. Surface the Rs 349 local drop starting fare on the homepage hero, clearly
+   labelled as a local Lucknow drop so it is not mistaken for an outstation rate.
+
+Flag every number you cannot source from existing data as [CONFIRM: ...] rather
+than estimating.</code></pre></div>
+</div>
+</section>
+
+<section id="measure">
+<div class="wrap">
+  <div class="snum">10 — MEASUREMENT</div>
+  <h2>Measurement &amp; local presence</h2>
+  <p class="lede">GA4 is installed and measuring nothing that matters. Fix this before scaling content — otherwise you will not know which pages earned the bookings.</p>
+
+<details class="find" data-sev="crit" open><summary><span class="pill p-crit">Critical</span><span class="tag">MEA-01</span><span class="ttl">Zero conversion events — GA4 counts pageviews only</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p><code>GoogleAnalytics</code> from <code>@next/third-parties</code> is mounted with a valid measurement ID. No <code>sendGAEvent</code> call exists anywhere in <code>src/</code>. The three conversion actions — tel: click, WhatsApp click, form submit — fire nothing. There is no thank-you page, so no destination conversion is possible either.</p>
+<h4>Why it matters</h4>
+<p>Every recommendation in this document is a hypothesis until measured. Without conversion events you cannot tell whether the Ayodhya guide produces ten bookings a month or zero, whether the sticky CTA beats the hero CTA, or whether the ₹2,499 fare is losing people at the pricing table. You will be forced to judge SEO by rankings, which is the metric that correlates worst with revenue.</p>
+<div class="principle"><p><b>Principle —</b> Instrument the conversion before optimising the acquisition. One well-defined conversion event with page attribution is worth more than any number of vanity dashboards. For a WhatsApp-first business, the outbound click <i>is</i> the conversion — treat it as a first-class key event, not an afterthought.</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Add full conversion tracking.
+
+1. Create src/lib/analytics.js exporting trackCTA({ action, position, route }) that
+   wraps sendGAEvent from @next/third-parties/google. Events to emit:
+   - "contact_whatsapp"  params: position, route, fare
+   - "contact_call"      params: position, route
+   - "generate_lead"     params: method, trip_type, route
+   - "view_fare_table"   fired when the pricing table scrolls into view (IntersectionObserver, once per page)
+
+2. Bind trackCTA to every CTA in the app. Each already has (or will have) a
+   data-cta attribute -- use it as the `position` param: hero_whatsapp, hero_call,
+   nav_call, sticky_call, sticky_whatsapp, guide_pricing_cta, guide_faq_cta,
+   cta_section_whatsapp, cta_section_call, form_submit.
+
+3. On guide pages pass route = guide.slug so GA4 can attribute bookings per route.
+
+4. Create /thank-you as a simple confirmation page and redirect there after a
+   successful form POST.
+
+5. Add a docs/analytics.md listing every event, its params, and which GA4 key
+   events I should mark in the admin UI.
+
+Do not add any third-party tag manager -- keep it native to @next/third-parties.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="crit"><summary><span class="pill p-crit">Critical</span><span class="tag">MEA-02</span><span class="ttl">Google Business Profile is the highest-ROI channel and the site barely acknowledges it</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>Nine reviews per your own schema. No link to the GBP anywhere on the site. No review-request flow. No embedded reviews. No location page carrying the visible NAP (see CNT-04).</p>
+<h4>Why it matters</h4>
+<p>For "taxi near me", "cab service Lucknow", "airport taxi Lucknow" and every "open now" variant, the <b>local pack sits above the organic results</b>. GBP ranking is driven by proximity, relevance and prominence — and prominence is driven largely by review count and velocity plus NAP consistency. Nine reviews is a starting position, not a plateau. Moving from 9 to 60 reviews will almost certainly outperform any single on-site change in this document.</p>
+<div class="principle"><p><b>Principle —</b> For a local service business, GBP is a distribution channel and the website is its supporting evidence. They must agree exactly on name, address, phone, hours and categories. Review velocity — a steady trickle — signals an operating business more strongly than a large batch acquired at once.</p></div>
+<h4>This is operational work, not code</h4>
+<ul>
+<li>Claim and fully complete the profile: primary category <b>Taxi service</b>, secondary <b>Airport shuttle service</b> and <b>Car rental agency</b>; service areas listed as the districts you actually cover; 24-hour opening hours; every vehicle type as a service; photos of real vehicles and drivers.</li>
+<li>Post weekly GBP updates linking to route guides — this is a direct, free channel from GBP to your pages.</li>
+<li>Build a review habit: a short WhatsApp message with the review link sent after every completed trip. At even a 20% response rate, normal trip volume moves you past 60 reviews within a quarter.</li>
+<li>Turn on the GBP messaging and booking-link fields, pointing at <code>/contact</code>.</li>
+</ul>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Add GBP support to the site.
+
+1. Add NEXT_PUBLIC_GOOGLE_REVIEWS_URL and NEXT_PUBLIC_GBP_URL to siteConfig and
+   .env.example.
+
+2. Create src/components/ui/ReviewsBadge.jsx: a compact card showing the Google
+   "G" mark, the rating, the review count and "Read our Google reviews" linking to
+   the reviews URL with rel="noopener". Values come from siteConfig, not hardcoded.
+
+3. Render it in the homepage hero proof row, in the footer, and above the booking
+   form on /contact.
+
+4. Add a "Leave a review" link in the footer pointing at the Google review-write
+   URL, so drivers can share it.
+
+5. Create /review as a tiny page with a large button to the Google review form, so
+   we have a short memorable URL to send by WhatsApp after each trip. Mark it
+   noindex via its metadata robots field.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">MEA-03</span><span class="ttl">No Search Console verification in code, and no IndexNow for Bing</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>No <code>verification</code> key in the metadata export. No IndexNow key file in <code>public/</code>. No Bing Webmaster Tools setup evident.</p>
+<h4>Why it matters</h4>
+<p>Search Console is the only source of truth for what Google actually indexed, which queries you appear for, and where CTR is weak — the last being directly actionable via CNT-05. Bing matters more than its market share suggests because it feeds <b>ChatGPT's web search</b>; IndexNow gives you near-instant indexing there, which is a real AEO advantage when you publish a new route page.</p>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>1. Add verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
+   other: { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION } }
+   to the metadata export in src/app/layout.js, with both vars in .env.example.
+
+2. Implement IndexNow: generate a key, place it at public/{key}.txt containing the
+   key, and create scripts/indexnow.mjs that POSTs the full URL list from the same
+   source as app/sitemap.js to https://api.indexnow.org/indexnow. Add an npm script
+   "notify:indexnow" that runs it.
+
+3. Document in docs/deploy.md that notify:indexnow should be run after any deploy
+   that adds or materially changes a page.</code></pre></div>
+</div></details>
+
+<details class="find" data-sev="med"><summary><span class="pill p-med">Medium</span><span class="tag">MEA-04</span><span class="ttl">No regression guard — nothing catches an SEO break before it ships</span><span class="arw">▶</span></summary>
+<div class="body">
+<h4>Evidence</h4>
+<p>The <code>Poopins</code> typo, the invalid <code>open</code>/<code>close</code> schema keys, the trailing space in the contact title, and the unrendered guide fields all reached production. Nothing in the build checks any of them.</p>
+<h4>Why it matters</h4>
+<p>Every defect in this audit is a defect that a ten-line check would have caught at build time. As you scale from 15 to 50 pages, manual review stops working. The cheapest possible investment is a script that fails the build on the classes of mistake you have already made once.</p>
+<div class="principle"><p><b>Principle —</b> Encode each bug you fix as a check. An audit is a snapshot; a check is permanent. This is the mechanism that turns "we did an SEO audit" into "our site cannot regress on SEO".</p></div>
+<h4>Prompt for Claude</h4>
+<div class="prompt"><button class="cp">Copy</button><pre><code>Create scripts/seo-check.mjs, run as part of `npm run build` via a prebuild script,
+that fails with a non-zero exit code on any of these:
+
+1. Any page whose rendered title (page title + " | The Yatra Company") exceeds 60
+   characters, or whose meta description is outside 140-165 characters.
+2. Any page missing alternates.canonical.
+3. Any guide object in travelGuides.js missing a required key, or containing a key
+   path that the [slug] template never references.
+4. Any JSON-LD node using a property not in an allowlist per @type -- specifically
+   assert `opens`/`closes` are used and `open`/`close` are not.
+5. Any file under public/Images larger than 400 KB.
+6. Any raw &lt;img&gt; tag or eslint-disable of no-img-element in src/.
+7. Any occurrence of the strings "Poopins", "COmpany", "tairport", "across India".
+8. Any next/image with `fill` but no `sizes` prop.
+9. Any duplicate title or meta description across pages.
+
+Print a clear report with file and line for each violation. Add a --warn-only flag
+for local development.</code></pre></div>
+</div></details>
+
+</div>
+</section>
+
+<section id="roadmap">
+<div class="wrap">
+  <div class="snum">11 — ROADMAP</div>
+  <h2>Sequenced plan</h2>
+  <p class="lede">Order matters. Fixing measurement and templates before scaling content prevents multiplying defects across 40 new pages.</p>
+
+  <div class="tblwrap"><table>
+  <thead><tr><th style="width:70px">Week</th><th>Do</th><th>IDs</th><th style="width:90px">Effort</th><th style="width:100px">Impact</th></tr></thead>
+  <tbody>
+  <tr><td><b>0</b></td><td><b>Sync the repo.</b> <code>git pull</code>. Confirm the working tree matches production before touching anything.</td><td>—</td><td>5 min</td><td><span class="pill p-crit">Blocker</span></td></tr>
+  <tr><td><b>1</b></td><td><b>Correctness sweep.</b> Font import, robots/sitemap dedupe, schema <code>opens</code>/<code>closes</code>, remove <code>aggregateRating</code>, metadata typos, nested <code>&lt;main&gt;</code>, button/anchor nesting, GA4 placement, www redirect.</td><td>TEC-01…08, SCH-01, SCH-02</td><td>1 day</td><td><span class="pill p-high">High</span></td></tr>
+  <tr><td><b>1</b></td><td><b>Instrument conversions.</b> GA4 events on every CTA, thank-you page, GSC + Bing verification.</td><td>MEA-01, MEA-03</td><td>1 day</td><td><span class="pill p-crit">Critical</span></td></tr>
+  <tr><td><b>2</b></td><td><b>Render the missing content.</b> Answer block, key takeaways, inclusions/exclusions, tolls, nearby destinations, attractions, byline and verification date.</td><td>CNT-01, CNT-06, AEO-01</td><td>1 day</td><td><span class="pill p-crit">Critical</span></td></tr>
+  <tr><td><b>2</b></td><td><b>Internal linking.</b> Related guides, breadcrumbs, popular-routes modules, footer routes column, guide → <code>/contact</code> links.</td><td>ARC-01</td><td>1 day</td><td><span class="pill p-crit">Critical</span></td></tr>
+  <tr><td><b>3</b></td><td><b>Images.</b> LCP to <code>next/image</code>, <code>sizes</code> on guide cards, CSS backgrounds converted, generated OG images, <code>next.config</code> formats and headers.</td><td>PRF-01…03, PRF-05</td><td>1–2 days</td><td><span class="pill p-high">High</span></td></tr>
+  <tr><td><b>3</b></td><td><b>Schema <code>@graph</code> refactor</b> with <code>@id</code> references, plus Offer markup on fare tables.</td><td>SCH-03, SCH-04, AEO-05</td><td>1 day</td><td><span class="pill p-high">High</span></td></tr>
+  <tr><td><b>4</b></td><td><b>Conversion rebuild.</b> Booking API + Mongo persistence, labelled accessible form, sticky mobile CTA, contextual CTAs, proof row.</td><td>CRO-01…04</td><td>2–3 days</td><td><span class="pill p-crit">Critical</span></td></tr>
+  <tr><td><b>5</b></td><td><b>Positioning &amp; copy.</b> Kill "across India" and "affordable", fare breakdown, inclusions comparison, verifiable trust claims, visible NAP, retitled pages.</td><td>CNT-02…05, POS</td><td>2 days</td><td><span class="pill p-high">High</span></td></tr>
+  <tr><td><b>5</b></td><td><b>Policy pages.</b> Pricing, cancellation, terms, privacy.</td><td>CNT-08</td><td>1 day</td><td><span class="pill p-med">Medium</span></td></tr>
+  <tr><td><b>6</b></td><td><b>Guardrails.</b> <code>seo-check.mjs</code> in prebuild, guide-coverage script, design tokens.</td><td>MEA-04, CRO-05</td><td>1 day</td><td><span class="pill p-med">Medium</span></td></tr>
+  <tr><td><b>6+</b></td><td><b>GBP programme.</b> Complete profile, weekly posts, post-trip review requests. Runs continuously.</td><td>MEA-02</td><td>ongoing</td><td><span class="pill p-crit">Critical</span></td></tr>
+  <tr><td><b>7–12</b></td><td><b>Scale content.</b> 15 outstation routes → 8 return legs → 6 service pages → 4 vehicle pages → 8 area pages, using the playbooks below.</td><td>ARC-02</td><td>ongoing</td><td><span class="pill p-high">High</span></td></tr>
+  </tbody></table></div>
+
+  <div class="callout">
+    <h3>What to expect, honestly</h3>
+    <p>Weeks 1–3 fix correctness and will not move rankings much on their own — they remove ceilings. The content rendering and internal linking in week 2 are the changes most likely to produce a visible ranking movement within 4–8 weeks. The GBP work is the change most likely to produce <b>bookings</b> within 2–4 weeks. Content scale compounds from month three. Anyone promising faster on a 15-page domain in a market of funded aggregators is selling something.</p>
+  </div>
+</div>
+</section>
+
+<section id="playbooks">
+<div class="wrap">
+  <div class="snum">12 — PLAYBOOKS</div>
+  <h2>Page playbooks to bake into your workflow</h2>
+  <p class="lede">Three templates: route/guide pages, blog posts, and landing pages. Each is a rule set, not a checklist — the reasoning is included so you can adapt it.</p>
+
+  <div class="box" style="margin-bottom:18px">
+    <h3>Rules that apply to every page you will ever publish</h3>
+    <ul class="chk">
+      <li><b>One intent per URL.</b> If a page targets both "Lucknow to Ayodhya taxi" and "Ayodhya to Lucknow taxi", it will underperform on both. Split it.</li>
+      <li><b>Answer-first.</b> The first 60 words state the answer with numbers and entity names, quotable with no surrounding context.</li>
+      <li><b>Title budget.</b> ≤40 characters before the brand template. Primary keyword in the first 30. One pipe maximum. Include a number where the query is commercial.</li>
+      <li><b>Description.</b> 150–160 characters, one number, one call to action, primary keyword present.</li>
+      <li><b>One <code>h1</code>, strict heading order.</b> Headings phrased as the questions a reader would actually ask, because those become the chunk boundaries.</li>
+      <li><b>Three internal links minimum</b> in the body, with descriptive anchor text. Up to the hub, sideways to siblings, down to conversion.</li>
+      <li><b>Canonical set explicitly</b> via <code>alternates.canonical</code>. Never rely on inference.</li>
+      <li><b>Schema matches what is visible.</b> Every marked-up property has an on-page counterpart.</li>
+      <li><b>One priority image</b> per page via <code>next/image</code> with explicit dimensions, under 200 KB delivered.</li>
+      <li><b>Generated OG image</b> at 1200×630, under 300 KB, with the page's key number rendered into it.</li>
+      <li><b>Added to the sitemap</b> with a real <code>lastmod</code>, and linked from at least one existing page before publishing.</li>
+      <li><b>A conversion event</b> on every CTA, with a unique position identifier.</li>
+    </ul>
+  </div>
+
+  <div class="grid2">
+    <div class="box">
+      <h3>A. Route / destination guide</h3>
+      <p style="margin-bottom:8px"><b>Intent:</b> transactional with heavy research. The reader wants a fare and wants to believe it.</p>
+      <p style="margin-bottom:4px"><b>Section order — this order is the point:</b></p>
+      <ol style="padding-left:20px">
+        <li>H1 with route + vehicle-agnostic fare hook</li>
+        <li>Byline + "fares verified {date}"</li>
+        <li><b>Answer block</b> (45–70 words, all numbers)</li>
+        <li>Key facts list (4 bullets)</li>
+        <li>Quick info grid — distance, time, route, fare range, best time</li>
+        <li><b>Fare table</b> with per-vehicle pricing + breakdown + Offer schema</li>
+        <li>CTA #1 — "Lock this fare on WhatsApp"</li>
+        <li>What's included / not included</li>
+        <li>Route detail — highway, tolls, stops, road condition, tips</li>
+        <li>Destination detail — about, why visit, attractions, food, climate</li>
+        <li>Nearest airport / railway station (entity anchors)</li>
+        <li>Why book direct (positioning block)</li>
+        <li>Attributed reviews for this route</li>
+        <li>FAQs — 6–8, each 40–80 words</li>
+        <li>CTA #2 + related routes + nearby destinations</li>
+      </ol>
+      <p style="margin-top:10px"><b>Length:</b> 1,200–1,800 words. <b>Non-negotiable:</b> every number must exist in the data file, never in prose only.</p>
+    </div>
+
+    <div class="box">
+      <h3>B. Blog post</h3>
+      <p style="margin-bottom:8px"><b>Intent:</b> informational, top of funnel. Its job is to earn topical authority and to feed the route pages — not to convert directly.</p>
+      <ol style="padding-left:20px">
+        <li>H1 phrased as the reader's question</li>
+        <li>Byline + published + updated dates</li>
+        <li><b>Answer block</b> — the full answer in 60 words. Do not withhold it; withholding costs the featured snippet and gains nothing.</li>
+        <li>Table of contents for posts over 1,000 words</li>
+        <li>Body in <code>h2</code> sections, each a distinct sub-question, 150–300 words each</li>
+        <li>At least one table or comparison — the most extractable format there is</li>
+        <li>One relevant, non-forced link to a route guide per major section</li>
+        <li>FAQ block of 4–6 questions not already answered in the body</li>
+        <li>Soft CTA at the end, tied to the topic</li>
+      </ol>
+      <p style="margin-top:10px"><b>Topic test:</b> if the post cannot naturally link to at least two route or service pages, it is off-strategy — write a different post.</p>
+      <p><b>Schema:</b> <code>BlogPosting</code> with <code>author</code>, <code>datePublished</code>, <code>dateModified</code>, <code>image</code>, <code>mentions</code>; plus <code>FAQPage</code> for the FAQ block; plus <code>BreadcrumbList</code>.</p>
+    </div>
+
+    <div class="box">
+      <h3>C. Service / landing page</h3>
+      <p style="margin-bottom:8px"><b>Intent:</b> commercial. One service, one audience, one action.</p>
+      <ol style="padding-left:20px">
+        <li>H1 = service + city. No cleverness.</li>
+        <li>Sub-headline with the starting price and what it includes</li>
+        <li>Proof row — rating with count, years, routes, reply time</li>
+        <li>Primary CTA above the fold, repeated as a sticky bar on mobile</li>
+        <li><b>Answer block</b> defining the service in 50 words</li>
+        <li>What's included / what's not — the objection-handling block</li>
+        <li>Pricing table with Offer schema</li>
+        <li>How it works — 4 steps, one sentence each</li>
+        <li>Vehicles available with capacity</li>
+        <li>Attributed reviews specific to this service</li>
+        <li>FAQs — 6+, objection-shaped: cancellation, payment, waiting, luggage, delays</li>
+        <li>Final CTA + links to related routes</li>
+      </ol>
+      <p style="margin-top:10px"><b>Landing-page discipline:</b> exactly one conversion action. No social icons, no newsletter, no outbound links above the fold. Every element either supports the booking decision or is deleted.</p>
+    </div>
+
+    <div class="box">
+      <h3>The AEO layer — apply to all three</h3>
+      <ul>
+        <li><b>Chunk hygiene.</b> Every <code>h2</code> section should stand alone if quoted. No "as mentioned above", no pronouns referring to earlier sections.</li>
+        <li><b>Numbers over adjectives.</b> Ban "comfortable", "reliable", "best", "trusted", "affordable" from answer blocks and FAQ answers.</li>
+        <li><b>Restate the subject.</b> First sentence of every section repeats the entity: "The Lucknow to Ayodhya route…" not "This route…".</li>
+        <li><b>Tables for comparisons.</b> They survive chunking and are disproportionately quoted.</li>
+        <li><b>Entity anchors.</b> Name the airport, the highway, the temple, the station in full, at least once each.</li>
+        <li><b>Dates on anything with a price.</b> Undated prices get hedged or skipped by AI answers.</li>
+        <li><b>Consistency across surfaces.</b> Page copy, JSON-LD, <code>llms.txt</code> and GBP must not disagree on any fact.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="prompts">
+<div class="wrap">
+  <div class="snum">13 — PROMPT LIBRARY</div>
+  <h2>Reusable prompts to bake into your skills</h2>
+  <p class="lede">The per-finding prompts above are one-time fixes. These four are permanent — save them as skills or slash commands and run them on every new page.</p>
+
+  <h3 style="font-size:18px;margin:22px 0 8px">1 · New route guide — from brief to shipped page</h3>
+  <div class="prompt"><button class="cp">Copy</button><pre><code>You are adding a new route guide to theyatracompany.com. Route: {ORIGIN} to {DESTINATION}.
+
+Step 1 — Research before writing. Report to me:
+- the actual road distance in km and typical drive time
+- the highway(s) used and whether tolls apply
+- the 3-5 landmarks or reasons people travel this route
+- the nearest airport and railway station to the destination
+- what 3 competitors ranking for "{ORIGIN} to {DESTINATION} taxi" put in their
+  title tags, and their advertised sedan one-way fare
+Do not write the page until I confirm the fares I will charge.
+
+Step 2 — Write a new object in src/data/travelGuides.js matching the EXACT existing
+schema, including every key other guides have. Required standards:
+- seo.metaTitle: max 40 chars, primary keyword in the first 30, includes the fare
+- seo.metaDescription: 150-160 chars, one number, one CTA
+- geo.aiSummary: 45-70 words, self-contained, names origin/destination/distance/
+  time/fare range/booking channel, contains zero unverifiable adjectives
+- geo.keyTakeaways: exactly 4 bullets, each containing a number or a proper noun
+- faqs: 6-8 entries, each answer 40-80 words, first sentence restates the subject,
+  each containing one concrete fact
+- relatedGuides: 3 existing slugs that a reader of this page would genuinely want
+- pricing: sedan, SUV and Innova rows with both display strings and numeric fields
+- nearbyDestinations, attractions, thingsToDo, taxi.inclusions, taxi.exclusions,
+  route.tolls, route.stops all populated — the template renders all of them
+
+Step 3 — Wire it up:
+- confirm generateStaticParams picks it up
+- confirm it appears in app/sitemap.js output
+- add a link to it from at least 2 existing guides' relatedGuides arrays
+- add it to the /travel-guides all-routes table
+- confirm the generated OG image renders with the right fare
+
+Step 4 — Verify. Run scripts/seo-check.mjs and scripts/check-guide-coverage.mjs and
+report any failures. Then paste the rendered title, description and character counts,
+and the full JSON-LD graph for the new page.
+
+Never invent a fare, distance or drive time. Mark anything unverified [CONFIRM: ...].</code></pre></div>
+
+  <h3 style="font-size:18px;margin:26px 0 8px">2 · New blog post</h3>
+  <div class="prompt"><button class="cp">Copy</button><pre><code>Write a new blog post for theyatracompany.com on: {TOPIC}.
+
+Before writing, tell me:
+- the exact primary query this targets and 3 secondary queries
+- which 2+ existing route or service pages this post can link to naturally
+  (if you cannot find 2, tell me the topic is off-strategy and propose a better one)
+- what the current top 3 results cover, and the one angle they all miss
+
+Structure:
+- h1 phrased as the reader's question
+- byline with published and updated dates in a &lt;time&gt; element
+- answer block: the complete answer in under 60 words, immediately, no withholding
+- table of contents if over 1000 words
+- h2 sections, each a distinct sub-question, 150-300 words, each opening by
+  restating its subject so it stands alone when quoted
+- at least one comparison table
+- one contextual internal link per major section, with descriptive anchor text —
+  never "click here" or "read more"
+- FAQ block of 4-6 questions not already answered above, 40-80 words each
+- closing CTA tied to the topic, not generic
+
+Constraints:
+- banned words in answer blocks and FAQ answers: comfortable, reliable, best,
+  trusted, affordable, seamless, hassle-free
+- every claim about price, distance or time must come from src/data/travelGuides.js
+  or be marked [CONFIRM: ...]
+- 1200-1800 words
+- BlogPosting + FAQPage + BreadcrumbList JSON-LD via src/lib/schema.js, with author
+  and dateModified
+
+Then run scripts/seo-check.mjs and report the rendered title length, description
+length, internal link count and word count.</code></pre></div>
+
+  <h3 style="font-size:18px;margin:26px 0 8px">3 · New service / landing page</h3>
+  <div class="prompt"><button class="cp">Copy</button><pre><code>Create a landing page for: {SERVICE} in Lucknow.
+
+Discovery first — report before building:
+- the primary commercial query and its 3 closest variants
+- the top 5 objections a buyer has for this specific service
+- what the starting price should be and exactly what it includes
+- which existing pages should link to this one, and which it should link to
+
+Build to this structure, one conversion action only:
+1. h1 = "{SERVICE} in Lucknow" — plain, no wordplay
+2. sub-headline with starting price and what it includes
+3. proof row: Google rating + review count, years operating, routes with published
+   fares, average WhatsApp reply time
+4. primary CTA above the fold; sticky mobile bar site-wide already covers scroll
+5. answer block defining the service in ~50 words with numbers
+6. what's included / what's not — built directly from the objection list
+7. pricing table with Offer schema and a fare breakdown
+8. how it works, 4 steps, one sentence each
+9. vehicles with capacity
+10. attributed reviews specific to this service
+11. FAQs, 6+, each mapped to one objection from discovery
+12. final CTA plus 3 links to related routes
+
+Rules:
+- no social icons, no newsletter, no outbound links above the fold
+- every element must support the booking decision or be removed — justify each
+- title max 40 chars before the brand template; description 150-160 chars
+- Service + Offer + FAQPage + BreadcrumbList via src/lib/schema.js
+- generated OG image with the starting price rendered into it
+- add to sitemap with a real lastmod; link from the services hub and the footer
+- unique data-cta value on every CTA
+
+Finish by running scripts/seo-check.mjs and pasting the JSON-LD graph.</code></pre></div>
+
+  <h3 style="font-size:18px;margin:26px 0 8px">4 · Pre-publish review — run on every page before merge</h3>
+  <div class="prompt"><button class="cp">Copy</button><pre><code>Review {PAGE_PATH} before I publish it. Do not fix anything — report only, as a
+table of Severity | Issue | Location | Fix.
+
+Check:
+CRAWL     canonical set explicitly; in sitemap with a real lastmod; at least one
+          internal link pointing at it from an existing page
+PRESENT   rendered title under 60 chars with keyword in the first 30; description
+          140-165 chars with a number and a CTA; no duplicate title or description
+          anywhere on the site; OG image generated, 1200x630, under 300 KB
+STRUCTURE one h1; strict heading order with no skipped levels; exactly one &lt;main&gt;;
+          headings phrased as questions a reader would ask
+ANSWER    first 60 words are a self-contained answer with numbers and entity names;
+          no banned adjectives; no pronouns referring outside the block
+LINKS     3+ contextual internal links with descriptive anchor text; no "read more"
+          or "click here"; up-hub, sideways-sibling and down-conversion all present
+SCHEMA    every marked-up property has a visible on-page counterpart; @id references
+          used instead of re-declared entities; validates in the Rich Results Test;
+          opens/closes not open/close
+IMAGES    LCP image uses next/image with explicit dimensions and priority; all
+          next/image fill usages have sizes; every alt is descriptive and not a
+          bare keyword; no file over 400 KB
+CRO       CTA visible above the fold and repeated after the pricing block; every CTA
+          has a unique data-cta; all form inputs have visible labels; tap targets
+          at least 44px
+CONSISTENCY  brand string, address, phone and hours match siteConfig, the JSON-LD,
+          llms.txt and the footer exactly; no "across India"; no unverifiable
+          counter claims
+
+Rank findings by expected impact on bookings, not by category.</code></pre></div>
+
+  <div class="callout" style="margin-top:26px">
+    <h3>How to bake these in</h3>
+    <p>Save each as a file under <code>.claude/skills/</code> in the repo — for example <code>new-route-guide/SKILL.md</code>, <code>new-blog-post/SKILL.md</code>, <code>new-landing-page/SKILL.md</code>, <code>pre-publish-review/SKILL.md</code> — with a short front-matter description so Claude Code offers them automatically. Add a project <code>CLAUDE.md</code> capturing the non-negotiables: the title budget, the banned-adjective list, the answer-first rule, the internal-link minimum, and the rule that every number must come from a data file. Then wire <code>scripts/seo-check.mjs</code> into <code>prebuild</code> so the rules are enforced by the build rather than by memory.</p>
+  </div>
+</div>
+</section>
+
+<footer><div class="wrap">
+  <p><b>The Yatra Company — SEO &amp; AEO audit.</b> Prepared 12 August 2026 against <code>origin/main</code> (<code>5e9fdc7</code>) and the live production HTML at theyatracompany.com. No code was changed.</p>
+  <p style="margin-top:10px">Competitor fare data from published rates on <a href="https://saarthicabs.com/lucknow-to-ayodhya-taxi/" target="_blank" rel="noopener">Saarthi Cabs</a>, <a href="https://hurryupcabs.com/outstation/lucknow-to-ayodhya-cab" target="_blank" rel="noopener">HurryUp Cabs</a>, <a href="https://chikucab.com/taxi/lucknow-to-ayodhya-taxi-service/" target="_blank" rel="noopener">Chiku Cab</a>, <a href="https://cabbazar.com/taxi/lucknow-to-ayodhya" target="_blank" rel="noopener">CabBazar</a>, <a href="https://www.makemytrip.com/car-rental/lucknow-ayodhya-cab-services.html" target="_blank" rel="noopener">MakeMyTrip</a> and <a href="https://www.lakshyacabs.com/lucknow-to-ayodhya-taxi" target="_blank" rel="noopener">Lakshya Cabs</a>, retrieved 12 August 2026. Core Web Vitals lab data was unavailable — the PageSpeed Insights API daily quota was exhausted at audit time — so performance findings are derived from measured asset weights, response headers and code inspection rather than a Lighthouse run. Re-run PSI once the image fixes land to confirm.</p>
+</div></footer>
+
+<script>
+(function(){
+  var cats = [
+    ["Technical foundation", 62],
+    ["Architecture & links", 40],
+    ["Content & copy", 55],
+    ["Schema & AEO", 54],
+    ["Performance & CWV", 38],
+    ["Conversion (CRO)", 28],
+    ["Positioning", 40],
+    ["Measurement", 25]
+  ];
+  function colour(v){ return v>=75?"var(--ok)":v>=55?"var(--med)":v>=40?"var(--high)":"var(--crit)"; }
+  var sc = document.getElementById("scores");
+  cats.forEach(function(c){
+    var v=c[1], r=24, C=2*Math.PI*r, off=C*(1-v/100);
+    var d=document.createElement("div");
+    d.className="sc";
+    d.innerHTML =
+      '<svg width="58" height="58" viewBox="0 0 58 58">'+
+      '<circle cx="29" cy="29" r="'+r+'" fill="none" stroke="var(--line)" stroke-width="6"/>'+
+      '<circle cx="29" cy="29" r="'+r+'" fill="none" stroke="'+colour(v)+'" stroke-width="6" '+
+      'stroke-linecap="round" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'" '+
+      'transform="rotate(-90 29 29)"/></svg>'+
+      '<div><div class="lbl">'+c[0]+'</div><div class="val" style="color:'+colour(v)+'">'+v+'</div></div>';
+    sc.appendChild(d);
+  });
+
+  var sevs = {crit:["Critical","var(--crit)"], high:["High","var(--high)"], med:["Medium","var(--med)"], low:["Low","var(--low)"]};
+  var counts = {crit:0,high:0,med:0,low:0};
+  var finds = document.querySelectorAll(".find");
+  finds.forEach(function(f){ var s=f.dataset.sev; if(counts[s]!==undefined) counts[s]++; });
+  var t = document.getElementById("tallies");
+  Object.keys(sevs).forEach(function(k){
+    var d=document.createElement("div"); d.className="tally";
+    d.innerHTML='<b style="color:'+sevs[k][1]+'">'+counts[k]+'</b>'+sevs[k][0];
+    t.appendChild(d);
+  });
+  document.getElementById("fcount").textContent = finds.length;
+
+  document.querySelectorAll(".prompt .cp").forEach(function(b){
+    b.addEventListener("click", function(){
+      var pre = b.parentElement.querySelector("pre");
+      navigator.clipboard.writeText(pre.innerText).then(function(){
+        var o=b.textContent; b.textContent="Copied"; b.style.color="var(--ok)";
+        setTimeout(function(){ b.textContent=o; b.style.color=""; },1400);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

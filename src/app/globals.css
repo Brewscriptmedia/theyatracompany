@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poopins:wght@300;400;500;600;700;800&displey=swap');
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poopins', sans-serif;
+    background: #ffffff;
+    color: #1f2937;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    font-family: inherit;
+}
+
+section{
+    padding: 90px 0;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #f59e0b;
+}
+
+::-webkit-scrollbar-track{
+    background: #ececec;
+}
+
+/* Common */
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sectionTitle{
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sectionSubtitles{
+    text-align: center;
+    color: #666;
+    margin-bottom: 60px;
+}

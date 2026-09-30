@@ -1,0 +1,54 @@
+.services {
+  padding: 80px 8%;
+  background: #f8f9fc;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+
+  gap: 30px;
+}
+
+.card {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  transition: .3s;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 50px;
+
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+
+  line-height: 1.8;
+}

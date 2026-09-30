@@ -1,0 +1,1 @@
+import {FaPhone} from 'react-icons/fa';export default function(){return(<div style={{padding:'40px'}}><h1 style={{textAlign:'center'}}>Chandigarh to Shimla</h1><p style={{textAlign:'center'}}>110 km | 2-3 hrs | 1,200</p></div>);}

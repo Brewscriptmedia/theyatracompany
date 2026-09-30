@@ -1,0 +1,1 @@
+import {FaPhone} from 'react-icons/fa';export default function(){return(<div style={{padding:'40px',textAlign:'center'}}><h1>Lucknow to Vrindavan</h1><p>340 km | 5-6 hrs | 3,700</p><a href="tel:+919198893198"><FaPhone/> Call</a></div>);}

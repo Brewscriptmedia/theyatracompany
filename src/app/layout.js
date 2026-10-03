@@ -7,67 +7,66 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import siteConfig from "../config/siteConfig";
 
 const geist = Geist({
-  subsets: ["latin"]
+  subsets: ["latin"],
 });
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-
-  name: siteConfig.companyName,
-  url: siteConfig.siteUrl,
-  image: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
-  logo: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
-
-  telephone: siteConfig.phone,
-  email: siteConfig.email,
-
-  priceRange: "₹₹",
-
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "T9-1103, Sun Breeze 1, Faizabad Road, BBD Green City",
-    addressLocality: "Lucknow",
-    addressRegion: "Uttar Pradesh",
-    postalCode: "226028",
-    addressCountry: "IN"
-  },
-
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "TaxiService",
-      "name": "Taxi Service"
-    }
-  },
-
-  areaServed: {
-    "@type": "City",
-    name: "Lucknow"
-  },
-
-  openingHoursSpecification: [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
+      "@type": "WebSite",
+      "@id": `${siteConfig.siteUrl}/#website`,
+      name: siteConfig.companyName,
+      url: siteConfig.siteUrl,
+      inLanguage: "en-IN",
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": `${siteConfig.siteUrl}/#business`,
+
+      name: siteConfig.companyName,
+      url: siteConfig.siteUrl,
+
+      image: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
+      logo: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
+
+      telephone: siteConfig.phone,
+      email: siteConfig.email,
+
+      priceRange: "₹₹",
+
+      address: {
+        "@type": "PostalAddress",
+        ...siteConfig.address,
+      },
+
+      areaServed: siteConfig.serviceArea,
+
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "00:00",
+          closes: "23:59",
+        },
       ],
-      open: "00:00",
-      close: "23:59"
+
+      sameAs: [
+        siteConfig.instagram,
+        siteConfig.facebook,
+      ].filter(Boolean),
     },
   ],
-
-  sameAs: [
-    siteConfig.instagram,
-    siteConfig.facebook,
-  ]
-}
+};
 
 export const metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -88,17 +87,16 @@ export const metadata = {
     "Outstation Taxi",
     "Cab Booking",
     "Travel Company",
-    "Raahify"
+    "Raahify",
   ],
 
-  author: [
+  authors: [
     {
       name: "Raahify",
     },
   ],
 
   creator: "Raahify",
-
   publisher: "Raahify",
 
   robots: {
@@ -111,16 +109,15 @@ export const metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
       "max-video-preview": -1,
-    }
+    },
   },
-
-  themeColor: "#f4a100",
 
   openGraph: {
     title: "Raahify | Trusted Taxi & Cab Service in Lucknow",
-    description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
+    description:
+      "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
     url: siteConfig.siteUrl,
-    siteName: "Raahify",
+    siteName: siteConfig.companyName,
     images: [
       {
         url: `${siteConfig.siteUrl}/Images/logo1.jpeg`,
@@ -136,7 +133,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Raahify | Trusted Taxi & Cab Service in Lucknow",
-    description: "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
+    description:
+      "Reliable airport pickup, drop, local and outstation taxi service in Lucknow.",
     images: [`${siteConfig.siteUrl}/Images/logo1.jpeg`],
   },
 };
@@ -150,7 +148,8 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
 
         <Footer />
-        <script 
+
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schema),
@@ -158,7 +157,7 @@ export default function RootLayout({ children }) {
         />
       </body>
 
-      <GoogleAnalytics gaId={siteConfig.gaId}/>
+      <GoogleAnalytics gaId={siteConfig.gaId} />
     </html>
   );
 }

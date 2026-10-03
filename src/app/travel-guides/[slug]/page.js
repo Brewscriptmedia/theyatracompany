@@ -53,100 +53,92 @@ export default async function GuidePage({ params }) {
 
   if (!guide) notFound();
 
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      name: guide.hero.title,
-      description: guide.seo.metaDescription,
-      url: guide.seo.canonical,
-      datePublished: guide.schema.publishedDate,
-      dateModified: guide.schema.lastUpdated,
-      inLanguage: "en-IN",
-      isPartOf: {
-        "@type": "WebSite",
-        name: "Raahify",
-        url: "https://raahify.com",
-      },
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${guide.seo.canonical}#webpage`,
+
+    name: guide.hero.title,
+    description: guide.seo.metaDescription,
+    url: guide.seo.canonical,
+
+    datePublished: guide.schema.publishedDate,
+    dateModified: guide.schema.lastUpdated,
+
+    inLanguage: "en-IN",
+
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": `${siteConfig.siteUrl}/#website`,
+      name: siteConfig.companyName,
+      url: siteConfig.siteUrl,
     },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: guide.hero.title,
-      description: guide.taxi.service,
-      provider: {
-        "@type": "LocalBusiness",
-        name: "Raahify",
-        url: "https://raahify.com",
-        telephone: siteConfig.phone,
-      },
-      areaServed: guide.geo.serviceArea,
-      serviceType: "Taxi Service",
+    about: {
+      "@id": `${siteConfig.siteUrl}/#business`,
+    },
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${guide.seo.canonical}#service`,
+
+    name: guide.hero.title,
+    description: guide.taxi.service,
+
+    provider: {
+      "@id": `${siteConfig.siteUrl}/#business`,
     },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Raahify",
-      image: `https://raahify.com${guide.hero.heroImage}`,
-      url: "https://raahify.com",
-      telephone: siteConfig.phone,
-      email: siteConfig.email,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "T9-1103, Sun Breeze 1, Faizabad Road",
-        addressLocality: "Lucknow",
-        addressRegion: "Uttar Pradesh",
-        postalCode: "226028",
-        addressCountry: "IN",
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": guide.geo.latitude,
-        "longitude": guide.geo.longitude,
-      },
-      areaServed: guide.geo.serviceArea,
-    },
+    areaServed: guide.geo.serviceArea,
+    serviceType: "Taxi Service",
+  },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": guide.faqs.map((faq) => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer,
-        },
-      })),
-    },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${guide.seo.canonical}#faq`,
 
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://raahify.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Travel Guides",
-          item: "https://raahify.com/travel-guides",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: guide.hero.title,
-          item: guide.seo.canonical,
-        },
-      ],
-    },
-  ];
+    mainEntity: guide.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${guide.seo.canonical}#breadcrumb`,
+
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteConfig.siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Travel Guides",
+        item: `${siteConfig.siteUrl}/travel-guides`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: guide.hero.title,
+        item: guide.seo.canonical,
+      },
+    ],
+  },
+];
 
   return (
     <>

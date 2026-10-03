@@ -12,10 +12,17 @@
 
 .imageSection{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imageSection img{
     width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+    object-fit: contain;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
 }
@@ -82,6 +89,16 @@
 @media(max-width: 768px){
     .container{
         flex-direction: column;
+        gap: 40px;
+    }
+
+    .imageSection{
+        width: 100%;
+    }
+
+    .imageSection img{
+        width: 90%;
+        max-width: 400px;
     }
 
     .contentSection{

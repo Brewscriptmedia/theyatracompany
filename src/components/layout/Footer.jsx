@@ -10,7 +10,7 @@ export default function Footer(){
             <Container>
                 <div className={styles.grid}>
                     <div>
-                        <h2>The Yatra Company</h2>
+                        <h2>Raahify</h2>
                         <p>
                             Reliable Taxi Services across India.
                             Airport Pickup, Airport Drop,
@@ -24,6 +24,7 @@ export default function Footer(){
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/about">About</Link></li>
                             <li><Link href="/services">Services</Link></li>
+                            <li><Link href="/travel-guides">Travel Guides</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                         <div className={styles.socialIcons}>
@@ -54,7 +55,7 @@ export default function Footer(){
                 </div>
 
                 <div className={styles.bottom}>
-                    © 2026 The Yatra Company. All Rights Reserved.
+                    © 2026 Raahify. All Rights Reserved.
                 </div>
             </Container>
         </footer>

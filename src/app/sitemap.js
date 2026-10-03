@@ -1,0 +1,52 @@
+import { guides } from "@/data/travelGuides";
+import siteConfig from "@/config/siteConfig";
+
+const baseUrl = siteConfig.siteUrl;
+
+export default function sitemap() {
+  const staticPages = [
+    {
+      url: baseUrl,
+      lastModified: new Date("2026-09-30"),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date("2026-09-30"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: new Date("2026-09-30"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/travel-guides`,
+      lastModified: new Date("2026-10-03"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date("2026-09-30"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+  ];
+
+  const guidePages = guides.map((guide) => ({
+    url: `${baseUrl}/travel-guides/${guide.slug}`,
+
+    lastModified: guide.schema?.lastUpdated
+      ? new Date(guide.schema.lastUpdated)
+      : new Date("2026-10-03"),
+
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...guidePages];
+}

@@ -1,1 +1,0 @@
-import {FaPhone,FaWhatsapp} from 'react-icons/fa';import s from './page.module.css';export default function(){return(<div className={s.c}><h1>Lucknow to Mussoorie</h1><p>550 km | 8-9 hrs | 6,200</p><div className={s.btns}><a href="tel:+919198893198"><FaPhone/>Call</a><a href="https://wa.me/919198893198"><FaWhatsapp/>WhatsApp</a></div></div>);}

@@ -6,16 +6,15 @@ export default function HeroAbout(){
             <div className={styles.overlay}>
                 <div className={styles.content}>
 
-                    <span className={styles.badge}>About The Yatra Company</span>
+                    <span className={styles.badge}>About Raahify</span>
 
                     <h1>
-                        Your Trusted Travel 
-                        <br/>
+                        Your Trusted Travel <br/>
                         Partner Across India
                     </h1>
 
                     <p>
-                        The yatra Company provides safe, reliable, and affordable taxi
+                        Raahify provides safe, reliable, and affordable taxi
                         services for airport transfers, local city rides, outstation
                         journeys, and corporate travel. Our mission is to make every
                         journey comfortable, punctual, and stress-free.

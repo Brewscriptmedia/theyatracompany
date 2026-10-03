@@ -1,14 +1,16 @@
 {
-  "name": "theyatracompany",
+  "name": "raahify",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "notify:indexnow": "node scripts/indexnow-submit.js"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.12",
     "axios": "^1.18.1",
     "framer-motion": "^12.42.2",
     "mongoose": "^9.7.4",

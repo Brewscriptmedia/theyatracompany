@@ -1,1 +1,0 @@
-import {FaPhone,FaWhatsapp} from 'react-icons/fa';export default function(){return(<div style={{padding:'40px'}}><h1 style={{textAlign:'center',color:'#185fa5'}}>Lucknow to Mathura</h1><p style={{textAlign:'center',fontSize:'1.1rem'}}>350 km | 5-6 hrs | 3,800</p></div>);}

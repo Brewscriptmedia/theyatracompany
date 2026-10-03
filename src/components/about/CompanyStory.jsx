@@ -9,8 +9,8 @@ export default function CompanyStory(){
 
                 <div className={styles.imageSection}>
                     <img
-                        src="/Images/logo1.jpeg"
-                        alt="The Yatra Company"
+                        src="/Images/logo1.png"
+                        alt="Raahify"
                     />
                 </div>
 
@@ -22,7 +22,7 @@ export default function CompanyStory(){
                     </h2>
 
                     <p>
-                        The Yatra Company is dedicated to providing reliable taxi services
+                        Raahify is dedicated to providing reliable taxi services
                         for local travel, airport transfers, outstation trips, and 
                         corporate transportation. We believe every customer deserves a 
                         comfortable, punctual, and safe travel experience.
@@ -30,8 +30,8 @@ export default function CompanyStory(){
 
                     <p>
                         Our experienced drivers, well-maintained vehicles, and 24*7 support 
-                        ensure every ride is smooth from pickup to destination. whether 
-                        you're travelling for business or leisure, we'er always ready to 
+                        ensure every ride is smooth from pickup to destination. Whether 
+                        you're travelling for business or leisure, we're always ready to 
                         serve you.
                     </p>
 

@@ -1,1 +1,0 @@
-import {FaPhone} from 'react-icons/fa';export default function(){return(<div style={{padding:'40px',textAlign:'center'}}><h1>Delhi to Agra Cab</h1><p>210 km | 3-4 hrs | 2,300</p><a href="tel:+919198893198"><FaPhone/> Call</a></div>);}

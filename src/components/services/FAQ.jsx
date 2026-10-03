@@ -15,7 +15,7 @@ const faqs = [
     },
     {
         question: "Are your drivers verified?",
-        answer: "Yes, Every driver is experienced, lincenced and professionally trained."
+        answer: "Yes, Every driver is experienced, licensed and professionally trained."
     },
     {
         question: "Do you provide corporate travel?",
@@ -23,9 +23,28 @@ const faqs = [
     }
 ];
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+        }
+    }))
+}
+
 export default function FAQ(){
     return (
         <section className={styles.faq}>
+            <script 
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqSchema),
+                }}
+            />
             <h2>Frequently Asked Questions</h2>
             <div className={styles.container}>
                 {faqs.map((item, index) => (
